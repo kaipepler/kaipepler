@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @kaipepler
-- 👀 I’m interested in visual design and frontend development
+- 👀 I’m a UX designer specializing in accessibility accessibility, color theory, data visualization, and motion graphics
 - 🌱 I’m currently learning svelte
 - 💞️ I’m not looking to collaborate at the moment, but that may change!
 - 📫 How to reach me: hello@kaipepler.com
