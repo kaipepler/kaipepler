@@ -72,7 +72,7 @@
 </section>
 <hr />
 <section>
-	<h2 id="accessibility-statement">Privacy Policy</h2>
+	<h2 id="privacy-policy">Privacy Policy</h2>
 	<p>
 		I don't collect any user data from this site. The site and its domain are hosted on Cloudflare,
 		and as such basic analytics such as unique visitor count are included there in aggregate.
