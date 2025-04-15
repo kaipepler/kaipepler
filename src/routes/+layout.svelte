@@ -30,5 +30,6 @@
 
 	main {
 		padding-inline: 2.5rem;
+		z-index: 1;
 	}
 </style>

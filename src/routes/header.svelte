@@ -44,7 +44,7 @@
 
 			.logo-wrapper {
 				position: relative;
-				z-index: 1;
+				z-index: 0;
 
 				a.lockup {
 					text-transform: lowercase;
@@ -114,7 +114,7 @@
 							width: 18px;
 							aspect-ratio: 1 / cos(30deg);
 							--_g: calc(tan(60deg) * var(--r)) bottom var(--r), #000 98%, #0000 101%;
-							-webkit-mask:
+							mask:
 								conic-gradient(
 										from -30deg at 50% calc(200% - 3 * var(--r) / 2),
 										#000 60deg,
