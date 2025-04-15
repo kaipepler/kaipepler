@@ -3,9 +3,9 @@
 </script>
 
 <footer>
-	<small>&copy {`${new Date().getFullYear()} ${config.title}`}. Written in Svelte.</small>
+	<small>&copy {`${new Date().getFullYear()} ${config.title}`}</small>
 	<small>
-		<ul>
+		<ul role="list">
 			<li><a href="/details">Details</a></li>
 			<li><a href="/details#accessibility-statement">Accessibility</a></li>
 			<li><a href="/details#privacy-policy">Privacy</a></li>
