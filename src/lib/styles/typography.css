@@ -1,0 +1,31 @@
+:root {
+	--step--2: clamp(0.6076rem, 0.5959rem + 0.0588vw, 0.64rem);
+	--step--1: clamp(0.7292rem, 0.7034rem + 0.1288vw, 0.8rem);
+	--step-0: clamp(0.875rem, 0.8295rem + 0.2273vw, 1rem);
+	--step-1: clamp(1.05rem, 0.9773rem + 0.3636vw, 1.25rem);
+	--step-2: clamp(1.26rem, 1.15rem + 0.55vw, 1.5625rem);
+	--step-3: clamp(1.512rem, 1.3516rem + 0.802vw, 1.9531rem);
+	--step-4: clamp(1.8144rem, 1.5864rem + 1.14vw, 2.4414rem);
+	--step-5: clamp(2.1773rem, 1.8593rem + 1.59vw, 3.0518rem);
+	--step-6: clamp(2.6127rem, 2.1757rem + 2.1854vw, 3.8147rem);
+}
+
+h1 {
+	font-size: var(--step-4);
+	letter-spacing: 0.5rem;
+	text-transform: lowercase;
+}
+
+small {
+	font-size: var(--step--2);
+}
+:is(h1, h2, h3, h4, h5, h6) {
+	overflow-wrap: break-word;
+	text-wrap: balance;
+}
+
+p {
+	text-wrap: pretty;
+	font-size: var(--step-0);
+	max-width: 800px;
+}

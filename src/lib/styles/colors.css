@@ -1,0 +1,43 @@
+/* Color Scales - Dark */
+@media (prefers-color-scheme: light) {
+	:root {
+		--background: color(display-p3 0.98431 0.98431 0.98431);
+		--default: color(display-p3 0.001 0.034 0.001);
+
+		--gray-100: color(display-p3 0.82353 0.82353 0.82353);
+		--gray-200: color(display-p3 0.69804 0.69804 0.69804);
+		--gray-300: color(display-p3 0.57255 0.56863 0.56863);
+		--gray-400: color(display-p3 0.4549 0.45098 0.45098);
+		--gray-500: color(display-p3 0.34118 0.33726 0.33726);
+		--gray-600: color(display-p3 0.23137 0.22745 0.22745);
+
+		--green-100: color(display-p3 0.63137 0.89412 0.56863);
+		--green-200: color(display-p3 0.345098 0.788235 0.286275);
+		--green-300: color(display-p3 0.058824 0.662745 0.058824);
+		--green-400: color(display-p3 0 0.52941 0.01177);
+		--green-500: color(display-p3 0.07843 0.39216 0.0549);
+		--green-600: color(display-p3 0.09412 0.26275 0.07059);
+	}
+}
+
+/* Color Scales - Light */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: color(display-p3 0.11373 0.11373 0.11373);
+		--default: color(display-p3 0.98824 0.99216 0.98824);
+
+		--gray-100: color(display-p3 0.22353 0.22353 0.22353);
+		--gray-200: color(display-p3 0.3098 0.3098 0.30588);
+		--gray-300: color(display-p3 0.40784 0.40784 0.40392);
+		--gray-400: color(display-p3 0.52157 0.51765 0.51765);
+		--gray-500: color(display-p3 0.65882 0.65882 0.6549);
+		--gray-600: color(display-p3 0.81177 0.81177 0.80784);
+
+		--green-100: color(display-p3 0.09412 0.2549 0.07059);
+		--green-200: color(display-p3 0.08628 0.35686 0.06274);
+		--green-300: color(display-p3 0.03137 0.481 0.03137);
+		--green-400: color(display-p3 0 0.613 0.01177);
+		--green-500: color(display-p3 0.2549 0.76 0.20784);
+		--green-600: color(display-p3 0.59608 0.88235 0.52941);
+	}
+}
