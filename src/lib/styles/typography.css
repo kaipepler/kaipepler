@@ -12,7 +12,7 @@
 
 @font-face {
 	font-family: 'Atkinson Hyperlegible Next';
-	src: url('AtkinsonHyperlegibleNextVF-Variable.woff2') format('woff2');
+	src: url('/AtkinsonHyperlegibleNextVF-Variable.woff2') format('woff2');
 }
 
 html {
