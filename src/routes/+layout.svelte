@@ -6,7 +6,20 @@
 
 	import '$lib/styles/colors.css';
 	import '$lib/styles/typography.css';
-	import '$lib/styles/app.css';
+	import '$lib/styles/global.css';
+
+	import { onNavigate } from '$app/navigation';
+
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) return;
+
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
 
 <div class="layout">

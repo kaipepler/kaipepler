@@ -1,8 +1,11 @@
+:root {
+	view-transition-name: none;
+}
+
 html,
 body {
 	margin: 0;
 	height: 100%;
-	font-family: Avenir Next;
 	background: var(--background);
 	color: var(--default);
 }

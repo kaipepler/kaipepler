@@ -6,7 +6,6 @@
 	<small>&copy {`${new Date().getFullYear()} ${config.title}`}</small>
 	<small>
 		<ul role="list">
-			<li><a href="/details">Details</a></li>
 			<li><a href="/details#accessibility-statement">Accessibility</a></li>
 			<li><a href="/details#privacy-policy">Privacy</a></li>
 		</ul>
@@ -25,7 +24,7 @@
 
 			ul {
 				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-columns: 1fr 1fr;
 				gap: 1rem;
 				list-style-type: none;
 				padding: 0;

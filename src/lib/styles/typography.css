@@ -10,6 +10,18 @@
 	--step-6: clamp(2.6127rem, 2.1757rem + 2.1854vw, 3.8147rem);
 }
 
+@font-face {
+	font-family: 'Atkinson Hyperlegible Next';
+	src: url('AtkinsonHyperlegibleNextVF-Variable.woff2') format('woff2');
+}
+
+html {
+	font-family:
+		'Atkinson Hyperlegible Next',
+		Avenir Next,
+		sans-serif;
+}
+
 h1 {
 	font-size: var(--step-4);
 	letter-spacing: 0.5rem;

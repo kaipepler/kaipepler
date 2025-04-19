@@ -16,13 +16,17 @@
 
 		<ul>
 			<li>
-				<a href="/portfolio" aria-current={page.url.pathname === '/portfolio' ? 'page' : undefined}
-					>Portfolio</a
+				<a
+					href="/portfolio"
+					data-text="Portfolio"
+					aria-current={page.url.pathname === '/portfolio' ? 'page' : undefined}>Portfolio</a
 				>
 			</li>
 			<li>
-				<a href="/writing" aria-current={page.url.pathname === '/writing' ? 'page' : undefined}
-					>Writing</a
+				<a
+					href="/writing"
+					data-text="Writing"
+					aria-current={page.url.pathname === '/writing' ? 'page' : undefined}>Writing</a
 				>
 			</li>
 			<li>
@@ -88,14 +92,34 @@
 						color 250ms,
 						fill 250ms;
 
+					@media not (prefers-reduced-motion: reduce) {
+						transition: font-weight 100ms;
+					}
+
 					&:hover {
 						color: var(--green-400);
 						fill: var(--green-400);
+						font-weight: 600;
 					}
 
 					&:active {
 						color: var(--green-500);
 						fill: var(--green-500);
+					}
+
+					&::before {
+						content: attr(data-text) / '';
+						display: block;
+						height: 0;
+						visibility: hidden;
+						overflow: hidden;
+						user-select: none;
+						pointer-events: none;
+						font-weight: 600;
+
+						@media speech {
+							display: none;
+						}
 					}
 
 					&[aria-current='page'] {
@@ -130,6 +154,12 @@
 					}
 				}
 			}
+		}
+	}
+
+	@media not (prefers-reduced-motion: reduce) {
+		nav a::after {
+			view-transition-name: page-indicator;
 		}
 	}
 
