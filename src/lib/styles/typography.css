@@ -11,13 +11,19 @@
 }
 
 @font-face {
-	font-family: 'Atkinson Hyperlegible Next';
-	src: url('/AtkinsonHyperlegibleNextVF-Variable.woff2') format('woff2');
+	font-family: 'DM Sans';
+	src: url('/DMSans-Variable.ttf');
+}
+
+@font-face {
+	font-family: 'DM Sans Italic';
+	src: url('/DMSans-Italic-Variable.ttf');
 }
 
 html {
 	font-family:
-		'Atkinson Hyperlegible Next',
+		'DM Sans',
+		'DM Sans Italic',
 		Avenir Next,
 		sans-serif;
 }
@@ -42,4 +48,5 @@ p {
 	max-width: 800px;
 	line-height: 2;
 	letter-spacing: 1%;
+	font-weight: 300;
 }

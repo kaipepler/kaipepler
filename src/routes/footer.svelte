@@ -20,7 +20,7 @@
 		justify-content: space-between;
 
 		small {
-			color: gray;
+			color: var(--gray-500);
 
 			ul {
 				display: grid;

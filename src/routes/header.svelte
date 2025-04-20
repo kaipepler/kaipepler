@@ -30,7 +30,14 @@
 				>
 			</li>
 			<li>
-				<a href="https://bsky.app/profile/kaipepler.com" target="_blank"><Bluesky /></a>
+				<a
+					href="https://bsky.app/profile/kaipepler.com"
+					class="icon"
+					title="Bluesky"
+					target="_blank"
+				>
+					<Bluesky />
+				</a>
 			</li>
 		</ul>
 	</nav>
@@ -153,6 +160,16 @@
 						}
 					}
 				}
+
+				.icon {
+					&:hover {
+						transform: scale(1.2);
+					}
+
+					&:active {
+						transform: scale(0.9);
+					}
+				}
 			}
 		}
 	}
@@ -160,6 +177,14 @@
 	@media not (prefers-reduced-motion: reduce) {
 		nav a::after {
 			view-transition-name: page-indicator;
+		}
+
+		.icon {
+			transition: transform 250ms;
+
+			&:active {
+				transition: transform 150ms;
+			}
 		}
 	}
 
