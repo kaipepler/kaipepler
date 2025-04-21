@@ -60,7 +60,7 @@
 				a.lockup {
 					text-transform: lowercase;
 					font-size: 32px;
-					font-weight: 500;
+					font-weight: 400;
 					display: flex;
 					align-items: center;
 					gap: 1.5rem;
