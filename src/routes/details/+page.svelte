@@ -1,13 +1,12 @@
 <svelte:head>
-	<title>Site Details | Kai Pepler</title>
+	<title>Site Details - Kai Pepler</title>
 	<meta name="description" content="Details about this site" />
 </svelte:head>
 
 <h1>Site Details</h1>
 
 <p>
-	This site is written in Svelte and compiled using SvelteKit. Content is hosted in GitHub and
-	published to Cloudflare Pages.
+	This site is written in Svelte. Content is hosted in GitHub and published to Cloudflare Pages.
 </p>
 <hr />
 <section>
@@ -76,11 +75,6 @@
 	<p>
 		I don't collect any user data from this site. The site and its domain are hosted on Cloudflare,
 		and as such basic analytics such as unique visitor count are included there in aggregate.
-	</p>
-	<p>
-		If I do add improved analytics in future, it will be some form of privacy-oriented system such
-		as Matomo, it will respect browser Do Not Track requests, and I will document its usage here on
-		this page.
 	</p>
 </section>
 

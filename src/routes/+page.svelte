@@ -10,6 +10,6 @@
 	theory, data visualization, and motion graphics.
 </p>
 <p>
-	This site is going to be under construction for a little while as I get all my content moved over
-	to a new platform. Thanks for your patience!
+	This site is under construction while I get all my content moved over to a new framework. Thanks
+	for your patience!
 </p>

@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Writing | Kai Pepler</title>
+	<title>Portfolio - Kai Pepler</title>
 	<meta name="description" content="Examples of art and design work" />
 </svelte:head>
 

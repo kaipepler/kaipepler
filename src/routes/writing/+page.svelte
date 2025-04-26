@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Writing | Kai Pepler</title>
+	<title>Writing - Kai Pepler</title>
 	<meta name="description" content="My assorted writings" />
 </svelte:head>
 
