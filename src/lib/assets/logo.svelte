@@ -24,14 +24,8 @@
 
 <style>
 	div {
-		position: relative;
-
 		will-change: transform;
 		transition: transform 250ms ease-in-out;
-
-		@media (min-width: 700px) {
-			left: -1rem;
-		}
 	}
 
 	svg {
@@ -65,19 +59,6 @@
 	@media (prefers-reduced-motion: no-preference) {
 		div:hover {
 			transform: scale(1.1);
-
-			svg {
-				filter: drop-shadow(2px 2px 0px rgba(3, 7, 18, 0.01))
-					drop-shadow(4px 4px 1px rgba(3, 7, 18, 0.01))
-					drop-shadow(5px 5px 1px rgba(3, 7, 18, 0.02))
-					drop-shadow(16px 20px 2px rgba(3, 7, 18, 0.02))
-					drop-shadow(13px 15px 2px rgba(3, 7, 18, 0.03))
-					drop-shadow(36px 44px 5px rgba(3, 7, 18, 0.04))
-					drop-shadow(48px 58px 7px rgba(3, 7, 18, 0.04))
-					drop-shadow(64px 76px 10px rgba(3, 7, 18, 0.05))
-					drop-shadow(82px 98px 12px rgba(3, 7, 18, 0.05))
-					drop-shadow(100px 120px 15px rgba(3, 7, 18, 0.06));
-			}
 		}
 	}
 </style>

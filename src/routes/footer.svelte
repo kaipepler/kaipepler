@@ -6,8 +6,8 @@
 	<small
 		>&copy {`${new Date().getFullYear()} ${config.title}`}
 		<ul role="list">
-			<li><a href="/details#accessibility-statement"><span>Accessibility</span></a></li>
-			<li><a href="/details#privacy-policy"><span>Privacy</span></a></li>
+			<li><a href="/accessibility"><span>Accessibility</span></a></li>
+			<li><a href="/privacy"><span>Privacy</span></a></li>
 		</ul>
 	</small>
 </footer>

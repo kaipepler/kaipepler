@@ -23,7 +23,7 @@ body {
 		sans-serif;
 	text-wrap: pretty;
 	font-size: var(--step-0);
-	line-height: calc(1em + 0.5rem);
+	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	font-weight: 350;
 }
@@ -35,9 +35,8 @@ body {
 
 h1 {
 	font-size: var(--step-4);
-	letter-spacing: 0.5rem;
+	letter-spacing: 0.3rem;
 	text-transform: lowercase;
-	margin-block: 2rem;
 }
 
 p {

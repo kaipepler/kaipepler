@@ -8,10 +8,10 @@
 <header>
 	<nav>
 		<div class="logo-wrapper">
-			<a href="/">
+			<a href="/" aria-labelledby="title">
 				<Logo />
 			</a>
-			<span class="title">{config.title}</span>
+			<span id="title" aria-hidden="true">{config.title}</span>
 		</div>
 
 		<ul>
@@ -172,19 +172,20 @@
 	}
 
 	@media (max-width: 850px) {
-		.title {
+		#title {
 			display: none;
 		}
 	}
 
 	@media (max-width: 700px) {
 		header {
-			padding-bottom: 0;
+			padding: 1rem;
+			padding-top: 2.5rem;
 
 			nav {
 				flex-direction: column;
 				align-items: center;
-				gap: 2.5rem;
+				gap: 1rem;
 			}
 		}
 	}
