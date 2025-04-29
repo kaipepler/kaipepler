@@ -2,12 +2,13 @@
 	<title>Site Details - Kai Pepler</title>
 	<meta name="description" content="Details about this site" />
 </svelte:head>
+<section>
+	<h1>Site Details</h1>
 
-<h1>Site Details</h1>
-
-<p>
-	This site is written in Svelte. Content is hosted in GitHub and published to Cloudflare Pages.
-</p>
+	<p>
+		This site is written in Svelte. Content is hosted in GitHub and published to Cloudflare Pages.
+	</p>
+</section>
 <hr />
 <section>
 	<h2 id="accessibility-statement">Accessibility Statement</h2>
@@ -76,6 +77,7 @@
 		I don't collect any user data from this site. The site and its domain are hosted on Cloudflare,
 		and as such basic analytics such as unique visitor count are included there in aggregate.
 	</p>
+	# Hello
 </section>
 
 <style>
@@ -83,11 +85,17 @@
 		font-size: var(--step-0);
 		line-height: 2;
 		margin-bottom: 12px;
-		max-width: 800px;
+		max-width: 75ch;
 	}
 
 	hr {
 		border: none;
 		border-top: 1px solid var(--gray-100);
+		margin: 2rem auto;
+		max-width: 1200px;
+	}
+
+	em {
+		font-variation-settings: 'ital' 0;
 	}
 </style>

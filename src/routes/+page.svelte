@@ -3,13 +3,14 @@
 	<meta name="description" content="This is a welcome page for Kai Pepler's portfolio." />
 </svelte:head>
 
-<h1>Hello Everyone!</h1>
-
-<p>
-	My name is Kai Pepler. I’m a UX designer and visual artist specializing in accessibility, color
-	theory, data visualization, and motion graphics.
-</p>
-<p>
-	This site is under construction while I get all my content moved over to a new framework. Thanks
-	for your patience!
-</p>
+<section>
+	<h1>Hello Everyone!</h1>
+	<p>
+		My name is Kai Pepler. I’m a UX designer and visual artist specializing in accessibility, color
+		theory, data visualization, and motion graphics.
+	</p>
+	<p>
+		This site is under construction while I get all my content moved over to a new framework. Thanks
+		for your patience!
+	</p>
+</section>

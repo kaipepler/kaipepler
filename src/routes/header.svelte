@@ -8,10 +8,10 @@
 <header>
 	<nav>
 		<div class="logo-wrapper">
-			<a href="/" class="lockup">
-				<Logo /> <span class="title">{config.title}</span>
+			<a href="/">
+				<Logo />
 			</a>
-			<div class="shadow"></div>
+			<span class="title">{config.title}</span>
 		</div>
 
 		<ul>
@@ -30,13 +30,8 @@
 				>
 			</li>
 			<li>
-				<a
-					href="https://bsky.app/profile/kaipepler.com"
-					class="icon"
-					title="Bluesky"
-					target="_blank"
-				>
-					<Bluesky />
+				<a href="https://bsky.app/profile/kaipepler.com" title="Bluesky" target="_blank">
+					<div class="icon-wrapper"><Bluesky /></div>
 				</a>
 			</li>
 		</ul>
@@ -46,8 +41,11 @@
 <style>
 	header {
 		padding: 2.5rem;
+		padding-left: 0.75rem;
 
 		nav {
+			margin-inline: auto;
+			max-width: 1200px;
 			display: flex;
 			flex-flow: row wrap;
 			align-items: center;
@@ -55,25 +53,16 @@
 
 			.logo-wrapper {
 				position: relative;
-				z-index: 0;
 
-				a.lockup {
-					text-transform: lowercase;
-					font-size: 32px;
-					font-weight: 400;
-					display: flex;
-					align-items: center;
-					gap: 1.5rem;
-				}
+				text-transform: lowercase;
+				font-size: 32px;
+				font-weight: 400;
+				display: flex;
+				align-items: center;
+				gap: 1rem;
 
-				.shadow {
-					position: absolute;
-					background-image: url(/shadow.svg);
-					width: 272px;
-					height: 241px;
-					top: 0;
-					left: 0;
-					z-index: -1;
+				a {
+					border-radius: 4px;
 				}
 			}
 
@@ -84,107 +73,102 @@
 				list-style-type: none;
 				padding: 0;
 				margin: 0;
-				z-index: 1;
+				font-size: var(--step-1);
+				font-weight: 400;
 
-				li a {
-					font-size: var(--step-1);
-					padding: 1.5rem;
-					display: block;
-					border-radius: 6px;
-					text-transform: lowercase;
-					text-align: center;
-					color: var(--default);
-					fill: var(--default);
-					transition:
-						color 250ms,
-						fill 250ms;
-
-					@media not (prefers-reduced-motion: reduce) {
-						transition: font-weight 100ms;
-					}
-
-					&:hover {
-						color: var(--green-400);
-						fill: var(--green-400);
-						font-weight: 600;
-					}
-
-					&:active {
-						color: var(--green-500);
-						fill: var(--green-500);
-					}
-
-					&::before {
-						content: attr(data-text) / '';
+				li {
+					a {
+						padding: 1.5rem;
 						display: block;
-						height: 0;
-						visibility: hidden;
-						overflow: hidden;
-						user-select: none;
-						pointer-events: none;
-						font-weight: 600;
+						border-radius: 4px;
+						text-transform: lowercase;
+						text-align: center;
+						transition:
+							color 250ms,
+							fill 250ms;
 
-						@media speech {
-							display: none;
+						@media (prefers-reduced-motion: no-preference) {
+							transition:
+								color 250ms,
+								fill 250ms,
+								outline 200ms,
+								font-weight 100ms;
 						}
-					}
 
-					&[aria-current='page'] {
-						color: var(--green-400);
-						font-weight: 600;
-						position: relative;
+						&:hover {
+							color: var(--green-400);
+							fill: var(--green-400);
 
-						&::after {
-							content: '';
-							position: absolute;
-							bottom: 0;
-							left: calc(50% - 9px);
+							@media (prefers-reduced-motion: no-preference) {
+								font-weight: 600;
 
-							--r: 2px; /* border radius */
-
-							width: 18px;
-							aspect-ratio: 1 / cos(30deg);
-							--_g: calc(tan(60deg) * var(--r)) bottom var(--r), #000 98%, #0000 101%;
-							mask:
-								conic-gradient(
-										from -30deg at 50% calc(200% - 3 * var(--r) / 2),
-										#000 60deg,
-										#0000 0
-									)
-									0 100%/100% calc(100% - 3 * var(--r) / 2) no-repeat,
-								radial-gradient(var(--r) at 50% calc(2 * var(--r)), #000 98%, #0000 101%),
-								radial-gradient(var(--r) at left var(--_g)),
-								radial-gradient(var(--r) at right var(--_g));
-							clip-path: polygon(50% 0, 100% 100%, 0 100%);
-							background: var(--green-400);
+								.icon-wrapper {
+									will-change: transform;
+									transition: transform 250ms;
+									transform: scale(1.2);
+								}
+							}
 						}
-					}
-				}
 
-				.icon {
-					&:hover {
-						transform: scale(1.2);
-					}
+						&:active {
+							color: var(--green-500);
+							fill: var(--green-500);
+						}
 
-					&:active {
-						transform: scale(0.9);
+						&::before {
+							content: attr(data-text) / '';
+							display: block;
+							height: 0;
+							visibility: hidden;
+							overflow: hidden;
+							user-select: none;
+							pointer-events: none;
+							font-weight: 600;
+
+							@media speech {
+								display: none;
+							}
+						}
+
+						&[aria-current='page'] {
+							color: var(--green-400);
+							font-weight: 600;
+							position: relative;
+
+							&::after {
+								content: '';
+								position: absolute;
+								bottom: 0;
+								left: calc(50% - 9px);
+
+								--r: 2px; /* border radius */
+
+								width: 18px;
+								aspect-ratio: 1 / cos(30deg);
+								--_g: calc(tan(60deg) * var(--r)) bottom var(--r), #000 98%, #0000 101%;
+								mask:
+									conic-gradient(
+											from -30deg at 50% calc(200% - 3 * var(--r) / 2),
+											#000 60deg,
+											#0000 0
+										)
+										0 100%/100% calc(100% - 3 * var(--r) / 2) no-repeat,
+									radial-gradient(var(--r) at 50% calc(2 * var(--r)), #000 98%, #0000 101%),
+									radial-gradient(var(--r) at left var(--_g)),
+									radial-gradient(var(--r) at right var(--_g));
+								clip-path: polygon(50% 0, 100% 100%, 0 100%);
+								background: var(--green-400);
+							}
+						}
 					}
 				}
 			}
 		}
 	}
 
-	@media not (prefers-reduced-motion: reduce) {
+	@media (prefers-reduced-motion: no-preference) {
 		nav a::after {
 			view-transition-name: page-indicator;
-		}
-
-		.icon {
-			transition: transform 250ms;
-
-			&:active {
-				transition: transform 150ms;
-			}
 		}
 	}
 

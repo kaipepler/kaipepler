@@ -3,23 +3,24 @@
 </script>
 
 <footer>
-	<small>&copy {`${new Date().getFullYear()} ${config.title}`}</small>
-	<small>
+	<small
+		>&copy {`${new Date().getFullYear()} ${config.title}`}
 		<ul role="list">
-			<li><a href="/details#accessibility-statement">Accessibility</a></li>
-			<li><a href="/details#privacy-policy">Privacy</a></li>
+			<li><a href="/details#accessibility-statement"><span>Accessibility</span></a></li>
+			<li><a href="/details#privacy-policy"><span>Privacy</span></a></li>
 		</ul>
 	</small>
 </footer>
 
 <style>
 	footer {
-		padding-inline: 2.5rem;
-		padding-block: 1rem;
-		display: flex;
-		justify-content: space-between;
+		padding: 1.5rem 2.5rem;
 
 		small {
+			margin-inline: auto;
+			max-width: 1200px;
+			display: flex;
+			justify-content: space-between;
 			color: var(--gray-500);
 
 			ul {
@@ -33,15 +34,23 @@
 				li {
 					text-align: center;
 					a {
-						transition:
-							color 0.2s linear,
-							border 0.2s linear;
 						position: relative;
-						border-bottom: 1px solid var(--background);
+						padding: 0.5rem;
+						border-radius: 6px;
+
+						span {
+							border-bottom: 1px solid transparent;
+							padding-block: 0.2rem;
+							transition:
+								color 0.2s linear,
+								border 0.2s linear;
+						}
 
 						&:hover {
-							color: var(--default);
-							border-bottom: 1px solid var(--default);
+							span {
+								color: var(--default);
+								border-bottom: 1px solid var(--default);
+							}
 						}
 					}
 				}

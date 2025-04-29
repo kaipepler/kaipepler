@@ -35,14 +35,11 @@
 <style>
 	.layout {
 		height: 100%;
-		max-inline-size: 1200px;
 		display: grid;
 		grid-template-rows: auto 1fr auto;
-		margin-inline: auto;
 	}
 
 	main {
-		padding-inline: 2.5rem;
 		z-index: 1;
 	}
 </style>

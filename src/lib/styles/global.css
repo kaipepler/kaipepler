@@ -2,12 +2,46 @@
 	view-transition-name: none;
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+
+	&:focus-visible {
+		@media (prefers-reduced-motion: no-preference) {
+			transition: outline 200ms;
+		}
+		outline: 3px solid var(--default);
+		background-color: gold;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		interpolate-size: allow-keywords;
+	}
+}
+
 html,
 body {
-	margin: 0;
 	height: 100%;
+}
+
+body {
 	background: var(--background);
 	color: var(--default);
+	fill: var(--default);
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
 }
 
 a {
@@ -15,7 +49,7 @@ a {
 	text-decoration: none;
 }
 
-.sr-only:not(:focus):not(:active) {
+.visuallyhidden:not(:focus):not(:active) {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
 	height: 1px;
@@ -23,4 +57,17 @@ a {
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
+}
+
+main {
+	padding-inline: 2.5rem;
+}
+
+section {
+	max-width: 1200px;
+	margin-inline: auto;
+}
+
+p {
+	max-width: 75ch;
 }
