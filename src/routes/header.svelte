@@ -41,7 +41,6 @@
 <style>
 	header {
 		padding: 2.5rem;
-		padding-left: 0.75rem;
 
 		nav {
 			margin-inline: auto;

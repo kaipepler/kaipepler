@@ -24,8 +24,14 @@
 
 <style>
 	div {
+		position: relative;
+
 		will-change: transform;
 		transition: transform 250ms ease-in-out;
+
+		@media (min-width: 700px) {
+			left: -1rem;
+		}
 	}
 
 	svg {
