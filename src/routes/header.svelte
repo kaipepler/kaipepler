@@ -62,6 +62,7 @@
 
 				a {
 					border-radius: 4px;
+					margin-left: -1rem;
 				}
 			}
 
