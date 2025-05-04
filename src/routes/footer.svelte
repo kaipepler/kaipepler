@@ -21,7 +21,7 @@
 			max-width: 1200px;
 			display: flex;
 			justify-content: space-between;
-			color: var(--gray-500);
+			color: var(--text-secondary);
 
 			ul {
 				display: grid;
@@ -48,8 +48,8 @@
 
 						&:hover {
 							span {
-								color: var(--default);
-								border-bottom: 1px solid var(--default);
+								color: var(--text-primary);
+								border-bottom: 1px solid var(--text-primary);
 							}
 						}
 					}

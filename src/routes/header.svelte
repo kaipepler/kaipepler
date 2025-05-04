@@ -96,8 +96,8 @@
 						}
 
 						&:hover {
-							color: var(--green-400);
-							fill: var(--green-400);
+							color: var(--green-11);
+							fill: var(--green-11);
 
 							@media (prefers-reduced-motion: no-preference) {
 								font-weight: 600;
@@ -111,8 +111,8 @@
 						}
 
 						&:active {
-							color: var(--green-500);
-							fill: var(--green-500);
+							color: var(--green-10);
+							fill: var(--green-10);
 						}
 
 						&::before {
@@ -131,7 +131,7 @@
 						}
 
 						&[aria-current='page'] {
-							color: var(--green-400);
+							color: var(--green-11);
 							font-weight: 600;
 							position: relative;
 
@@ -157,7 +157,7 @@
 									radial-gradient(var(--r) at left var(--_g)),
 									radial-gradient(var(--r) at right var(--_g));
 								clip-path: polygon(50% 0, 100% 100%, 0 100%);
-								background: var(--green-400);
+								background: var(--green-11);
 							}
 						}
 					}

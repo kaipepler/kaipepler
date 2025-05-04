@@ -32,19 +32,21 @@
 		height: 110px;
 		padding: 1rem;
 		overflow: visible;
-		filter: drop-shadow(8px 10px 2px rgba(3, 7, 18, 0.02))
-			drop-shadow(13px 15px 4px rgba(3, 7, 18, 0.03))
-			drop-shadow(18px 22px 5px rgba(3, 7, 18, 0.04))
-			drop-shadow(24px 29px 7px rgba(3, 7, 18, 0.04))
-			drop-shadow(32px 38px 10px rgba(3, 7, 18, 0.05))
-			drop-shadow(41px 49px 12px rgba(3, 7, 18, 0.05));
+		filter: drop-shadow(8px 10px 2px color(from var(--shadow) display-p3 r g b / 0.02))
+			drop-shadow(13px 15px 4px color(from var(--shadow) display-p3 r g b / 0.03))
+			drop-shadow(18px 22px 5px color(from var(--shadow) display-p3 r g b / 0.04))
+			drop-shadow(24px 29px 7px color(from var(--shadow) display-p3 r g b / 0.04))
+			drop-shadow(32px 38px 10px color(from var(--shadow) display-p3 r g b / 0.05))
+			drop-shadow(41px 49px 12px color(from var(--shadow) display-p3 r g b / 0.05))
+			drop-shadow(50px 60px 15px color(from var(--shadow) display-p3 r g b / 0.06));
+		/* https://smoothshadows.com/#djEsMSwxMCwwLjA2LDE1LDYwLDUwLCMwMzA3MTIsI2YzZjRmNiwjZmZmZmZmLDI%3D */
 
 		@media (prefers-color-scheme: light) {
 			path.accent {
-				fill: var(--green-300);
+				fill: var(--green-9);
 			}
 			path.dark {
-				fill: var(--default);
+				fill: var(--text-primary);
 			}
 			path.light {
 				fill: var(--background);
@@ -53,13 +55,13 @@
 
 		@media (prefers-color-scheme: dark) {
 			path.accent {
-				fill: var(--default);
+				fill: var(--text-primary);
 			}
 			path.dark {
-				fill: var(--default);
+				fill: var(--text-primary);
 			}
 			path.light {
-				fill: var(--default);
+				fill: var(--text-primary);
 			}
 		}
 	}

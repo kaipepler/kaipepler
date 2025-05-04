@@ -15,8 +15,8 @@
 		@media (prefers-reduced-motion: no-preference) {
 			transition: outline 200ms;
 		}
-		outline: 3px solid var(--default);
-		background-color: gold;
+		outline: 3px solid var(--text-primary);
+		background-color: var(--green-4);
 	}
 }
 
@@ -33,8 +33,8 @@ body {
 
 body {
 	background: var(--background);
-	color: var(--default);
-	fill: var(--default);
+	color: var(--text-primary);
+	fill: var(--text-primary);
 }
 
 input,
@@ -74,7 +74,7 @@ p {
 
 abbr {
 	position: relative;
-	border-bottom: 2px dotted var(--gray-300);
+	border-bottom: 2px dotted var(--text-secondary);
 	text-decoration: none;
 	padding: 2px;
 
@@ -83,7 +83,7 @@ abbr {
 		bottom: 150%;
 		left: 50%;
 		transform: translateX(-50%) translateY(2rem) scale(0.1);
-		background: var(--default);
+		background: var(--text-primary);
 		width: max-content;
 		color: var(--background);
 		padding: 10px;
