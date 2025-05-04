@@ -138,7 +138,7 @@
 							&::after {
 								content: '';
 								position: absolute;
-								bottom: 0;
+								top: calc(100% - 13px);
 								left: calc(50% - 9px);
 
 								--r: 2px; /* border radius */
@@ -180,8 +180,7 @@
 
 	@media (max-width: 700px) {
 		header {
-			padding: 1rem;
-			padding-top: 2.5rem;
+			padding: 2.5rem 1rem;
 
 			nav {
 				flex-direction: column;
