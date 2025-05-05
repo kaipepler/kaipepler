@@ -6,10 +6,9 @@
 	<h1>Accessibility Statement</h1>
 
 	<p>
-		I’ve designed this site to respect as many accessibility accomodations as possible. Below are a
-		range of the features provided: I want this site to offer a good experience to all users, and as
-		such I’m working to incorporate as many accessibility features as possible. Below is a list of
-		the features I’m working on, alongside their rough state of completion:
+		I want this site to offer a good experience to all users, and as such I’m working to incorporate
+		as many accessibility features as possible. Below is a list of the features I’m working on,
+		alongside their rough state of completion:
 	</p>
 	<ul>
 		<li>
@@ -23,7 +22,7 @@
 			fades. <em>In development, not yet available.</em>
 		</li>
 		<li>
-			If you're on windows, the site will respect Windows Forced Colors Mode, overriding all styling
+			If you’re on windows, the site will respect Windows Forced Colors Mode, overriding all styling
 			to the colors you select in your OS settings. <em>Planned.</em>
 		</li>
 		<li>

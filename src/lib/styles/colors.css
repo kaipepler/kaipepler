@@ -61,7 +61,7 @@
 		--gray-12: color(display-p3 0.929412 0.929412 0.956863 / 1);
 
 		--background: var(--gray-1);
-		--shadow: var(--gray-8);
+		--shadow: var(--gray-1);
 	}
 }
 

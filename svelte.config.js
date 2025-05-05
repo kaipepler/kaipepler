@@ -3,7 +3,8 @@ import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 const mdsvexOptions = {
-	extensions: ['.svx', '.md']
+	extensions: ['.svx', '.md'],
+	smartypants: true
 };
 
 const config = {
