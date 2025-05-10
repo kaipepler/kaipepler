@@ -3,30 +3,30 @@
 </script>
 
 <footer>
-	<small
-		>&copy {`${new Date().getFullYear()} ${config.title}`}
-		<ul role="list">
+	<div>
+		&copy {`${new Date().getFullYear()} ${config.title}`}
+		<ul>
 			<li><a href="/accessibility"><span>Accessibility</span></a></li>
 			<li><a href="/privacy"><span>Privacy</span></a></li>
 		</ul>
-	</small>
+	</div>
 </footer>
 
 <style>
 	footer {
 		padding: 1.5rem 2.5rem;
 
-		small {
+		div {
 			margin-inline: auto;
 			max-width: 1200px;
 			display: flex;
 			justify-content: space-between;
+			font-size: var(--step--1);
 			color: var(--text-secondary);
 
 			ul {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
-				gap: 1rem;
 				list-style-type: none;
 				padding: 0;
 				margin: 0;

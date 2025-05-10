@@ -30,7 +30,11 @@
 				>
 			</li>
 			<li>
-				<a href="https://bsky.app/profile/kaipepler.com" title="Bluesky" target="_blank">
+				<a
+					href="https://bsky.app/profile/kaipepler.com"
+					target="_blank"
+					aria-describedby="targetBlank"
+				>
 					<div class="icon-wrapper"><Bluesky /></div>
 				</a>
 			</li>
