@@ -22,6 +22,7 @@
 			display: flex;
 			justify-content: space-between;
 			font-size: var(--step--1);
+			font-weight: 400;
 			color: var(--text-secondary);
 
 			ul {
@@ -39,7 +40,7 @@
 						border-radius: 6px;
 
 						span {
-							border-bottom: 1px solid transparent;
+							border-bottom: 0.08rem solid transparent;
 							padding-block: 0.2rem;
 							transition:
 								color 0.2s linear,
@@ -49,7 +50,7 @@
 						&:hover {
 							span {
 								color: var(--text-primary);
-								border-bottom: 1px solid var(--text-primary);
+								border-bottom: 0.08rem solid var(--text-primary);
 							}
 						}
 					}

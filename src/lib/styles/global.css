@@ -72,24 +72,35 @@ p {
 	max-width: 75ch;
 }
 
-main a:not(.button, .button-outline, .button-primary, .project-card) {
+main a {
 	font-weight: 700;
-	color: var(--default);
-	text-decoration: none;
-	border-bottom: 2px solid var(--green-9);
+	border-bottom: 0.15rem solid var(--green-9);
+	padding: 0.1rem;
+	margin: -0.1rem;
 	transition:
 		border-width 100ms linear,
 		outline 200ms;
 
 	&:hover {
-		border-width: 4px;
+		border-width: 0.3rem;
 	}
 
 	&:focus-visible {
 		border-radius: 4px;
-		padding: 0.25rem;
-		margin: -0.25rem;
 		border: none;
+	}
+
+	&[target='_blank']::after {
+		content: '';
+		display: inline-block;
+		text-decoration: none;
+		margin-inline: 0.2em;
+		width: 0.6em;
+		height: 0.6em;
+		background-color: currentColor;
+		mask-image: url('/new-tab-icon.svg');
+		-webkit-mask-image: url('/new-tab-icon.svg');
+		mask-repeat: no-repeat;
 	}
 }
 

@@ -21,6 +21,6 @@
 		You can learn more about Cloudflare’s approach to privacy by visiting
 		<a href="https://www.cloudflare.com/trust-hub/privacy-and-data-protection/" target="_blank"
 			>Cloudflare Privacy & Data Protection</a
-		> trust hub.
+		>.
 	</p>
 </section>
