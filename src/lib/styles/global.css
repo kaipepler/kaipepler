@@ -72,6 +72,27 @@ p {
 	max-width: 75ch;
 }
 
+main a:not(.button, .button-outline, .button-primary, .project-card) {
+	font-weight: 700;
+	color: var(--default);
+	text-decoration: none;
+	border-bottom: 2px solid var(--green-9);
+	transition:
+		border-width 100ms linear,
+		outline 200ms;
+
+	&:hover {
+		border-width: 4px;
+	}
+
+	&:focus-visible {
+		border-radius: 4px;
+		padding: 0.25rem;
+		margin: -0.25rem;
+		border: none;
+	}
+}
+
 abbr {
 	position: relative;
 	border-bottom: 2px dotted var(--text-secondary);

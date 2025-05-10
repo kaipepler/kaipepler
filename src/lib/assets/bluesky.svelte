@@ -9,4 +9,3 @@
 >
 
 <span id="bluesky" class="visuallyhidden">Bluesky</span>
-<span id="targetBlank" hidden>opens in a new tab</span>

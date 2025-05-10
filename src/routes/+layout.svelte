@@ -26,6 +26,7 @@
 	<Header />
 
 	<main>
+		<span id="targetBlank" hidden>opens in a new tab</span>
 		{@render children()}
 	</main>
 
