@@ -4,6 +4,16 @@
 </svelte:head>
 <section>
 	<h1>Portfolio</h1>
-
-	<p>Under construction</p>
+	<p>
+		I’m in the process of migrating my portfolio to a new framework. Content will be missing for a
+		bit as I fine-tune the new design. Thanks for your patience!
+	</p>
+</section>
+<section>
+	<h2>Featured</h2>
+	<p>Coming soon</p>
+</section>
+<section>
+	<h2>Art & Design</h2>
+	<p>Coming soon</p>
 </section>

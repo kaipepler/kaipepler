@@ -59,6 +59,38 @@ a {
 	width: 1px;
 }
 
+.skip-link {
+	text-transform: lowercase;
+	position: fixed;
+	z-index: 100;
+	top: 1rem;
+	left: 50%;
+	transform: translateX(-50%) translateY(-150%);
+	transition:
+		opacity 200ms,
+		background 200ms,
+		outline 200ms;
+
+	@media (prefers-reduced-motion: no-preference) {
+		transition: transform 200ms;
+	}
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	font-weight: bold;
+	opacity: 0;
+
+	&:focus,
+	&:active {
+		transform: translateX(-50%) translateY(0);
+		opacity: 1;
+
+		& ~ nav {
+			filter: blur(4px);
+			pointer-events: none;
+		}
+	}
+}
+
 main {
 	padding-inline: 2.5rem;
 }
@@ -77,9 +109,12 @@ main a {
 	border-bottom: 0.15rem solid var(--green-9);
 	padding: 0.1rem;
 	margin: -0.1rem;
-	transition:
-		border-width 100ms linear,
-		outline 200ms;
+
+	@media (prefers-reduced-motion: no-preference) {
+		transition:
+			border-width 100ms linear,
+			outline 200ms;
+	}
 
 	&:hover {
 		border-width: 0.3rem;
@@ -91,16 +126,42 @@ main a {
 	}
 
 	&[target='_blank']::after {
-		content: '';
+		content: '- opens in a new tab';
+		overflow: hidden;
 		display: inline-block;
-		text-decoration: none;
 		margin-inline: 0.2em;
 		width: 0.6em;
 		height: 0.6em;
 		background-color: currentColor;
 		mask-image: url('/new-tab-icon.svg');
-		-webkit-mask-image: url('/new-tab-icon.svg');
-		mask-repeat: no-repeat;
+	}
+}
+
+hr {
+	margin: 2rem auto;
+	border: none;
+	border-top: 1px solid var(--gray-8);
+}
+
+th,
+td {
+	text-align: left;
+	font-weight: 350;
+	padding: 1rem;
+}
+
+table {
+	width: 100%;
+	max-width: 75ch;
+	border-collapse: collapse;
+
+	thead th {
+		font-weight: bold;
+		border-bottom: 1px solid var(--text-secondary);
+	}
+
+	tbody :is(th, td) {
+		border-bottom: 1px solid var(--text-secondary);
 	}
 }
 

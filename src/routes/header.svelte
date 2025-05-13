@@ -3,9 +3,21 @@
 	import Logo from '$lib/assets/logo.svelte';
 	import Bluesky from '$lib/assets/bluesky.svelte';
 	import { page } from '$app/state';
+
+	/**
+	 * @param {{ preventDefault: () => void; }} e
+	 */
+	function handleSkipLink(e) {
+		e.preventDefault();
+		// Update URL without triggering history navigation
+		location.replace('#main');
+		// Focus main directly
+		document.getElementById('main')?.focus();
+	}
 </script>
 
 <header>
+	<a class="skip-link" href="#main" onclick={handleSkipLink}>Skip to Main Content</a>
 	<nav>
 		<div class="logo-wrapper">
 			<a href="/" aria-labelledby="title">
@@ -49,6 +61,9 @@
 			flex-flow: row wrap;
 			align-items: center;
 			justify-content: space-between;
+			@media (prefers-reduced-motion: no-preference) {
+				transition: filter 200ms;
+			}
 
 			.logo-wrapper {
 				position: relative;
@@ -93,6 +108,16 @@
 								fill 250ms,
 								outline 200ms,
 								font-weight 100ms;
+						}
+
+						&[target='_blank']::after {
+							content: '- opens in a new tab';
+							overflow: hidden;
+							display: inline-block;
+							margin-inline: 0.2em;
+							width: 1px;
+							height: 1px;
+							position: absolute;
 						}
 
 						&:hover {
@@ -167,7 +192,7 @@
 	}
 
 	@media (prefers-reduced-motion: no-preference) {
-		nav a::after {
+		nav a[aria-current='page']::after {
 			view-transition-name: page-indicator;
 		}
 	}

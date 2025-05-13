@@ -25,8 +25,7 @@
 <div class="layout">
 	<Header />
 
-	<main>
-		<span id="newTab" hidden>opens in a new tab</span>
+	<main id="main">
 		{@render children()}
 	</main>
 
