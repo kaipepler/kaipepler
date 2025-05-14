@@ -101,7 +101,7 @@
 		max-width: 75ch;
 		margin-block: 2rem;
 
-		div:first-child {
+		& div:first-child {
 			flex-shrink: 0;
 			width: 9rem;
 			height: 6rem;
