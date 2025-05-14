@@ -8,4 +8,4 @@
 	></path></svg
 >
 
-<span id="bluesky" class="visuallyhidden">Bluesky</span>
+<span id="bluesky" hidden>Bluesky</span>
