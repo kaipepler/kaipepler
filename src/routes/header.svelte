@@ -17,7 +17,7 @@
 </script>
 
 <header>
-	<a class="skip-link" href="#main" onclick={handleSkipLink}>Skip to Main Content</a>
+	<a class="button skip-link" href="#main" onclick={handleSkipLink}>Skip to Main Content</a>
 	<nav>
 		<div class="logo-wrapper">
 			<a href="/" aria-labelledby="title">

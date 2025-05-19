@@ -70,5 +70,10 @@
 		div:hover {
 			transform: scale(1.1);
 		}
+
+		div:active {
+			transform: scale(0.95);
+			transition: transform 120ms ease-out;
+		}
 	}
 </style>

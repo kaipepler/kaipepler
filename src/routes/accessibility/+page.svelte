@@ -42,7 +42,7 @@
 		},
 		{
 			title: 'Voice Control',
-			status: 'Complete, needs additional testing',
+			status: 'In development, needs additional testing',
 			desc: 'The site is fully navigable using voice control. Links and other interactive elements have unique accessible names that allow for easy targeting by assistive technology.'
 		}
 	];
@@ -119,11 +119,6 @@
 		small {
 			color: var(--green-11);
 		}
-	}
-
-	hr {
-		max-width: 75ch;
-		margin-inline: 0 auto;
 	}
 
 	@media (max-width: 850px) {

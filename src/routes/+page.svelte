@@ -1,3 +1,14 @@
+<script>
+	import Xerox from '$lib/assets/xerox.svelte';
+	import Naz from '$lib/assets/naz.svelte';
+	import RIT from '$lib/assets/rit.svelte';
+	import Map from '$lib/assets/map.svelte';
+
+	const adjs = ['sunny', 'cloudy', 'rainy', 'stormy', 'windy', 'snowy'];
+	const randomIndex = Math.floor(Math.random() * adjs.length);
+	let adj = adjs[randomIndex];
+</script>
+
 <svelte:head>
 	<title>Kai Pepler</title>
 	<meta name="description" content="This is a welcome page for Kai Pepler's portfolio." />
@@ -9,29 +20,97 @@
 		My name is Kai Pepler. I’m a UX designer and visual artist specializing in accessibility, color
 		theory, data visualization, and motion graphics.
 	</p>
-	<p><a href="mailto:hello@kaipepler.com">Contact Me</a></p>
+	<p><a class="button primary" href="mailto:hello@kaipepler.com">Contact me</a></p>
 </section>
-<!-- <section>
-	<h2>My Work</h2>
-	<p>
-		I do illustration, UI work, and branding. <a href="./portfolio">Visit my portfolio</a> for more information.
-	</p>
-	<p>
-		I also write about design related topics, and collect links to other resources I’ve found
-		inspiring. <a href="./writing">Visit my writings</a>.
-	</p>
+<section class="about">
+	<div class="content">
+		<h2 class="visuallyhidden">About Me</h2>
+		<p>
+			Based in {adj} Rochester New York, I’ve worked with top companies and universities in the area:
+		</p>
+		<div class="logos">
+			<small>Select a logo to learn more about my work with these organizations.</small>
+			<div>
+				<a href="/xerox"><Xerox /></a>
+				<a href="/naz"><Naz /></a>
+				<a href="/rit"><RIT /></a>
+			</div>
+		</div>
+	</div>
+	<div class="map"><Map /></div>
 </section>
-<section>
-	<h2>About Me</h2>
-	<p>Based in Rochester New York, I’ve worked with top companies and universities in the area:</p>
-	<p><strong>Xerox — Naz — RIT</strong></p>
-	<p><small>Select a logo to learn more about my work with these organizations.</small></p>
-</section>
-<section>
-	<h2>Contact</h2>
-	<p>
-		<a href="mailto:hello@kaipepler.com">Send me an email</a> follow or message me on
-		<a href="https://bsky.app/profile/kaipepler.com" target="_blank">Bluesky</a>, or connect with me
-		on <a href="https://www.linkedin.com/in/kaipepler/" target="_blank">LinkedIn</a>.
-	</p>
-</section> -->
+
+<style>
+	section:first-of-type {
+		min-height: 50vh;
+	}
+
+	section.about {
+		border-block: 1px solid var(--gray-3);
+		max-width: unset;
+		margin-inline: -2.5rem;
+		padding: 5rem 2.5rem;
+		display: grid;
+		grid-template-columns: 1.5fr 1fr;
+		overflow: hidden;
+
+		.content {
+			margin: auto;
+
+			.logos {
+				display: flex;
+				flex-direction: column-reverse;
+				gap: 1lh;
+
+				small {
+					color: var(--text-primary);
+				}
+
+				div {
+					display: flex;
+					flex-direction: row;
+					gap: 1rem;
+					margin-left: -1rem;
+				}
+
+				a {
+					border: unset;
+					padding: 1rem;
+					text-align: center;
+
+					&:focus-visible :global(path) {
+						fill: var(--text-primary);
+					}
+				}
+			}
+		}
+
+		.map {
+			z-index: -1;
+			height: 200px;
+
+			transform: scale(15);
+		}
+	}
+
+	@media (max-width: 800px) {
+		section.about {
+			grid-template-columns: 1fr;
+			padding-bottom: 2rem;
+
+			.map {
+				order: -1;
+				height: 3rem;
+				margin-bottom: 7rem;
+				transform: scale(60);
+			}
+		}
+	}
+
+	@media (max-width: 600px) {
+		section.about .content .logos div {
+			flex-direction: column;
+			margin-left: unset;
+		}
+	}
+</style>

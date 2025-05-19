@@ -16,11 +16,14 @@
 	font-display: swap;
 }
 
+@font-face {
+	font-family: 'Atkinson Hyperlegible Mono';
+	src: url('/AtkinsonHyperlegibleMono.woff2') format('woff2');
+	font-display: swap;
+}
+
 body {
-	font-family:
-		'Atkinson Hyperlegible Next',
-		Avenir Next,
-		sans-serif;
+	font-family: 'Atkinson Hyperlegible Next', system-ui;
 	text-wrap: pretty;
 	font-size: var(--step-0);
 	line-height: 1.5;
@@ -35,7 +38,7 @@ body {
 
 h1 {
 	font-size: var(--step-4);
-	letter-spacing: 0.3rem;
+	letter-spacing: 0.2rem;
 	text-transform: lowercase;
 }
 
