@@ -42,7 +42,7 @@
 
 <style>
 	section:first-of-type {
-		min-height: 50vh;
+		margin-bottom: 10rem;
 	}
 
 	section.about {

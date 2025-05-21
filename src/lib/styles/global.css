@@ -63,6 +63,7 @@ a {
 
 .skip-link {
 	text-transform: lowercase;
+	text-align: center;
 	position: fixed;
 	z-index: 100;
 	top: 1rem;
