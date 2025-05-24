@@ -43,7 +43,7 @@
 		{
 			title: 'Voice Control',
 			status: 'In development, needs additional testing',
-			desc: 'The site is fully navigable using voice control. Links and other interactive elements have unique accessible names that allow for easy targeting by assistive technology.'
+			desc: 'The site is fully navigable using voice control. Links and other interactive elements have unique accessible names to allow for easy targeting by assistive technology.'
 		}
 	];
 </script>
@@ -56,13 +56,12 @@
 	<h1>Accessibility Statement</h1>
 
 	<p>
-		I want this site to offer a good experience to all users, and as such I’m working to incorporate
-		as many accessibility features as possible.
+		I want my site to offer a good experience to all users, and as such I have incorporated a number
+		of accessibility features into the core of the site’s design.
 	</p>
 	<p>
-		My goal is to have this site be 100% compliant with WCAG 2.2 AA by default, and reach AAA
-		compliance when certain user configurations are applied. While I’m not there yet, this page
-		documents my progress on a number of accessibility features:
+		As it’s still under construction, not all of the features I have planned are fully available or
+		tested yet. In the meantime I’ll use this page to document my progress:
 	</p>
 
 	{#each features as feature}
