@@ -6,17 +6,15 @@
 	<h1>Writing</h1>
 
 	<p>
-		A place where I write and collect resources from across the internet. Topics include UX, color
-		theory, typography, design systems, accessibility, frontend development, and more.
-	</p>
-
-	<p>
-		My intent with this page is to publish a collection of evergreen documents, updating and adding
-		to them over time.
+		One of the things I love most about design is that there are endless opportunities to learn. The
+		field touches so many other disciplines: Color science. Typograpy. Data visualization.
+		Psychology. Writing. Accessibility. Animation. Programming. Motion graphics. These are just a
+		few of the fields to which you could easily devote your whole life.
 	</p>
 	<p>
-		For more informal content, follow me on
-		<a href="https://bsky.app/profile/kaipepler.com" target="_blank">Bluesky</a>.
+		Over the years I’ve collected hundreds of links to the works of brilliant people who have shared
+		their content with the world. This page is a place where I write articles to reference those
+		works, and put my own learnings back into the community.
 	</p>
 </section>
 <section>

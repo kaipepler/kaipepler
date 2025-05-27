@@ -16,8 +16,5 @@
 			fill: var(--gray-9);
 			transition: fill 150ms ease-in-out;
 		}
-		&:hover path {
-			fill: var(--text-primary);
-		}
 	}
 </style>

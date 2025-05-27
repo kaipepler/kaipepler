@@ -42,7 +42,7 @@
 
 <style>
 	section:first-of-type {
-		margin-bottom: 10rem;
+		margin-bottom: 2lh;
 	}
 
 	section.about {
@@ -78,7 +78,8 @@
 					padding: 1rem;
 					text-align: center;
 
-					&:focus-visible :global(path) {
+					&:focus-visible :global(path),
+					&:hover :global(path) {
 						fill: var(--text-primary);
 					}
 				}
@@ -88,7 +89,6 @@
 		.map {
 			z-index: -1;
 			height: 200px;
-
 			transform: scale(15);
 		}
 	}

@@ -52,6 +52,7 @@ small {
 	color: var(--text-secondary);
 }
 
-em {
+em,
+i {
 	font-variation-settings: 'ital' 0;
 }

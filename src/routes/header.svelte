@@ -67,7 +67,6 @@
 
 			.logo-wrapper {
 				position: relative;
-
 				text-transform: lowercase;
 				font-size: 32px;
 				font-weight: 400;
