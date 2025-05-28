@@ -24,7 +24,7 @@
 </section>
 <section class="about">
 	<div class="content">
-		<h2 class="visuallyhidden">About Me</h2>
+		<h2 class="visually-hidden">About Me</h2>
 		<p>
 			Based in {adj} Rochester New York, I’ve worked with top companies and universities in the area:
 		</p>

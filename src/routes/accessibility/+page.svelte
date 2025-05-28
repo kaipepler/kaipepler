@@ -2,7 +2,7 @@
 	const features = [
 		{
 			title: 'Color Scheme',
-			status: 'Complete',
+			status: 'Mostly complete, certain controls need improved contrast ratios',
 			desc: 'The site adopts your system theme to minimize eye strain. Colors across both light and dark themes are tuned to provide contrast for comfortable viewing.'
 		},
 		{
@@ -13,7 +13,7 @@
 		{
 			title: 'Typography',
 			status: 'Mostly complete, layouts need more tuning',
-			desc: 'The site uses the <a href="https://www.brailleinstitute.org/freefont/" target="_blank">Atkinson Hyperlegible</a> typeface to provide highly readable text content. Typography is tuned with additional line height and kerning to further enhance readability.'
+			desc: 'The site uses the <a href="https://www.brailleinstitute.org/freefont/">Atkinson Hyperlegible</a> typeface to provide highly readable text content. Typography is tuned with additional line height and kerning to further enhance readability.'
 		},
 		{
 			title: 'Text Resizing',
@@ -84,6 +84,14 @@
 	{/each}
 
 	<hr />
+
+	<aside aria-labelledby="external">
+		<strong aria-hidden="true"><span id="external">Note</span>:</strong> While I do my best to promote
+		accessible resources, I do link to external content that features accessibility barriers. This includes
+		some of my older work for companies to which I no longer have edit access. Content I maintain ownership
+		of (for example, art featured in my portfolio) I have revisited and optimized for accessibility wherever
+		possible.
+	</aside>
 
 	<p>
 		If you have any issues accessing the content on this site, encounter WCAG violations, or have

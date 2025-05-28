@@ -51,7 +51,7 @@ a {
 	text-decoration: none;
 }
 
-.visuallyhidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active) {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
 	height: 1px;
@@ -161,11 +161,13 @@ main {
 		font-weight: 500;
 		padding: 0.5rem 1rem;
 		border-radius: 6px;
-		border: 3px solid var(--green-11);
+		border: 3px solid var(--green-10);
 		transition: background 100ms ease-in-out;
 
 		@media (prefers-reduced-motion: no-preference) {
-			transition: all 100ms ease-in-out;
+			transition:
+				transform 100ms ease-in-out,
+				background 100ms ease-in-out;
 		}
 
 		&:hover {
@@ -192,7 +194,7 @@ main {
 	}
 
 	:is(a.button, button).primary {
-		background: var(--green-11);
+		background: var(--green-10);
 		color: var(--background);
 
 		&:hover {
@@ -394,4 +396,6 @@ aside {
 	padding: 0.75rem 1rem;
 	border-radius: 0.5rem;
 	margin-block: 1lh;
+	display: flex;
+	gap: 0.5rem;
 }

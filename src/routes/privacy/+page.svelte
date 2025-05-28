@@ -11,15 +11,21 @@
 	</p>
 	<p>
 		This site is hosted through Cloudflare, so the only metrics used are the ones provided through
-		their basic privacy-first <a href="https://www.cloudflare.com/web-analytics/" target="_blank"
+		their basic privacy-first <a href="https://www.cloudflare.com/web-analytics/"
 			>Cloudflare Web Analytics</a
 		>. This provides me anonymous metrics like page views so I can improve site performance. This
 		data is aggregated and cannot be used to track individual users.
 	</p>
 	<p>
-		You can learn more about Cloudflare’s approach to privacy by visiting
-		<a href="https://www.cloudflare.com/trust-hub/privacy-and-data-protection/" target="_blank"
+		You can learn more by visiting the
+		<a href="https://www.cloudflare.com/trust-hub/privacy-and-data-protection/"
 			>Cloudflare Privacy & Data Protection</a
-		>.
+		> hub.
 	</p>
+	<aside aria-labelledby="external">
+		<strong aria-hidden="true"><span id="external">Note</span>:</strong> Many of my articles link to
+		external sites. While I take care to link only to sites I deem reputable, I have no control over
+		external domains. I recommend you exercise the same discretion as you would when navigating anywhere
+		else on the web.
+	</aside>
 </section>
