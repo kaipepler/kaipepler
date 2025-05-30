@@ -60,19 +60,25 @@
 			display: flex;
 			flex-flow: row wrap;
 			align-items: center;
-			justify-content: space-between;
+			justify-content: center;
 			@media (prefers-reduced-motion: no-preference) {
 				transition: filter 200ms;
 			}
 
 			.logo-wrapper {
-				position: relative;
+				flex-grow: 1;
 				text-transform: lowercase;
 				font-size: 32px;
 				font-weight: 400;
 				display: flex;
 				align-items: center;
 				gap: 1rem;
+
+				@media (max-width: 750px) {
+					flex-basis: 100%; /* Forces wrap */
+					justify-content: center; /* Centers when wrapped */
+					margin-bottom: 1rem; /* Adds space between logo and nav items */
+				}
 
 				a {
 					border-radius: 4px;
@@ -196,21 +202,9 @@
 		}
 	}
 
-	@media (max-width: 850px) {
+	@media (max-width: 900px) {
 		#title {
 			display: none;
-		}
-	}
-
-	@media (max-width: 700px) {
-		header {
-			padding: 2.5rem 1rem;
-
-			nav {
-				flex-direction: column;
-				align-items: center;
-				gap: 1rem;
-			}
 		}
 	}
 </style>

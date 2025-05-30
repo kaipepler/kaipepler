@@ -1,6 +1,6 @@
 <svg
 	viewBox="0 0 600 530"
-	style="height: 20px; margin-bottom: 2px; vertical-align: middle"
+	style="height: var(--step-1); margin-bottom: 2px; vertical-align: middle"
 	aria-labelledby="bluesky"
 	role="img"
 	><path

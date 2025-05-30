@@ -29,7 +29,7 @@
 	}
 
 	svg {
-		height: 110px;
+		height: 7rem;
 		padding: 1rem;
 		overflow: visible;
 		filter: drop-shadow(8px 10px 2px color(from var(--shadow) display-p3 r g b / 0.02))
