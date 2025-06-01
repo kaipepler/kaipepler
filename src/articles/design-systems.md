@@ -1,6 +1,6 @@
 ---
 title: Design Systems
-description: Diving into the world’s top design systems
+description: Diving into the world’s top design systems.
 date: '2025-6-1'
 update: ''
 categories:
