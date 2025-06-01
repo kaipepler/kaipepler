@@ -137,23 +137,18 @@ main {
 			border: none;
 		}
 
-		&[target='_blank'] {
-			position: relative;
-			padding-right: calc(0.4em + 0.1em);
-		}
-
 		&[target='_blank']::after {
 			content: '- opens in a new tab';
 			overflow: hidden;
-			position: absolute;
-			right: 0;
-			top: 50%;
-			transform: translateY(-50%);
+			display: inline-block;
+			margin-inline: 0.1em;
 			width: 0.4em;
-			height: 0.8em;
+			height: 1rem;
 			background-color: currentColor;
 			mask-image: url('/new-tab-icon.svg');
 			mask-repeat: no-repeat;
+			line-height: 0;
+			vertical-align: middle;
 		}
 	}
 
