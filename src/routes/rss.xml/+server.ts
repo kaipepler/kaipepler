@@ -8,31 +8,28 @@ export async function GET({ fetch }) {
 	const headers = { 'Content-Type': 'application/xml' };
 
 	const xml = `
-		<feed xmlns="http://www.w3.org/2005/Atom">
-      <title>${config.title}</title>
-      <subtitle>Articles on accessibility, design systems, and development</subtitle>
-      <link href="${config.url}/rss.xml" rel="self"/>
-      <link href="${config.url}"/>
-      <updated>${new Date().toISOString()}</updated>
-      <id>${config.url}</id>
-      <author>
-        <name>Kai Pepler</name>
-        <email>hello@kaipepler.com</email>
-      </author>
+		<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+			<channel>
+				<title>${config.title}</title>
+				<link>${config.url}</link>
+				<description>${config.description}</description>
+        <language>en-US</language>
+				<atom:link href="${config.url}rss.xml" rel="self" type="application/rss+xml"/>
 				${articles
 					.map(
 						(article) => `
-						<entry>
+						<item>
 							<title>${article.title}</title>
+							<link>${config.url}writing/${article.slug}</link>
 							<description>${article.description}</description>
-							<link href="${config.url}/writing/${article.slug}"/>
-              <id>${config.url}/writing/${article.slug}</id>
-							<updated>${new Date(article.date).toUTCString()}</updated>
-						</entry>
+							<pubDate>${new Date(article.date).toUTCString()}</pubDate>
+							<guid isPermaLink="true">${config.url}writing/${article.slug}</guid>
+						</item>
 					`
 					)
 					.join('')}
-		</feed>
+			</channel>
+		</rss>
 	`.trim();
 
 	return new Response(xml, { headers });
