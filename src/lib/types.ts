@@ -5,6 +5,7 @@ export type Article = {
 	slug: string;
 	description: string;
 	date: string;
+	update: string;
 	categories: Categories[];
 	published: boolean;
 };

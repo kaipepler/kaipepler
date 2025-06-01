@@ -2,6 +2,7 @@
 	<title>Privacy Policy - Kai Pepler</title>
 	<meta name="description" content="My commitment to accessibility" />
 </svelte:head>
+
 <section>
 	<h1>Privacy Policy</h1>
 	<p>

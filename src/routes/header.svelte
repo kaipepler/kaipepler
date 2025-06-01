@@ -52,7 +52,7 @@
 
 <style>
 	header {
-		padding: 2.5rem;
+		padding: 2.5rem var(--space-s-xl);
 
 		nav {
 			margin-inline: auto;

@@ -1,7 +1,8 @@
 ---
 title: Design Systems
 description: Diving into the world’s top design systems
-date: '2025-5-26’
+date: '2025-6-1'
+update: ''
 categories:
   - designsystems
   - color
@@ -43,9 +44,11 @@ In addition, their design team has written a number of blog posts about process.
 2. [The Power to Serve](https://medium.com/carbondesign/the-power-to-serve-fb84387deef8) (discussing the process and workflows of an effective design systems team)
 3. [Color palettes and accessibility features for data visualization](https://medium.com/carbondesign/color-palettes-and-accessibility-features-for-data-visualization-7869f4874fca) (covering the special considerations required when defining colors and patterns for data visualization)
 
-## As a final plus, there is a dedicated section of the guide on [Carbon’s approach to accessibility](https://carbondesignsystem.com/guidelines/accessibility/overview/), and an accessibility tab on component pages outlining accessibility functions, testing, and best practices. This guidance is sound, and although the site is not without issues, it is one of the more accessibly-built guides on this list.
+As a final plus, there is a dedicated section of the guide on [Carbon’s approach to accessibility](https://carbondesignsystem.com/guidelines/accessibility/overview/), and an accessibility tab on component pages outlining accessibility functions, testing, and best practices. This guidance is sound, and although the site is not without issues, it is one of the more accessibly-built guides on this list.
 
-### [Spectrum](spectrum.adobe.com)
+---
+
+### [Spectrum](https://spectrum.adobe.com)
 
 Adobe’s Spectrum design system does an amazing job of distilling an incredible about of complicated information down into clean and easy-to-reference documentation.
 
@@ -77,7 +80,7 @@ Like Spectrum, I’ve run into difficulties navigating the site with a screen re
 
 ### [Ant Design](https://ant.design)
 
-Speaking of systems designed to take on a massive amount of content, next up is Alibaba’s Ant Design. One thing that is striking about Ant Design is the sheer scope of the project. They not only supply toolkits for a wide range of platforms, but they also develop <a href="https://antv.antgroup.com/en/" target="_blank">AntV</a>, an entire network of solutions for handling complex data visualization scenarios.
+Speaking of systems designed to take on a massive amount of content, next up is Alibaba’s Ant Design. One thing that is striking about Ant Design is the sheer scope of the project. They not only supply toolkits for a wide range of platforms, but they also develop [AntV](https://antv.antgroup.com/en/), an entire network of solutions for handling complex data visualization scenarios.
 
 Digging deeper, one of Ant’s designers **Shan'er** wrote a fascinating blog post in 2019 explaining how they approached building a effective palettes for data visualization: [数据可视化设计体系中的搭建（下）](https://zhuanlan.zhihu.com/p/70121039).
 
@@ -97,7 +100,8 @@ Radix Colors stands out from other color systems through its superb documentatio
 
 In earlier versions of Radix Colors, there was a page dedicated to showcasing contrast tests across all the colors. It appears that this page has been removed from version 3.0.0. In its place, selecting a given color swatch on the landing page will open a modal describing which colors and text types that color can pair with. My only issue with this is that they provide contrast calculations solely in APCA, and not in the legally-binding WCAG formula.
 
-<aside>While APCA offers a number of advantages over the current flawed algorithm, it’s not ready for production use and must be cross-checked against the WCAG 2.2 formula to be compliant. For this reason, if design systems include APCA, they should also reference. This however is a topic for another article.</aside>
+<aside aria-labelledby="apca">
+		<strong aria-hidden="true"><span id="apca">Note</span>:</strong>While APCA offers a number of advantages over the current flawed algorithm, it’s not ready for production use and must be cross-checked against the WCAG 2.2 formula to be compliant. For this reason, if design systems include APCA, they should also reference WCAG. This however is a topic for another article.</aside>
 
 ---
 
@@ -105,7 +109,7 @@ In earlier versions of Radix Colors, there was a page dedicated to showcasing co
 
 There are many other amazing design systems out there beyond what I featured in this article. I combed through dozens of systems to come up with this short a list, but this naturally means many great systems got left out. I may update this article in future to document additional systems with unique benefits, like [TRMNL’s Framework](https://usetrmnl.com/framework), a design system built for e-ink displays.
 
-If you’d like to explore more about design systems, the following three sites are great hubs to dig into more components and systems.
+If you’d like to explore more about design systems, the following sites are great hubs to dig into more components and systems:
 
 - [The Component Gallery](https://component.gallery/components/button/)
 - [Adele by UXPin](https://adele.uxpin.com)

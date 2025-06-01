@@ -103,7 +103,7 @@ a {
 }
 
 main {
-	padding-inline: 2.5rem;
+	padding-inline: var(--space-s-xl);
 
 	section {
 		max-width: 1200px;
@@ -137,13 +137,20 @@ main {
 			border: none;
 		}
 
+		&[target='_blank'] {
+			position: relative;
+			padding-right: calc(0.4em + 0.1em);
+		}
+
 		&[target='_blank']::after {
 			content: '- opens in a new tab';
 			overflow: hidden;
-			display: inline-block;
-			margin-inline: 0.2em;
-			width: 0.6em;
-			height: 0.6em;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 0.4em;
+			height: 0.8em;
 			background-color: currentColor;
 			mask-image: url('/new-tab-icon.svg');
 			mask-repeat: no-repeat;
@@ -161,7 +168,7 @@ main {
 		font-weight: 500;
 		padding: 0.5rem 1rem;
 		border-radius: 6px;
-		border: 3px solid var(--green-10);
+		border: 3px solid var(--green-11);
 		transition: background 100ms ease-in-out;
 
 		@media (prefers-reduced-motion: no-preference) {
@@ -194,7 +201,7 @@ main {
 	}
 
 	:is(a.button, button).primary {
-		background: var(--green-10);
+		background: var(--green-11);
 		color: var(--background);
 
 		&:hover {
