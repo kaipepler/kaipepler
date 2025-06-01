@@ -6,9 +6,9 @@ export async function GET({ fetch }) {
 	const articles: Article[] = await response.json();
 
 	const headers = { 'Content-Type': 'application/xml' };
-
+	// Add in when ready: <?xml-stylesheet href="/rss.xsl" type="text/xsl"?>
 	const xml = `<?xml version="1.0" encoding="UTF-8" ?>
-<?xml-stylesheet href="/rss.xsl" type="text/xsl"?>
+
         <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
             <channel>
                 <title>${config.title}</title>

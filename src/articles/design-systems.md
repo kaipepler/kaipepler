@@ -34,7 +34,7 @@ Even if the implementations of these style guides have problems, I’ve learned 
 
 ### [Carbon Design System](https://carbondesignsystem.com/)
 
-IBM’s Carbon Design system is an amazing source of guidance on everything from layout with their beautiful and structured [2x Grid system](https://carbondesignsystem.com/elements/2x-grid/overview/)), to theming built on the logical and consistent [Carbon Color System](https://carbondesignsystem.com/elements/color/overview/). I also appreciate the video introductions they have to foundational elements like color, grids, and motion.
+IBM’s Carbon Design system is an amazing source of guidance on everything from layout with their beautiful and structured [2x Grid system](https://carbondesignsystem.com/elements/2x-grid/overview/), to theming built on the logical and consistent [Carbon Color System](https://carbondesignsystem.com/elements/color/overview/). I also appreciate the video introductions they have to foundational elements like color, grids, and motion.
 
 The entire design system is based on the [IBM Design Language](https://www.ibm.com/design/language/) which has its own website and is worth a read thanks to the fantastic documentation on decisions that led to their color, spacing, and typography.
 
