@@ -9,17 +9,14 @@
 
 <section>
 	<h1>Writing</h1>
-
 	<p>
-		One of the things I love most about design is that there are endless opportunities to learn. The
-		field touches so many other disciplines: Color science. Typograpy. Data visualization.
-		Psychology. Writing. Accessibility. Animation. Programming. Motion graphics. These are just a
-		few of the fields to which you could easily devote your whole life.
-	</p>
-	<p>
-		Over the years I’ve learned from the work of of brilliant people who have shared their content
+		Over the years I’ve learned from so many wonderful people who have chosen to share their work
 		with the world. This page is a place where I write articles to reference those works, and put my
 		own learnings back into the community.
+	</p>
+	<p>
+		Topics include color theory, typography, data visualization, accessibility, animation, front-end
+		development, and more.
 	</p>
 </section>
 <!-- <section>
@@ -28,28 +25,32 @@
 </section> -->
 <section>
 	<h2>All Articles</h2>
-	<ul>
-		{#each data.articles as article}
-			<li>
-				<a href={`/writing/${article.slug}`}>{article.title}</a>
-			</li>
-		{/each}
-	</ul>
+	{#if data.articles.length > 0}
+		<ul>
+			{#each data.articles as article}
+				<li>
+					<a href={`/writing/${article.slug}`}>{article.title}</a>
+				</li>
+			{/each}
+		</ul>
+	{:else}
+		<p>No articles are currently available.</p>
+	{/if}
 </section>
 
 <section>
 	<hr />
 	<h2 class="visually-hidden">RSS Feed</h2>
 	<p>
-		If you prefer to process content through your own feed reader, you can find the link to my RSS
+		If you prefer to take in content through your own feed reader, you can find the link to my RSS
 		feed below:
 	</p>
 
-	<p><a href="/rss.xml" class="button">RSS Feed</a></p>
+	<p><a href="/feed.xml" class="button">RSS Feed</a></p>
 </section>
 
 <style>
-	a[href='/rss.xml']::before {
+	a[href$='xml']::before {
 		content: '';
 		overflow: hidden;
 		display: inline-block;
@@ -67,7 +68,7 @@
 	}
 
 	/* Add this to create a more stable layout */
-	a[href='/rss.xml'] {
+	a[href$='xml'] {
 		display: inline-flex;
 		align-items: center;
 	}

@@ -7,5 +7,4 @@ export type Article = {
 	date: string;
 	update: string;
 	categories: Categories[];
-	published: boolean;
 };

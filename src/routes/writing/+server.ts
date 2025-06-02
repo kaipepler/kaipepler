@@ -11,7 +11,7 @@ async function getArticles() {
 
 	// Use Vite's glob import to get all .md files from articles directory
 	// eager: true means files are loaded immediately instead of on-demand
-	const paths = import.meta.glob('/src/articles/*.md', { eager: true });
+	const paths = import.meta.glob('$lib/articles/*.md', { eager: true });
 
 	// Iterate through each markdown file path
 	for (const path in paths) {
@@ -26,7 +26,7 @@ async function getArticles() {
 			// Create complete article object by combining metadata with slug
 			const article = { ...metadata, slug } satisfies Article;
 			// Only add article to array if it's marked as published
-			article.published && articles.push(article);
+			articles.push(article);
 		}
 	}
 
@@ -40,7 +40,7 @@ async function getArticles() {
 
 /**
  * GET endpoint handler that returns all published articles as JSON
- * This endpoint will be available at /api/writing
+ * This endpoint will be available at /writing
  */
 export async function GET() {
 	const articles = await getArticles();
