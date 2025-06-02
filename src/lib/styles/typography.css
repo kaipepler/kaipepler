@@ -22,7 +22,7 @@
 	--space-2xl-3xl: clamp(4rem, 2.7816rem + 4.9605vw, 6.75rem);
 
 	/* Custom pairs */
-	--space-s-xl: clamp(1rem, -0.0523rem + 4.2841vw, 3.375rem);
+	--space-m-xl: clamp(1.5rem, 0.6693rem + 3.3822vw, 3.375rem);
 
 	--step--2: clamp(0.6944rem, 0.6852rem + 0.0465vw, 0.72rem);
 	--step--1: clamp(0.8333rem, 0.8091rem + 0.1212vw, 0.9rem);

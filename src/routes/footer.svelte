@@ -14,7 +14,7 @@
 
 <style>
 	footer {
-		padding: 1.5rem var(--space-s-xl);
+		padding: 1.5rem var(--space-m-xl);
 
 		div {
 			margin-inline: auto;

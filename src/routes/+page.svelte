@@ -48,8 +48,8 @@
 	section.about {
 		border-block: 1px solid var(--gray-3);
 		max-width: unset;
-		margin-inline: calc(var(--space-s-xl) - var(--space-s-xl) * 2);
-		padding: 5rem var(--space-s-xl);
+		margin-inline: calc(var(--space-m-xl) - var(--space-m-xl) * 2);
+		padding: 5rem var(--space-m-xl);
 		display: grid;
 		grid-template-columns: 1.5fr 1fr;
 		overflow: hidden;

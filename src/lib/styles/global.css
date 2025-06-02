@@ -103,7 +103,7 @@ a {
 }
 
 main {
-	padding-inline: var(--space-s-xl);
+	padding-inline: var(--space-m-xl);
 
 	section {
 		max-width: 1200px;
