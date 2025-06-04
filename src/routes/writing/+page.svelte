@@ -42,8 +42,7 @@
 	<hr />
 	<h2 class="visually-hidden">RSS Feed</h2>
 	<p>
-		If you prefer to take in content through your own feed reader, you can find the link to my RSS
-		feed below:
+		If you prefer to take in content through your own feed reader, you can find my RSS feed here:
 	</p>
 
 	<p><a href="/feed.xml" class="button">RSS Feed</a></p>
