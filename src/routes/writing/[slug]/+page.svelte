@@ -17,3 +17,9 @@
 		<svelte:component this={data.content} />
 	</article>
 </section>
+
+<style>
+	h1 {
+		margin-bottom: 1.2rem;
+	}
+</style>

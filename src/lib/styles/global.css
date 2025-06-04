@@ -141,7 +141,7 @@ main {
 			content: '- opens in a new tab';
 			overflow: hidden;
 			display: inline-block;
-			margin-inline: 0.1em;
+			margin-left: 0.1em;
 			width: 0.4em;
 			height: 1rem;
 			background-color: currentColor;
@@ -169,7 +169,8 @@ main {
 		@media (prefers-reduced-motion: no-preference) {
 			transition:
 				transform 100ms ease-in-out,
-				background 100ms ease-in-out;
+				background 100ms ease-in-out,
+				border 100ms ease-in-out;
 		}
 
 		&:hover {

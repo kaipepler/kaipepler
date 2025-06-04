@@ -25,7 +25,6 @@ async function getArticles() {
 			const metadata = file.metadata as Omit<Article, 'slug'>;
 			// Create complete article object by combining metadata with slug
 			const article = { ...metadata, slug } satisfies Article;
-			// Only add article to array if it's marked as published
 			articles.push(article);
 		}
 	}

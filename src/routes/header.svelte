@@ -74,12 +74,6 @@
 				align-items: center;
 				gap: 1rem;
 
-				@media (max-width: 750px) {
-					flex-basis: 100%; /* Forces wrap */
-					justify-content: center; /* Centers when wrapped */
-					margin-bottom: 1rem; /* Adds space between logo and nav items */
-				}
-
 				a {
 					border-radius: 4px;
 					margin-left: -1rem;
@@ -89,7 +83,7 @@
 			ul {
 				display: grid;
 				grid-template-columns: 1fr 1fr 1fr;
-				gap: 1rem;
+				gap: 0.5rem;
 				list-style-type: none;
 				padding: 0;
 				margin: 0;
@@ -202,9 +196,21 @@
 		}
 	}
 
-	@media (max-width: 900px) {
+	@media (max-width: 850px) {
 		#title {
 			display: none;
+		}
+	}
+
+	@media (max-width: 650px) {
+		header {
+			padding-bottom: 1rem;
+		}
+
+		.logo-wrapper {
+			flex-basis: 100%; /* Forces wrap */
+			justify-content: center; /* Centers when wrapped */
+			margin-bottom: 1rem; /* Adds space between logo and nav items */
 		}
 	}
 </style>

@@ -111,6 +111,11 @@
 		section.about .content .logos div {
 			flex-direction: column;
 			margin-left: unset;
+			align-items: center;
+
+			a {
+				width: fit-content;
+			}
 		}
 	}
 </style>
