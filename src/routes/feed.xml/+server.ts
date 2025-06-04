@@ -2,6 +2,10 @@ import * as config from '$lib/config';
 import type { Article } from '$lib/types';
 import { compile } from 'mdsvex';
 
+export const config = {
+	runtime: 'nodejs18.x'
+};
+
 export async function GET({ fetch }) {
 	const response = await fetch('/writing');
 	const articles: Article[] = await response.json();

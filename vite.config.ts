@@ -35,5 +35,13 @@ function externalLinksPlugin(): Plugin {
 }
 
 export default defineConfig({
-	plugins: [sveltekit(), externalLinksPlugin()]
+	plugins: [sveltekit(), externalLinksPlugin()],
+	server: {
+		fs: {
+			allow: ['.']
+		}
+	},
+	ssr: {
+		noExternal: ['mdsvex']
+	}
 });
