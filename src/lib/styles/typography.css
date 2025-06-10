@@ -59,13 +59,13 @@ body {
 :is(h1, h2, h3, h4, h5, h6) {
 	overflow-wrap: break-word;
 	text-wrap: balance;
-	margin-block: 0.5em 1em;
 }
 
 h1 {
 	font-size: var(--step-4);
 	letter-spacing: 0.2rem;
 	text-transform: lowercase;
+	margin-top: 1rem;
 }
 
 p,
