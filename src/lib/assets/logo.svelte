@@ -64,6 +64,19 @@
 				fill: var(--text-primary);
 			}
 		}
+
+		@media (prefers-contrast: more) {
+			path.accent {
+				fill: var(--text-primary);
+			}
+			path.dark {
+				fill: var(--text-primary);
+			}
+			path.light {
+				fill: var(--text-primary);
+			}
+			filter: none;
+		}
 	}
 
 	@media (prefers-reduced-motion: no-preference) {

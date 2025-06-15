@@ -75,6 +75,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		@media (prefers-contrast: more) {
+			border-color: var(--gray-12);
+		}
 	}
 
 	@media (prefers-color-scheme: light) {

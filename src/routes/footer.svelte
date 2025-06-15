@@ -25,6 +25,10 @@
 			font-weight: 400;
 			color: var(--text-secondary);
 
+			@media (prefers-contrast: more) {
+				color: var(--text-primary);
+			}
+
 			ul {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
@@ -38,6 +42,10 @@
 						position: relative;
 						padding: 0.5rem;
 						border-radius: 6px;
+
+						@media (prefers-contrast: more) {
+							border: 1px solid var(--gray-12);
+						}
 
 						span {
 							border-bottom: 0.08rem solid transparent;

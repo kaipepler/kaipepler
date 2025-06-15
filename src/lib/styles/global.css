@@ -117,6 +117,11 @@ main {
 	a {
 		font-weight: 700;
 		border-bottom: 0.15rem solid var(--green-9);
+
+		@media (prefers-contrast: more) {
+			border-bottom: 0.15rem solid var(--gray-12);
+		}
+
 		padding: 0.1rem;
 		margin: -0.1rem;
 		padding-bottom: 0;
@@ -166,6 +171,10 @@ main {
 		border: 3px solid var(--green-11);
 		transition: background 100ms ease-in-out;
 
+		@media (prefers-contrast: more) {
+			border-color: var(--green-12);
+		}
+
 		@media (prefers-reduced-motion: no-preference) {
 			transition:
 				transform 100ms ease-in-out,
@@ -200,14 +209,28 @@ main {
 		background: var(--green-11);
 		color: var(--background);
 
+		@media (prefers-contrast: more) {
+			background: var(--green-12);
+		}
+
 		&:hover {
 			background: var(--green-10);
 			border-color: var(--green-10);
+
+			@media (prefers-contrast: more) {
+				background: var(--green-12);
+				border-color: var(--green-12);
+			}
 		}
 
 		&:active {
 			background: var(--green-11);
 			border-color: var(--green-11);
+
+			@media (prefers-contrast: more) {
+				background: var(--green-12);
+				border-color: var(--green-12);
+			}
 		}
 	}
 }
@@ -230,6 +253,9 @@ hr {
 	h3 {
 		color: var(--green-11);
 		white-space: nowrap; /* Prevent date from wrapping */
+		@media (prefers-contrast: more) {
+			color: var(--green-12);
+		}
 	}
 }
 
@@ -401,4 +427,9 @@ aside {
 	margin-block: 1lh;
 	display: flex;
 	gap: 0.5rem;
+
+	@media (prefers-contrast: more) {
+		background: var(--gray-4);
+		border: 1px solid var(--gray-12);
+	}
 }

@@ -206,15 +206,26 @@
 		fill: var(--gray-2);
 		stroke: var(--gray-3);
 		stroke-width: 0.25rem;
+		@media (prefers-contrast: more) {
+			fill: var(--gray-1);
+			stroke: var(--gray-9);
+		}
 	}
 
 	path#NY {
 		fill: var(--gray-3);
 		stroke: var(--gray-7);
+		@media (prefers-contrast: more) {
+			fill: var(--gray-6);
+			stroke: var(--gray-9);
+		}
 	}
 
 	path#Monroe {
 		fill: var(--green-9);
 		stroke: var(--gray-11);
+		@media (prefers-contrast: more) {
+			fill: var(--green-10);
+		}
 	}
 </style>

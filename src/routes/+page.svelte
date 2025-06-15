@@ -56,6 +56,10 @@
 
 		.content {
 			margin: auto;
+			border-radius: 6px;
+			@media (prefers-contrast: more) {
+				background: var(--gray-1);
+			}
 
 			.logos {
 				display: flex;
@@ -77,10 +81,16 @@
 					border: unset;
 					padding: 1rem;
 					text-align: center;
+					border-radius: 6px;
 
 					&:focus-visible :global(path),
 					&:hover :global(path) {
 						fill: var(--text-primary);
+					}
+
+					@media (prefers-contrast: more) {
+						border: 1px solid var(--gray-12);
+						background: var(--gray-1);
 					}
 				}
 			}

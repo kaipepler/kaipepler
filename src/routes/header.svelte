@@ -75,8 +75,12 @@
 				gap: 1rem;
 
 				a {
-					border-radius: 4px;
+					border-radius: 6px;
 					margin-left: -1rem;
+
+					@media (prefers-contrast: more) {
+						border: 1px solid var(--gray-12);
+					}
 				}
 			}
 
@@ -94,12 +98,16 @@
 					a {
 						padding: 1.5rem;
 						display: block;
-						border-radius: 4px;
+						border-radius: 6px;
 						text-transform: lowercase;
 						text-align: center;
 						transition:
 							color 250ms,
 							fill 250ms;
+
+						@media (prefers-contrast: more) {
+							border: 1px solid var(--gray-12);
+						}
 
 						@media (prefers-reduced-motion: no-preference) {
 							transition:
@@ -162,7 +170,8 @@
 							&::after {
 								content: '';
 								position: absolute;
-								top: calc(100% - 13px);
+								top: calc(100% - 14px);
+
 								left: calc(50% - 9px);
 
 								--r: 2px; /* border radius */

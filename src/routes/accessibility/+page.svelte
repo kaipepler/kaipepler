@@ -2,17 +2,17 @@
 	const features = [
 		{
 			title: 'Color Scheme',
-			status: 'Mostly complete, certain controls need improved contrast ratios',
+			status: 'Mostly complete',
 			desc: 'The site adopts your system theme to minimize eye strain. Colors across both light and dark themes are tuned to provide contrast for comfortable viewing.'
 		},
 		{
 			title: 'Reduce Motion',
-			status: 'Complete, but may need fine-tuning',
+			status: 'Complete',
 			desc: 'If your operating system is set to Reduce motion, the site will replace all movement-based animation with gentle fades.'
 		},
 		{
 			title: 'Typography',
-			status: 'Mostly complete, layouts need more tuning',
+			status: 'Mostly complete',
 			desc: 'The site uses the <a href="https://www.brailleinstitute.org/freefont/">Atkinson Hyperlegible</a> typeface to provide highly readable text content. Typography is tuned with additional line height and kerning to further enhance readability.'
 		},
 		{
@@ -22,12 +22,12 @@
 		},
 		{
 			title: 'Reader',
-			status: 'Complete, but needs additional testing',
+			status: 'Complete',
 			desc: 'Text-heavy pages are optimized for browser Reader modes, allowing users further customization of text and theming for a more comfortable reading environment.'
 		},
 		{
 			title: 'Increase Contrast',
-			status: 'In development, not yet available',
+			status: 'Mostly complete',
 			desc: 'The site will respect Increase Contrast modes, heighting the distinction between colors and outlining click targets across all pages.'
 		},
 		{
@@ -117,6 +117,11 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
+			@media (prefers-contrast: more) {
+				background: 1px var(--gray-1);
+				border: 4px solid var(--gray-9);
+			}
 		}
 
 		:global(p) {
@@ -125,6 +130,9 @@
 
 		small {
 			color: var(--green-11);
+			@media (prefers-contrast: more) {
+				color: var(--green-12);
+			}
 		}
 	}
 

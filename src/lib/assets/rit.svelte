@@ -15,6 +15,9 @@
 		path {
 			fill: var(--gray-9);
 			transition: fill 150ms ease-in-out;
+			@media (prefers-contrast: more) {
+				fill: var(--gray-11);
+			}
 		}
 	}
 </style>

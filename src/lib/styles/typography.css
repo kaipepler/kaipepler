@@ -84,6 +84,10 @@ small {
 	font-size: var(--step--1);
 	font-weight: 400;
 	color: var(--text-secondary);
+
+	@media (prefers-contrast: more) {
+		color: var(--text-primary);
+	}
 }
 
 em,
