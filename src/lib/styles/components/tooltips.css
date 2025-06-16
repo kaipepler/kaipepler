@@ -1,0 +1,33 @@
+abbr {
+	position: relative;
+	border-bottom: 2px dotted var(--text-secondary);
+	text-decoration: none;
+
+	&::after {
+		position: absolute;
+		bottom: 150%;
+		left: 50%;
+		transform: translateX(-50%) translateY(2rem) scale(0.1);
+		background: var(--text-primary);
+		width: max-content;
+		color: var(--background);
+		padding: 10px;
+		border-radius: 6px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		opacity: 0;
+		text-align: center;
+		overflow: hidden;
+		content: attr(title) / '';
+		speak-as: none;
+	}
+
+	&:hover,
+	&:focus {
+		cursor: help;
+		&::after {
+			content: attr(title) / '';
+			opacity: 1;
+			transform: translateX(-50%) translateY(0) scale(1);
+		}
+	}
+}

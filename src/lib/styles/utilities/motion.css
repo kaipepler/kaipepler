@@ -1,0 +1,82 @@
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		interpolate-size: allow-keywords;
+	}
+
+	/* Button transitions */
+	main :is(a.button, button) {
+		transition:
+			transform 100ms ease-in-out,
+			background 100ms ease-in-out,
+			border 100ms ease-in-out;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+
+		&:active {
+			transform: scale(0.99);
+		}
+	}
+
+	/* Links transitions */
+	main a {
+		transition:
+			border-width 100ms linear,
+			outline 200ms;
+	}
+
+	/* Skip link transitions */
+	.skip-link {
+		transition: transform 200ms;
+	}
+
+	/* Focus transitions */
+	*:focus-visible {
+		transition:
+			outline 200ms,
+			box-shadow 200ms;
+	}
+
+	/* Details arrow transition */
+	details summary:before {
+		transition: transform 200ms ease-in-out;
+	}
+
+	/* Content reveal animation */
+	details[open] > *:not(summary) {
+		animation: details-show 150ms ease-in-out;
+	}
+
+	/* Tooltip transitions */
+	abbr::after {
+		transition:
+			transform 150ms cubic-bezier(0.2, 0.8, 0.3, 1.3) 200ms,
+			opacity 50ms ease-in-out 200ms;
+	}
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+	abbr::after {
+		transform: translateX(-50%) translateY(0);
+		transition: opacity 150ms ease-in-out 200ms;
+	}
+
+	/* Disable all other animations */
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+@keyframes details-show {
+	from {
+		opacity: 0;
+		transform: translateY(-1rem);
+	}
+}

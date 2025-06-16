@@ -1,0 +1,21 @@
+th,
+td {
+	text-align: left;
+	font-weight: 350;
+	padding: 1rem;
+}
+
+table {
+	width: 100%;
+	max-width: 75ch;
+	border-collapse: collapse;
+
+	thead th {
+		font-weight: bold;
+		border-bottom: 1px solid var(--text-secondary);
+	}
+
+	tbody :is(th, td) {
+		border-bottom: 1px solid var(--text-secondary);
+	}
+}

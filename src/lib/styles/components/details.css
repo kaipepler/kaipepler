@@ -1,0 +1,53 @@
+details {
+	border-radius: 5px;
+
+	& > *:not(summary) {
+		margin: 0.5rem 1rem 0.5rem 2.5rem;
+	}
+
+	summary {
+		padding: 0.5rem 1rem 0.5rem 2.5rem;
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		user-select: none;
+		border-radius: 5px;
+		line-height: normal;
+		font-weight: 500;
+
+		&:before {
+			transform: rotate(90deg);
+			transform-origin: 50%;
+			left: 0.8rem;
+			top: calc(50% - 8px);
+			content: '';
+			position: absolute;
+
+			--r: 2px; /* border radius */
+			width: 16px;
+			aspect-ratio: 1 / cos(30deg);
+			--_g: calc(tan(60deg) * var(--r)) bottom var(--r), #000 98%, #0000 101%;
+			mask:
+				conic-gradient(from -30deg at 50% calc(200% - 3 * var(--r) / 2), #000 60deg, #0000 0) 0
+					100%/100% calc(100% - 3 * var(--r) / 2) no-repeat,
+				radial-gradient(var(--r) at 50% calc(2 * var(--r)), #000 98%, #0000 101%),
+				radial-gradient(var(--r) at left var(--_g)),
+				radial-gradient(var(--r) at right var(--_g));
+			clip-path: polygon(50% 0, 100% 100%, 0 100%);
+			background: var(--green-11);
+		}
+
+		&:hover,
+		&:focus {
+			font-weight: 700;
+		}
+	}
+
+	&[open] > summary {
+		font-weight: 700;
+	}
+
+	&[open] > summary:before {
+		transform: rotate(180deg);
+	}
+}

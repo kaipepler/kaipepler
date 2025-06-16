@@ -1,0 +1,24 @@
+@media (prefers-contrast: more) {
+	:root {
+		/* Increase contrast for text colors */
+		--text-secondary: var(--text-primary);
+	}
+
+	/* High contrast overrides for various components */
+	a {
+		border-bottom: 0.15rem solid var(--gray-12) !important;
+	}
+
+	:is(a.button, button) {
+		border-color: var(--green-12);
+	}
+
+	:is(a.button, button).primary {
+		background: var(--green-12);
+		border-color: var(--green-12);
+	}
+
+	small {
+		color: var(--text-primary);
+	}
+}
