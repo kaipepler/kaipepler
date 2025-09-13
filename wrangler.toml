@@ -1,6 +1,4 @@
 name = "kaipepler"
-compatibility_flags = [ "nodejs_compat" ]
 compatibility_date = "2025-09-13"
-
 [assets]
 directory = ".svelte-kit/cloudflare"
