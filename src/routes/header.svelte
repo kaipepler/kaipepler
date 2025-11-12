@@ -82,6 +82,10 @@
 						border: 1px solid var(--gray-12);
 					}
 				}
+
+				#title {
+					font-weight: 500;
+				}
 			}
 
 			ul {
