@@ -4,7 +4,7 @@
 	import RIT from '$lib/assets/rit.svelte';
 	import Map from '$lib/assets/map.svelte';
 
-	const adjs = ['sunny', 'cloudy', 'rainy', 'stormy', 'windy', 'snowy'];
+	const adjs = ['sunny', 'cloudy', 'rainy', 'stormy', 'windy', 'snowy', 'icy'];
 	const randomIndex = Math.floor(Math.random() * adjs.length);
 	let adj = adjs[randomIndex];
 </script>
@@ -21,6 +21,28 @@
 		theory, data visualization, and motion graphics.
 	</p>
 	<p><a class="button primary" href="mailto:hello@kaipepler.com">Contact me</a></p>
+</section>
+<section>
+	<h1>beauty.</h1>
+	<p>
+		I love design. No matter how small the detail, I love having the opportunity to make the world a
+		little more beautiful, make daily interactions a little more efficient and joyful.
+	</p>
+</section>
+<section>
+	<h1>accessiblity.</h1>
+	<p>
+		Accessibility isn't simply a buzzword to strengthen my portfolio. I’ve spent hours interpreting
+		WCAG guidelines. I’ve run internal training workshops to help my teams work accessibility
+		considerations into their design specs. And for my own designs, I craft every interaction to
+		consider how users of all abilities can access and enjoy the features I create.
+	</p>
+	<p>
+		I designed and coded this website from scratch to demonstrate my commitment to universal,
+		user-centered design. You can find more information in my <a href="accessibility/"
+			>accessibility statement</a
+		>.
+	</p>
 </section>
 <section class="about">
 	<div class="content">
@@ -41,8 +63,8 @@
 </section>
 
 <style>
-	section:first-of-type {
-		margin-bottom: 2lh;
+	section {
+		min-height: 50vh;
 	}
 
 	section.about {

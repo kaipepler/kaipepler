@@ -15,8 +15,8 @@
 		own learnings back into the community.
 	</p>
 	<p>
-		Topics include color theory, typography, data visualization, accessibility, animation, front-end
-		development, and more.
+		Topics include color theory, typography, coding, data visualization, accessibility, animation,
+		and more.
 	</p>
 </section>
 <!-- <section>
