@@ -37,8 +37,8 @@
 			<aside aria-labelledby="external">
 				<strong aria-hidden="true"><span id="external">Note</span>:</strong>
 				<div>
-					The Randleman site has since gone behind a university login. You can view a (slightly
-					broken) snapshot of the site in the
+					The Randleman site has since gone behind a university login. You can view a snapshot of
+					the site in the
 					<a
 						href="https://web.archive.org/web/20241126213631/https://www.rit.edu/ntid/das/randleman"
 						>Randleman Program Web Archive</a

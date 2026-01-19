@@ -44,6 +44,7 @@
 
 <div class="layout">
 	<Header />
+	<div id="targetBlank" hidden>– opens in a new tab</div>
 
 	<main id="main">
 		{@render children()}

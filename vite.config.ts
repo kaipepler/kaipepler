@@ -15,7 +15,7 @@ function externalLinksPlugin(): Plugin {
 			// Handle HTML-style links
 			transformedCode = transformedCode.replace(
 				/<a([^>]+)href=(["'])(https?:\/\/[^"']+)\2([^>]*)>/g,
-				'<a$1href=$2$3$2 target="_blank" rel="noreferrer"$4>'
+				'<a$1href=$2$3$2 target="_blank" aria-describedby="targetBlank" rel="noreferrer"$4>'
 			);
 
 			// Handle markdown-style links - convert to HTML style

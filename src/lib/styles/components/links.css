@@ -27,7 +27,7 @@ main a:not(.button) {
 
 /* External link indicator */
 main a[target='_blank']::after {
-	content: '- opens in a new tab';
+	content: '';
 	overflow: hidden;
 	display: inline-block;
 	margin-left: 0.1em;

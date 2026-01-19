@@ -20,8 +20,8 @@
 		</div>
 		<p>
 			Nazareth University is my <i lang="la">alma mater</i>. I graduated with honors in 2018,
-			earning a Bachelor of Science in visual communication design. I’ve gone on to work with their
-			nursing and arts departments, recording voiceovers and teaching design labs respectively.
+			earning a Bachelor of Science in visual communication design. I’ve since gone on to work with
+			their nursing and art departments, recording voiceovers and teaching design labs respectively.
 		</p>
 	</div>
 </section>
@@ -31,15 +31,16 @@
 		<div class="tl-date"><h3>2022</h3></div>
 		<div class="tl-desc">
 			<p>
-				Since 2022 I’ve worked as an adjunct professor at Nazareth, teaching visual design
-				fundamentals (Photoshop and Illustrator) as well as web design fundamentals (HTML and CSS).
+				Since 2022 I’ve been an adjunct professor, teaching visual design fundamentals (Photoshop
+				and Illustrator). I’ve also previously taught a web design fundamentals (HTML and CSS)
+				course.
 			</p>
 		</div>
 		<div class="tl-date"><h3>2017</h3></div>
 		<div class="tl-desc">
 			<p>
-				For the past {`${new Date().getFullYear() - 2017}`} years I have recorded the voiceovers for
-				the Nazareth nursing department’s biannual pinning ceremonies.
+				For the past {`${new Date().getFullYear() - 2017}`} years I have recorded the voiceovers for the
+				Nazareth nursing department’s biannual pinning ceremonies.
 			</p>
 		</div>
 	</div>

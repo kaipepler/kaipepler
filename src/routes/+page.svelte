@@ -23,14 +23,14 @@
 	<p><a class="button primary" href="mailto:hello@kaipepler.com">Contact me</a></p>
 </section>
 <section>
-	<h1>beauty.</h1>
+	<h2>design is beautiful.</h2>
 	<p>
 		I love design. No matter how small the detail, I love having the opportunity to make the world a
 		little more beautiful, make daily interactions a little more efficient and joyful.
 	</p>
 </section>
 <section>
-	<h1>accessiblity.</h1>
+	<h2>design is accessible.</h2>
 	<p>
 		Accessibility isn't simply a buzzword to strengthen my portfolio. I’ve spent hours interpreting
 		WCAG guidelines. I’ve run internal training workshops to help my teams work accessibility

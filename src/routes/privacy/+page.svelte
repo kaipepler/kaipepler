@@ -24,9 +24,8 @@
 		> hub.
 	</p>
 	<aside aria-labelledby="external">
-		<strong aria-hidden="true"><span id="external">Note</span>:</strong> Many of my articles link to
-		external sites. While I take care to link only to sites I deem reputable, I have no control over
-		external domains. I recommend you exercise the same discretion as you would when navigating anywhere
-		else on the web.
+		<strong aria-hidden="true"><span id="external">Note</span>:</strong> Many of my articles link to external
+		sites. While I take care to link only to reputable sites, I recommend you exercise the same discretion
+		as you would when navigating anywhere else on the web.
 	</aside>
 </section>

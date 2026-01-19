@@ -42,7 +42,7 @@
 				>
 			</li>
 			<li>
-				<a href="https://bsky.app/profile/kaipepler.com" target="_blank">
+				<a href="https://bsky.app/profile/kaipepler.com">
 					<div class="icon-wrapper"><Bluesky /></div>
 				</a>
 			</li>
