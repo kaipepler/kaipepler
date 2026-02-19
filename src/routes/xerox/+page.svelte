@@ -19,8 +19,8 @@
 		</div>
 		<p>
 			Since 2022 I’ve worked as a UX designer within Xerox’s Experience Design Group (EDG). I’m part
-			of an amazing team designing current and future <a href="https://www.xerox.com/en-us/services"
-				>Global Document Services</a
+			of an amazing team in charge of designing <a href="https://www.xerox.com/en-us/services"
+				>Xerox Digital Services</a
 			>.
 		</p>
 	</div>
@@ -28,18 +28,40 @@
 <section>
 	<h2>Notable Work</h2>
 	<div class="timeline">
+		<div class="tl-date"><h3>2025</h3></div>
+		<div class="tl-desc">
+			<p>
+				In 2025 I temporarily shifted focus from digital services to working with our design
+				strategy team. I helped architect a migration to Figma, including building out a new set of
+				interconnected libraries from scratch that perfectly reflect the guidance in our interface
+				design system.
+			</p>
+			<p>
+				The toolkits we built are highly sophisticated, making use of cutting-edge Figma features,
+				and are designed support all our department’s needs, including different themes, modes,
+				screen scale factors, spec templates, and more.
+			</p>
+		</div>
 		<div class="tl-date"><h3>2024</h3></div>
 		<div class="tl-desc">
 			<p>
-				Since 2024 I’ve been furthering accessibility initiatives across our department, ensuring
-				that the resources we deliver remove barriers of access for people of differing abilities.
+				Since 2024 I’ve functioned as one of our department’s subject matter experts on
+				accessibility. My focus has been on furthering accessibility initiatives across our
+				department, ensuring that the resources we deliver remove barriers of access for people of
+				differing abilities.
+			</p>
+			<p>
+				To this end, I’ve run workshops to train our designers on the importance of delivering
+				accessible design specifications, I answer daily questions from teams across the department,
+				and I've collaborated with our in-house frontend developer to improve the accessibility of
+				the React code we deliver to project teams across the company.
 			</p>
 		</div>
 		<div class="tl-date"><h3>2023</h3></div>
 		<div class="tl-desc">
 			<p>
 				I collaborated with our design system team to improve the color scales we use for data
-				visualization. The new scales are to be used across company reports and dashboards.
+				visualization. The new scales are used across company reports and dashboards.
 			</p>
 		</div>
 		<div class="tl-date"><h3>2022</h3></div>

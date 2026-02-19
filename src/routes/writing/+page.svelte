@@ -48,6 +48,22 @@
 	<p><a href="/feed.xml" class="button">RSS Feed</a></p>
 </section>
 
+<section>
+	<hr />
+	<h2>No Revisionist History</h2>
+	<p>I regularly review my content for accuracy and to prune/update broken links.</p>
+	<p>
+		When I’m wrong, I’ll update my statements so that any advice or learning I share reflects that
+		new information. You can check the published and last edited dates at the top of every article.
+	</p>
+	<p>
+		In addition, I host this entire site in a <a href="https://github.com/kaipepler/kaipepler"
+			>public GitHub repository</a
+		>, so every change — down to granular lines of code — is documented and freely available for
+		anyone who wishes to review.
+	</p>
+</section>
+
 <style>
 	a[href$='xml']::before {
 		content: '';

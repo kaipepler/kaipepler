@@ -17,29 +17,71 @@
 <section>
 	<h1>Hello Everyone!</h1>
 	<p>
-		My name is Kai Pepler. I’m a UX designer and visual artist specializing in accessibility, color
-		theory, data visualization, and motion graphics.
+		I’m Kai Pepler, a UX designer and visual artist. I have over 10 years of experience designing
+		UI, and over the course of my career I’ve worked in information design, web development,
+		videography, motion graphics, data vizualization, color science, accessibility, and design
+		strategy.
+	</p>
+	<p>
+		As a UX designer specializing in accessibility, I shape my products at the crossroads of all
+		these fields, taking inspiration from them as I work to make all users’ interactions the best
+		they can be.
 	</p>
 	<p><a class="button primary" href="mailto:hello@kaipepler.com">Contact me</a></p>
-</section>
-<section>
-	<h2>design is beautiful.</h2>
 	<p>
-		I love design. No matter how small the detail, I love having the opportunity to make the world a
-		little more beautiful, make daily interactions a little more efficient and joyful.
+		<small>
+			Thank you for visiting my site! If you’d like to learn about my work you can <a
+				href="/portfolio">visit my portfolio</a
+			>, or scroll down to read about the principles that guide my creative process.
+		</small>
 	</p>
 </section>
 <section>
-	<h2>design is accessible.</h2>
+	<h2>beauty.</h2>
 	<p>
-		Accessibility isn't simply a buzzword to strengthen my portfolio. I’ve spent hours interpreting
-		WCAG guidelines. I’ve run internal training workshops to help my teams work accessibility
-		considerations into their design specs. And for my own designs, I craft every interaction to
-		consider how users of all abilities can access and enjoy the features I create.
+		Design is beautiful. Even something as simple as a login page is a pattern that can be honed to
+		perfection, and that perfection can bring delight to users, whether it registers on a conscious
+		level or not.
+	</p>
+	<p>
+		No matter how small the detail, I love having the opportunity to make the world a little more
+		beautiful, and make users’ daily interactions more efficient and joyful.
+	</p>
+</section>
+<section>
+	<h2>precision.</h2>
+	<p>
+		Design can only be at its most beautiful when every tiny detail is considered and crafted with
+		intention.
+	</p>
+	<p>
+		Precision might take the form of typographic polish, such as ensuring typesetter’s apostrophies
+		(’) are used instead of straight apostrophies (') in copy, and en dashes (–) are used instead of
+		hyphens (-) in ranges.
+	</p>
+	<p>
+		It might take the form of optically balancing icons to be perfectly in tune with text labels. Or
+		aligning just the right call to action to predict a user’s needs.
+	</p>
+	<p>
+		No matter the manifestation, it is always attention to detail that separates the great designs
+		from the good.
+	</p>
+</section>
+<section>
+	<h2>accessibility.</h2>
+	<p>
+		Accessibility is one of my primary specializations, and has forever been a core value of my
+		designs methodology. I’ve spent hours interpreting WCAG guidelines, and have run several
+		workshops to help teams incorporate accessibility considerations into their design specs.
+	</p>
+	<p>
+		As for my own designs, I craft every interaction to be considerate of how users of all abilities
+		can access and enjoy the features I create.
 	</p>
 	<p>
 		I designed and coded this website from scratch to demonstrate my commitment to universal,
-		user-centered design. You can find more information in my <a href="accessibility/"
+		user-centered design. You can find more information in my site’s <a href="accessibility/"
 			>accessibility statement</a
 		>.
 	</p>
@@ -63,8 +105,8 @@
 </section>
 
 <style>
-	section {
-		min-height: 50vh;
+	section:not(:first-of-type, :last-of-type) {
+		margin-block: 10rem;
 	}
 
 	section.about {

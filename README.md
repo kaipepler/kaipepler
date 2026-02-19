@@ -1,10 +1,10 @@
-- 👋 Hi, I’m @kaipepler
-- 👀 I’m a UX designer specializing in accessibility accessibility, color theory, data visualization, and motion graphics
-- 🌱 I’m currently learning svelte
-- 💞️ I’m not looking to collaborate at the moment, but that may change!
-- 📫 How to reach me: hello@kaipepler.com
+# Hello Everyone!
 
-<!---
-kaipepler/kaipepler is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+I’m Kai Pepler, a UX designer and visual artist. I have over 10 years of experience designing
+UI, and over the course of my career I’ve worked in information design, web development,
+videography, motion graphics, data vizualization, color science, accessibility, and design
+strategy.
+
+This is my personal website, where I host my portfolio and write articles about design-adjacent topics.
+
+Feel free to reach out: hello@kaipepler.com

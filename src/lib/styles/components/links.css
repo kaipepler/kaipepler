@@ -3,6 +3,10 @@ a {
 	text-decoration: none;
 }
 
+small a:not(.button) {
+	color: var(--text-primary);
+}
+
 main a:not(.button) {
 	font-weight: 700;
 	border-bottom: 0.15rem solid var(--green-9);
