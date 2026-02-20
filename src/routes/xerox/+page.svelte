@@ -37,9 +37,9 @@
 				design system.
 			</p>
 			<p>
-				The toolkits we built are highly sophisticated, making use of cutting-edge Figma features,
-				and are designed support all our department’s needs, including different themes, modes,
-				screen scale factors, spec templates, and more.
+				The toolkits are highly sophisticated, making use of cutting-edge Figma features, and are
+				designed support all our department’s needs, including different themes, modes, screen scale
+				factors, spec templates, and more.
 			</p>
 		</div>
 		<div class="tl-date"><h3>2024</h3></div>
@@ -47,8 +47,7 @@
 			<p>
 				Since 2024 I’ve functioned as one of our department’s subject matter experts on
 				accessibility. My focus has been on furthering accessibility initiatives across our
-				department, ensuring that the resources we deliver remove barriers of access for people of
-				differing abilities.
+				department, helping remove barriers of access for people of differing abilities.
 			</p>
 			<p>
 				To this end, I’ve run workshops to train our designers on the importance of delivering
@@ -61,7 +60,8 @@
 		<div class="tl-desc">
 			<p>
 				I collaborated with our design system team to improve the color scales we use for data
-				visualization. The new scales are used across company reports and dashboards.
+				visualization. The new scales are rooted in color science and are now used across a range of
+				company reports and dashboards.
 			</p>
 		</div>
 		<div class="tl-date"><h3>2022</h3></div>

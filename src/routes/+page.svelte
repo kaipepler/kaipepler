@@ -11,16 +11,16 @@
 
 <svelte:head>
 	<title>Kai Pepler</title>
-	<meta name="description" content="This is a welcome page for Kai Pepler's portfolio." />
+	<meta name="description" content="Kai Pepler. UX designer, professor, and visual artist." />
 </svelte:head>
 
 <section>
 	<h1>Hello Everyone!</h1>
 	<p>
-		I’m Kai Pepler, a UX designer and visual artist. I have over 10 years of experience designing
-		UI, and over the course of my career I’ve worked in information design, web development,
-		videography, motion graphics, data vizualization, color science, accessibility, and design
-		strategy.
+		I’m Kai Pepler, a UX designer, professor, and visual artist. I have over 10 years of experience
+		designing UI, and over the course of my career I’ve worked in information design, web
+		development, photography, videography, motion graphics, data visualization, color science, and
+		design strategy.
 	</p>
 	<p>
 		As a UX designer specializing in accessibility, I shape my products at the crossroads of all
@@ -61,7 +61,7 @@
 	</p>
 	<p>
 		It might take the form of optically balancing icons to be perfectly in tune with text labels. Or
-		aligning just the right call to action to predict a user’s needs.
+		surfacing just the right call to action to predict a user’s needs.
 	</p>
 	<p>
 		No matter the manifestation, it is always attention to detail that separates the great designs
@@ -71,9 +71,9 @@
 <section>
 	<h2>accessibility.</h2>
 	<p>
-		Accessibility is one of my primary specializations, and has forever been a core value of my
-		designs methodology. I’ve spent hours interpreting WCAG guidelines, and have run several
-		workshops to help teams incorporate accessibility considerations into their design specs.
+		Accessibility is my specialty, and has forever been a core value of my designs methodology. I’ve
+		spent hours interpreting WCAG guidelines, and have run several workshops to help teams
+		incorporate accessibility considerations into their design specs.
 	</p>
 	<p>
 		As for my own designs, I craft every interaction to be considerate of how users of all abilities

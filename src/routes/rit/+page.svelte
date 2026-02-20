@@ -65,8 +65,8 @@
 		<div class="tl-date"><h3>2011</h3></div>
 		<div class="tl-desc">
 			<p>
-				From approximately 2011 to 2016 I worked as a consultant for DAS, primarily developing
-				presentations for academic conferences.
+				From approximately 2011 to 2016 I worked as a consultant for DAS, primarily as an
+				information designer developing presentations for academic conferences.
 			</p>
 			<p>My work has been shared at events across North America, Scotland, France, and Turkey.</p>
 		</div>

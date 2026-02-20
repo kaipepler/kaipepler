@@ -4,31 +4,35 @@
 </svelte:head>
 <section>
 	<h1>Portfolio</h1>
-	<p>
-		I’m in the process of migrating my portfolio to a new framework. Content will be missing for a
-		bit as I fine-tune the new design. Thanks for your patience!
-	</p>
 </section>
 <section>
 	<h2 class="visually-hidden">Featured</h2>
 
 	<div class="portfolio-featured">
-		<a class="project-card" href="stratz/" id="stratz"
+		<a class="project-card" href="/portfolio/stratz/" id="stratz"
 			><div class="project-title">STRATZ</div>
 			<div class="project-type">Case Study</div>
 			<div class="project-date">2019 – 2022</div></a
 		>
 
-		<a class="project-card" href="aslcore/" id="aslcore"
+		<a class="project-card" href="/portfolio/aslcore/" id="aslcore"
 			><div class="project-title">ASLCORE</div>
 			<div class="project-type">Case Study</div>
 			<div class="project-date">2016 – 2019</div></a
 		>
 	</div>
 </section>
+
 <section>
 	<h2>Art & Design</h2>
-	<p>Coming soon</p>
+	<p>
+		A number of my older pieces are offline as I migrate my portfolio to a new framework. Expect new
+		content and UI changes daily as I tune the new experience.
+	</p>
+	<p>
+		Please <a href="mailto:hello@kaipepler.com">contact me</a> if you have any questions or would like
+		to see further samples of my work.
+	</p>
 </section>
 
 <style>
@@ -65,12 +69,13 @@
 		&:hover {
 			color: white;
 			box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.3);
+			border-width: 2px;
+			transform: scale(1.03);
 		}
 
 		div.project-title {
 			font-weight: bold;
 			font-size: var(--step-1);
-			padding-bottom: 0.75rem;
 			letter-spacing: 0.075rem;
 		}
 
@@ -78,7 +83,7 @@
 			position: absolute;
 			top: 0;
 			right: 0;
-			padding: 0.35rem;
+			padding: 0.25rem;
 			padding-left: calc(0.35rem + 2px);
 			background: var(--text-primary);
 			border-bottom-left-radius: 8px;
@@ -91,6 +96,7 @@
 
 		div.project-date {
 			font-size: var(--step--1);
+			font-weight: 400;
 		}
 	}
 
