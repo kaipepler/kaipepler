@@ -82,7 +82,7 @@
 		usability. As I continued to gather feedback corresponding with new feature releases, the
 		responses have been overwhelmingly positive.
 	</p>
-	<h4>Competition</h4>
+	<h3>Competition</h3>
 
 	<div class="mediaframe right">
 		<table>
