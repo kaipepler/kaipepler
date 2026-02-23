@@ -3,36 +3,44 @@
 	<meta name="description" content="Examples of art and design work" />
 </svelte:head>
 <section>
-	<h1>ASLCORE Case Study</h1>
-	<p>Case study of the creation of a new ASL resource</p>
+	<h1>ASLCORE</h1>
 </section>
 
-<section>
+<!-- <section>
 	<h2>Description</h2>
 	<p>ASLCORE is a project by RIT/NTID to support ASL vocabulary in higher education settings.</p>
 	<h3>Date</h3>
 	<p>2016 – 2019</p>
 	<h3>Medium</h3>
 	<p>Website, Video</p>
-</section>
+</section> -->
 
 <section>
-	<h2>Overview</h2>
+	<h2 class="visually-hidden">Overview</h2>
+
+	<div class="mediaframe right">
+		<img
+			src="/portfolio/aslcore/aslcore-beforeafter.webp"
+			alt="Two home screens showing the evolution from the old Wordpress blog that used to power the project, to the custom-built website that I designed and programmed."
+			loading="lazy"
+		/>
+	</div>
+
 	<p>
 		American Sign Language (ASL) has historically lacked specific signs to communicate advanced
 		academic subjects. This leads to additional barriers for Deaf and hard-of-hearing people
-		learning and working in these disciplines. ASLCORE was formed as a project where Deaf content
-		experts (professionals in their respective fields) would work in sessions Deaf Sign Masters to
-		conceptualize and develop new signs for academic terminology. Once these signs are developed,
-		the Sign Masters would model the new signs on video, and the videos would be organized into an
-		online lexicon, to allow people around the world to learn and use these new linguistic tools.
+		learning and working in these disciplines. <a href="https://aslcore.org">ASLCORE</a> was formed as
+		a project where Deaf content experts (professionals in their respective fields) would work in sessions
+		Deaf Sign Masters to conceptualize and develop new signs for academic terminology. Once these signs
+		are developed, the Sign Masters would model the new signs on video, and the videos would be organized
+		into an online lexicon, to allow people around the world to learn and use these new linguistic tools.
 	</p>
 	<p>
 		ASLCORE was funded and supported by the Department of Access Services (DAS) at the Rochester
-		Institute of Technology. When I joined the project, the online lexicon consisted of only one
-		academic branch, Philosophy, and it was displayed in a WordPress blog. After initial meetings
-		with project leader Miriam Lerner and the rest of the team, it was clear that to grow, the
-		project needed its own website, to allow the content within to shine.
+		Institute of Technology (RIT). When I joined the project, the online lexicon consisted of only
+		one academic branch, Philosophy, and it was displayed in a WordPress blog. After initial
+		meetings with project leader Miriam Lerner and the rest of the team, it was clear that to grow,
+		the project needed its own website, to allow the content within to shine.
 	</p>
 	<p>
 		I designed the website from scratch to address the specific needs of the team. I worked for
@@ -56,4 +64,122 @@
 		resources across the globe, and I’m honored to have been a part of bringing these resources into
 		the world.
 	</p>
+	<p><a class="button primary" href="https://aslcore.org">Visit ASLCORE</a></p>
 </section>
+
+<section>
+	<hr />
+	<h2 class="visually-hiddeen">My Work with RIT</h2>
+	<p>
+		ASLCORE was one of a number of projects I supported while working with RIT. For a complete
+		record of my work there, <a href="/rit">View my RIT timeline</a>.
+	</p>
+</section>
+
+<style>
+	table {
+		font-size: var(--step--1);
+
+		thead th {
+			text-align: center;
+		}
+
+		td,
+		th {
+			padding: 0.25rem;
+		}
+
+		td {
+			text-align: center;
+		}
+
+		tbody {
+			td:not(:empty) {
+				background: var(--green-5);
+			}
+		}
+
+		tfoot {
+			td,
+			th {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.mediaframe {
+		margin-top: 1rem;
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+
+		img:first-child {
+			flex-basis: 100%;
+		}
+
+		img,
+		iframe {
+			width: 0;
+			flex: 1;
+			border: 1px solid var(--gray-4);
+			border-radius: 0.25rem;
+		}
+
+		.subtle {
+			border: none;
+		}
+	}
+
+	.mediaframe.right {
+		float: right;
+		width: 40%;
+		margin: 2rem;
+		margin-right: 0;
+	}
+
+	.mediaframe.fullsize {
+		flex-direction: column;
+
+		img {
+			flex-basis: unset;
+			width: 100%;
+		}
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		clear: both;
+	}
+
+	blockquote {
+		font-variation-settings: 'ital' 0;
+		font-style: italic;
+		font-size: larger;
+		border-left: 0.25rem solid var(--green-9);
+		padding: 1rem;
+		max-width: 60ch;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		img {
+			filter: brightness(0.9);
+
+			&.invert {
+				filter: invert();
+			}
+		}
+	}
+
+	@media (max-width: 650px) {
+		.mediaframe.right {
+			float: none;
+			width: 100%;
+			margin: 1rem 0 0 0;
+		}
+	}
+</style>

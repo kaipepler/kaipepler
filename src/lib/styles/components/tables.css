@@ -12,10 +12,10 @@ table {
 
 	thead th {
 		font-weight: bold;
-		border-bottom: 1px solid var(--text-secondary);
+		border-bottom: 1px solid var(--gray-7);
 	}
 
 	tbody :is(th, td) {
-		border-bottom: 1px solid var(--text-secondary);
+		border-bottom: 1px solid var(--gray-7);
 	}
 }

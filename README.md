@@ -2,7 +2,7 @@
 
 I’m Kai Pepler, a UX designer, professor, and visual artist. I have over 10 years of experience designing
 UI, and over the course of my career I’ve worked in information design, web development, photography,
-videography, motion graphics, data vizualization, color science, accessibility, and design
+videography, motion graphics, data visualization, color science, accessibility, and design
 strategy.
 
 This is my personal website, where I host my portfolio and write articles about design-adjacent topics.

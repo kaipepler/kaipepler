@@ -4,6 +4,13 @@
 </svelte:head>
 <section>
 	<h1>Portfolio</h1>
+
+	<p>This page highlights a number of my projects and case studies from over the years.</p>
+	<p>
+		My most recent work is under nondisclosure for Xerox. <a href="/xerox"
+			>Learn about my work with Xerox</a
+		>.
+	</p>
 </section>
 <section>
 	<h2 class="visually-hidden">Featured</h2>
@@ -17,7 +24,7 @@
 
 		<a class="project-card" href="/portfolio/aslcore/" id="aslcore"
 			><div class="project-title">ASLCORE</div>
-			<div class="project-type">Case Study</div>
+			<div class="project-type">Write-Up</div>
 			<div class="project-date">2016 – 2019</div></a
 		>
 	</div>
@@ -26,7 +33,7 @@
 <section>
 	<h2>Art & Design</h2>
 	<p>
-		A number of my older pieces are offline as I migrate my portfolio to a new framework. Expect new
+		Many of my older pieces are offline as I migrate my portfolio to a new framework. Expect new
 		content and UI changes daily as I tune the new experience.
 	</p>
 	<p>
@@ -71,6 +78,10 @@
 			box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.3);
 			border-width: 2px;
 			transform: scale(1.03);
+		}
+
+		&:active {
+			transform: scale(0.98);
 		}
 
 		div.project-title {
