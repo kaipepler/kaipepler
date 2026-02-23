@@ -23,6 +23,7 @@ body {
 	overflow-wrap: break-word;
 	text-wrap: balance;
 	line-height: 1.25em;
+	clear: both;
 }
 
 h1 {
@@ -38,6 +39,15 @@ ol,
 dl,
 blockquote {
 	margin-block: 1lh;
+}
+
+blockquote {
+	font-variation-settings: 'ital' 0;
+	font-style: italic;
+	font-size: larger;
+	border-left: 0.25rem solid var(--green-9);
+	padding: 1rem;
+	max-width: 60ch;
 }
 
 main li {

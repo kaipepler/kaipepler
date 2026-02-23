@@ -1,3 +1,12 @@
+<script>
+	import { browser } from '$app/environment';
+	import '$lib/utils/lightbox.css';
+
+	if (browser) {
+		import('$lib/utils/lightbox.js');
+	}
+</script>
+
 <svelte:head>
 	<title>STRATZ - Portfolio - Kai Pepler</title>
 	<meta name="description" content="Examples of art and design work" />
@@ -229,11 +238,13 @@
 	<h3>Site Map</h3>
 
 	<div class="mediaframe right">
-		<img
-			src="/portfolio/stratz/stratz-ia-sitemap.webp"
-			alt="Range of color-coded cards laid out in an isometric pattern, showing key areas of the site, such as Dashboard, STRATZ+, Heroes, Diretide 2020, Battle Pass, About Us, and Twitch Tracker."
-			loading="lazy"
-		/>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-ia-sitemap.webp"
+				alt="Range of color-coded cards showing key areas of the site, laid out in an isometric pattern."
+				loading="lazy"
+			/>
+		</lightbox-image>
 	</div>
 
 	<p>
@@ -250,6 +261,7 @@
 		<iframe
 			width="560"
 			height="315"
+			style="width:100%"
 			src="https://www.youtube-nocookie.com/embed/vvM9Y1Dcrt0?si=LQyp9d72DmqAjw6g"
 			title="YouTube video player"
 			frameborder="0"
@@ -276,12 +288,14 @@
 	<h2>Wireframes</h2>
 
 	<div class="mediaframe right">
-		<img
-			src="/portfolio/stratz/stratz-wireframes.webp"
-			class="invert"
-			alt="Hand-drawn sketch of a profile page. The top-left tile shows a message saying, “Welcome back, Fantôme!” alongside additional content blocks for Hero Advice, Meta Advice, and a Drafting Assistant. A section for recent matches is blocked out below, and the right side has additional unlabeled cards blocked out."
-			loading="lazy"
-		/>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-wireframes.webp"
+				class="invert"
+				alt="Hand-drawn sketch of a profile page. The top-left tile shows a message saying, “Welcome back, Fantôme!” alongside additional content blocks for Hero Advice, Meta Advice, and a Drafting Assistant. A section for recent matches is blocked out below, and the right side has additional unlabeled cards blocked out."
+				loading="lazy"
+			/>
+		</lightbox-image>
 	</div>
 
 	<p>
@@ -304,21 +318,29 @@
 	<h3>Iconography</h3>
 
 	<div class="mediaframe right">
-		<img
-			src="/portfolio/stratz/stratz-design-iconography-1.webp"
-			alt="An isometric view of groups of colorful icons, each indicating different aspects of Dota 2 terminology."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-design-iconography-2.webp"
-			alt="A set of ranking medals from S-tier to F-tier, showing a transformation from stylized graphics to simple and consistent icons"
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-design-iconography-3.webp"
-			alt="A set of icons showing that there are 10 possible combinations of role + lane icons, with an arrow indicating that all these combinations can be more cleanly represented by a set of 5 new position icons: Safe Lane, Mid Lane, Off Lane, Soft Support, and Hard Support."
-			loading="lazy"
-		/>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-design-iconography-1.webp"
+				alt="An isometric view of groups of colorful icons, each indicating different aspects of Dota 2 terminology."
+				loading="lazy"
+			/>
+		</lightbox-image>
+
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-design-iconography-2.webp"
+				alt="A set of ranking medals from S-tier to F-tier, showing a transformation from stylized graphics to simple and consistent icons"
+				loading="lazy"
+			/>
+		</lightbox-image>
+
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-design-iconography-3.webp"
+				alt="A set of icons showing that there are 10 possible combinations of role + lane icons, with an arrow indicating that all these combinations can be more cleanly represented by a set of 5 new position icons: Safe Lane, Mid Lane, Off Lane, Soft Support, and Hard Support."
+				loading="lazy"
+			/>
+		</lightbox-image>
 	</div>
 
 	<p>
@@ -329,21 +351,29 @@
 	<h3>Typography</h3>
 
 	<div class="mediaframe right">
-		<img
-			src="/portfolio/stratz/stratz-design-type-1.webp"
-			alt="Two pairings of text, both reading “Primary, Secondary.” In the first set, the text is almost the same size, with only slight dimming indicating the secondary nature of the second string. In the second set, the size difference between the text is much more pronounced, and the primary string is bolded, creating clear hierarchy."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-design-type-2.webp"
-			alt="Two pairings of text reading “Primary, Secondary,” with red lines behind them, indicating that the x-height for the new font is larger."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-design-type-3.webp"
-			alt="Three parings of text indicating how the font uses a consistent style for different languages. The text reads “Первичный Вторичный” for Russian, “基本的 中学” for Chinese, and “Primary Secondary” for English"
-			loading="lazy"
-		/>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-design-type-1.webp"
+				alt="Two pairings of text, both reading “Primary, Secondary.” In the first set, the text is almost the same size, with only slight dimming indicating the secondary nature of the second string. In the second set, the size difference between the text is much more pronounced, and the primary string is bolded, creating clear hierarchy."
+				loading="lazy"
+			/>
+		</lightbox-image>
+
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-design-type-2.webp"
+				alt="Two pairings of text reading “Primary, Secondary,” with red lines behind them, indicating that the x-height for the new font is larger."
+				loading="lazy"
+			/>
+		</lightbox-image>
+
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-design-type-3.webp"
+				alt="Three parings of text indicating how the font uses a consistent style for different languages. The text reads “Первичный Вторичный” for Russian, “基本的 中学” for Chinese, and “Primary Secondary” for English"
+				loading="lazy"
+			/>
+		</lightbox-image>
 	</div>
 
 	<p>
@@ -361,11 +391,13 @@
 	<h3>Color</h3>
 
 	<div class="mediaframe right">
-		<img
-			src="/portfolio/stratz/stratz-design-color-1.webp"
-			alt="A color wheel with the STRATZ logo in the center and 360 rays of color radiating out to form a circle. A label below the wheel reads “360° Palette Update, and a gold STRATZ wordmark sits in the corner.”"
-			loading="lazy"
-		/>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-design-color-1.webp"
+				alt="A color wheel with the STRATZ logo in the center and 360 rays of color radiating out to form a circle. A label below the wheel reads “360° Palette Update, and a gold STRATZ wordmark sits in the corner.”"
+				loading="lazy"
+			/>
+		</lightbox-image>
 	</div>
 
 	<p>
@@ -381,16 +413,20 @@
 	<h3>Accessibility</h3>
 
 	<div class="mediaframe right">
-		<img
-			src="/portfolio/stratz/stratz-design-a11y-1.webp"
-			alt="A hero stats page slashed down one side, with one part showing default coloring, and the second showcasing alternate colors. A title above the page reads“Introducing Colorblind Mode.”"
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-design-a11y-2.webp"
-			alt="Two hero stats tables, simulating the effects of colorblindness."
-			loading="lazy"
-		/>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-design-a11y-1.webp"
+				alt="A hero stats page slashed down one side, with one part showing default coloring, and the second showcasing alternate colors. A title above the page reads“Introducing Colorblind Mode.”"
+				loading="lazy"
+			/>
+		</lightbox-image>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-design-a11y-2.webp"
+				alt="Two hero stats tables, simulating the effects of colorblindness."
+				loading="lazy"
+			/>
+		</lightbox-image>
 	</div>
 
 	<p>
@@ -414,26 +450,34 @@
 	<h2>Stakeholder Presentations</h2>
 
 	<div class="mediaframe right">
-		<img
-			src="/portfolio/stratz/stratz-stakeholders-1.webp"
-			alt="String of text reading “Troll Warlord played core in the safe lane, and won an immortal-tier comeback. He had high game impact, and was the match MVP.”"
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-stakeholders-2.webp"
-			alt="The same string of text is now highlighted by word, with key concepts (Troll Warlord, core, safe lane, won, immortal-tier, comeback, high game impact, and MVP) matched to graphics and icons to visually communicate the narrative."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-stakeholders-3.webp"
-			alt="The graphics and icons are now all arranged in a table row, showing the same narrative visually."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-stakeholders-4.webp"
-			alt="A set of the table rows, indicating a set of match performances."
-			loading="lazy"
-		/>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-stakeholders-1.webp"
+				alt="String of text reading “Troll Warlord played core in the safe lane, and won an immortal-tier comeback. He had high game impact, and was the match MVP.”"
+				loading="lazy"
+			/>
+		</lightbox-image>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-stakeholders-2.webp"
+				alt="The same string of text is now highlighted by word, with key concepts (Troll Warlord, core, safe lane, won, immortal-tier, comeback, high game impact, and MVP) matched to graphics and icons to visually communicate the narrative."
+				loading="lazy"
+			/>
+		</lightbox-image>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-stakeholders-3.webp"
+				alt="The graphics and icons are now all arranged in a table row, showing the same narrative visually."
+				loading="lazy"
+			/>
+		</lightbox-image>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-stakeholders-4.webp"
+				alt="A set of the table rows, indicating a set of match performances."
+				loading="lazy"
+			/>
+		</lightbox-image>
 	</div>
 
 	<p>
@@ -458,36 +502,48 @@
 	<h2>Revisions</h2>
 
 	<div class="mediaframe right">
-		<img
-			src="/portfolio/stratz/stratz-revisions-1.webp"
-			alt="A marked up set of hero table rows, with color-coded boxes and arrows indicating key takeaways: 1. Repetition is bad, 2. Related ideas need to be better associated, 3. IMP Meter can be rendered better, 4. We need party/solo indicators, and 5. Text density can be further refined."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-revisions-2.webp"
-			alt="A comparison of old versus new designs titled, “Repetition is bad,” showing how match tier and game type can be combined into a new icon."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-revisions-3.webp"
-			alt="A comparison of old versus new designs titled, Related ideas need to be better associated,” showing how match outcome and match intensity can be combined into a new combined tag."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-revisions-4.webp"
-			alt="A comparison of old versus new designs titled, “IMP Meter can be rendered better,” showing a simplified set of purple bars to represent IMP."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-revisions-5.webp"
-			alt="A comparison of old versus new designs titled, “We need party/solo indicators,” showing the addition of new icons to represent party status."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-revisions-6.webp"
-			alt="A comparison of old versus new designs titled, “Text density can be further refined,” showing how groupings of words can be simplified down to single labels."
-			loading="lazy"
-		/>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-revisions-1.webp"
+				alt="A marked up set of hero table rows, with color-coded boxes and arrows indicating key takeaways: 1. Repetition is bad, 2. Related ideas need to be better associated, 3. IMP Meter can be rendered better, 4. We need party/solo indicators, and 5. Text density can be further refined."
+				loading="lazy"
+			/>
+		</lightbox-image>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-revisions-2.webp"
+				alt="A comparison of old versus new designs titled, “Repetition is bad,” showing how match tier and game type can be combined into a new icon."
+				loading="lazy"
+			/>
+		</lightbox-image>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-revisions-3.webp"
+				alt="A comparison of old versus new designs titled, Related ideas need to be better associated,” showing how match outcome and match intensity can be combined into a new combined tag."
+				loading="lazy"
+			/>
+		</lightbox-image>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-revisions-4.webp"
+				alt="A comparison of old versus new designs titled, “IMP Meter can be rendered better,” showing a simplified set of purple bars to represent IMP."
+				loading="lazy"
+			/>
+		</lightbox-image>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-revisions-5.webp"
+				alt="A comparison of old versus new designs titled, “We need party/solo indicators,” showing the addition of new icons to represent party status."
+				loading="lazy"
+			/>
+		</lightbox-image>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-revisions-6.webp"
+				alt="A comparison of old versus new designs titled, “Text density can be further refined,” showing how groupings of words can be simplified down to single labels."
+				loading="lazy"
+			/>
+		</lightbox-image>
 	</div>
 
 	<p>
@@ -501,12 +557,14 @@
 	<h2>External Feedback</h2>
 
 	<div class="mediaframe right">
-		<img
-			src="/portfolio/stratz/stratz-external-feedback.webp"
-			class="subtle"
-			alt="A set of 5 promotional graphics highlighting the releases of different features. The cards read “Match Overview,” “Match Graphics Part 2,” “Introducing Breakdown,” “Introducing the STRATZ.com 2020 Battle Pass Card,” and “Introducing Trends.”"
-			loading="lazy"
-		/>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-external-feedback.webp"
+				class="subtle"
+				alt="A set of 5 promotional graphics highlighting the releases of different features. The cards read “Match Overview,” “Match Graphics Part 2,” “Introducing Breakdown,” “Introducing the STRATZ.com 2020 Battle Pass Card,” and “Introducing Trends.”"
+				loading="lazy"
+			/>
+		</lightbox-image>
 	</div>
 
 	<p>
@@ -537,64 +595,102 @@
 	<p><a class="button primary" href="https://stratz.com">Visit STRATZ</a></p>
 
 	<aside aria-labelledby="external">
-		<strong aria-hidden="true"><span id="external">Note</span>:</strong> Since my departure from the project,
-		STRATZ has made additions that deviate from my design direction, namely the addition of sports betting
-		advertisements.
+		<strong aria-hidden="true"><span id="external">Note</span>:</strong> Since my departure, STRATZ has
+		made choices that deviate from my design direction, notably the addition of sports betting advertisements.
 	</aside>
+</section>
+
+<section>
+	<h2 class="visually-hidden">Additional Images</h2>
 
 	<div class="mediaframe fullsize">
-		<img
-			src="/portfolio/stratz/stratz-finalthoughts-1.webp"
-			alt="An isometric view of a player overview page, with 6 sections highlighted to show improvements: Time Filter, Visual Match Count, Visual Win Rate, Most Played Heroes, Activity Chart, and Teammates."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-finalthoughts-2.webp"
-			alt="Two New Views for Match Overview pages, promoting a Card View and a List View"
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-finalthoughts-3.webp"
-			alt="Stability Update June 2022, showing six improvements: Translation Progress, New Filters, TypeScript Conversion, Speed Improvements, Guilds Design Updates, and Apollo Fixes."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-finalthoughts-4.webp"
-			alt="A promotional graphic for a new quick swicher for page sections, demonstrating how easy it is to swap between hero pages."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-finalthoughts-5.webp"
-			alt="August Update, showing a fan of promotional cards, highlighting improvements to Match Pages, IMP, Icons, & More"
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-finalthoughts-6.webp"
-			alt="A map of the world with gold pins connecting in a web across different countries. The title reads “STRATZ Global highlights for Dota 2.”"
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-finalthoughts-7.webp"
-			alt="A table showing a new Dota Plus Player Heroes page."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-finalthoughts-8.webp"
-			alt="STRATZ.com Top Heores by Win Rate, with a set of heroes paired with their win rates, top counters, and best pairings."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-finalthoughts-9.webp"
-			alt="STRATZ Dedicated TI Support, highlighting The International 10, alongside a cascade of previous International promotional cards."
-			loading="lazy"
-		/>
-		<img
-			src="/portfolio/stratz/stratz-finalthoughts-10.webp"
-			alt="STRATZ 2021, A Year in Review with an isometric layout of promotional update cards from the year."
-			loading="lazy"
-		/>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-finalthoughts-1.webp"
+				alt="An isometric view of a player overview page, with 6 sections highlighted to show improvements: Time Filter, Visual Match Count, Visual Win Rate, Most Played Heroes, Activity Chart, and Teammates."
+				loading="lazy"
+			/>
+		</lightbox-image>
+
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-finalthoughts-2.webp"
+				alt="Two New Views for Match Overview pages, promoting a Card View and a List View"
+				loading="lazy"
+			/>
+		</lightbox-image>
+
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-finalthoughts-3.webp"
+				alt="Stability Update June 2022, showing six improvements: Translation Progress, New Filters, TypeScript Conversion, Speed Improvements, Guilds Design Updates, and Apollo Fixes."
+				loading="lazy"
+			/>
+		</lightbox-image>
+
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-finalthoughts-4.webp"
+				alt="A promotional graphic for a new quick swicher for page sections, demonstrating how easy it is to swap between hero pages."
+				loading="lazy"
+			/>
+		</lightbox-image>
+
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-finalthoughts-5.webp"
+				alt="August Update, showing a fan of promotional cards, highlighting improvements to Match Pages, IMP, Icons, & More"
+				loading="lazy"
+			/>
+		</lightbox-image>
+
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-finalthoughts-6.webp"
+				alt="A map of the world with gold pins connecting in a web across different countries. The title reads “STRATZ Global highlights for Dota 2.”"
+				loading="lazy"
+			/>
+		</lightbox-image>
+
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-finalthoughts-7.webp"
+				alt="A table showing a new Dota Plus Player Heroes page."
+				loading="lazy"
+			/>
+		</lightbox-image>
+
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-finalthoughts-8.webp"
+				alt="STRATZ.com Top Heores by Win Rate, with a set of heroes paired with their win rates, top counters, and best pairings."
+				loading="lazy"
+			/>
+		</lightbox-image>
+
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-finalthoughts-9.webp"
+				alt="STRATZ Dedicated TI Support, highlighting The International 10, alongside a cascade of previous International promotional cards."
+				loading="lazy"
+			/>
+		</lightbox-image>
+
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/stratz/stratz-finalthoughts-10.webp"
+				alt="STRATZ 2021, A Year in Review with an isometric layout of promotional update cards from the year."
+				loading="lazy"
+			/>
+		</lightbox-image>
 	</div>
 </section>
+
+<dialog id="lightbox">
+	<form method="dialog">
+		<button>Close lightbox</button>
+	</form>
+</dialog>
 
 <style>
 	table {
@@ -628,26 +724,14 @@
 	}
 
 	.mediaframe {
-		margin-top: 1rem;
 		text-align: center;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1rem;
 
-		img:first-child {
-			flex-basis: 100%;
-		}
-
-		img,
-		iframe {
-			width: 0;
-			flex: 1;
-			border: 1px solid var(--gray-4);
-			border-radius: 0.25rem;
-		}
-
 		.subtle {
 			border: none;
+			box-shadow: none;
 		}
 	}
 
@@ -665,24 +749,6 @@
 			flex-basis: unset;
 			width: 100%;
 		}
-	}
-
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		clear: both;
-	}
-
-	blockquote {
-		font-variation-settings: 'ital' 0;
-		font-style: italic;
-		font-size: larger;
-		border-left: 0.25rem solid var(--green-9);
-		padding: 1rem;
-		max-width: 60ch;
 	}
 
 	@media (prefers-color-scheme: dark) {
