@@ -177,7 +177,7 @@
 			</tbody>
 			<tfoot>
 				<tr>
-					<th>Coverage</th>
+					<th scope="row">Coverage</th>
 					<td>83%</td>
 					<td>50%</td>
 					<td>42%</td>
