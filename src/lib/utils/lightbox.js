@@ -83,8 +83,9 @@ class LightBoxImage extends HTMLElement {
 
 	moveImage(fn) {
 		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		const isChrome = /Chrome/.test(navigator.userAgent);
 
-		if (!document.startViewTransition || prefersReducedMotion) {
+		if (!document.startViewTransition || prefersReducedMotion || isChrome) {
 			fn();
 		} else {
 			this.handleViewTransition(fn);
@@ -92,9 +93,9 @@ class LightBoxImage extends HTMLElement {
 	}
 
 	async handleViewTransition(fn) {
-		this.image.style.viewTransitionName = 'active-lightbox-image';
-
 		const transition = document.startViewTransition(() => fn());
+
+		this.image.style.viewTransitionName = 'active-lightbox-image';
 
 		try {
 			await transition.finished;

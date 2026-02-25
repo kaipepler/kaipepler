@@ -51,6 +51,8 @@ dialog {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: fixed;
+	pointer-events: none;
 
 	&::backdrop {
 		background: color-mix(in srgb, var(--background) 80%, transparent);
@@ -82,6 +84,10 @@ dialog {
 		border: none;
 		box-shadow: none;
 	}
+}
+
+dialog[open] {
+	pointer-events: auto;
 }
 
 ::view-transition-group(active-lightbox-image) {
