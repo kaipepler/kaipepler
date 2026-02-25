@@ -291,7 +291,7 @@
 		<lightbox-image dialog-id="lightbox">
 			<img
 				src="/portfolio/stratz/stratz-wireframes.webp"
-				class="invert"
+				class="invert subtle"
 				alt="Hand-drawn sketch of a profile page. The top-left tile shows a message saying, “Welcome back, Fantôme!” alongside additional content blocks for Hero Advice, Meta Advice, and a Drafting Assistant. A section for recent matches is blocked out below, and the right side has additional unlabeled cards blocked out."
 				loading="lazy"
 			/>

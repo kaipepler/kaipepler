@@ -1,6 +1,5 @@
 html:has(dialog[open]) {
 	overflow: hidden;
-	scrollbar-gutter: stable;
 }
 
 lightbox-image {
@@ -39,10 +38,19 @@ dialog {
 	--_gutter: 2rem;
 	padding: 1rem;
 	outline: unset;
-	border: unset;
+	border: none;
 	background: unset;
 	max-height: 100vh;
 	cursor: zoom-out;
+
+	width: 100%;
+	height: 100%;
+	max-width: unset;
+	max-height: unset;
+	inset: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	&::backdrop {
 		background: color-mix(in srgb, var(--background) 80%, transparent);
@@ -59,7 +67,20 @@ dialog {
 	}
 
 	img {
-		max-width: calc(100vw - var(--_gutter));
+		border-radius: 0.5rem;
+		border: 1px solid var(--gray-4);
+		box-shadow: 0 16px 32px 8px rgba(0, 0, 0, 0.05);
+
+		max-width: calc(100% - var(--_gutter));
+		max-height: calc(100% - var(--_gutter));
+		object-fit: contain;
+		width: auto;
+		height: auto;
+	}
+
+	img.subtle {
+		border: none;
+		box-shadow: none;
 	}
 }
 

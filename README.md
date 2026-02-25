@@ -5,6 +5,4 @@ UI, and over the course of my career I’ve worked in information design, web de
 videography, motion graphics, data visualization, color science, accessibility, and design
 strategy.
 
-This is my personal website, where I host my portfolio and write articles about design-adjacent topics.
-
 Feel free to reach out: hello@kaipepler.com
