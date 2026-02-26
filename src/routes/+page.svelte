@@ -71,9 +71,9 @@
 <section>
 	<h2>accessibility.</h2>
 	<p>
-		Accessibility is my specialty, and has forever been a core value of my designs methodology. I’ve
-		spent hours interpreting WCAG guidelines, and have run several workshops to help teams
-		incorporate accessibility considerations into their design specs.
+		Accessibility has forever been a core value of my design methodology. I’ve spent countless hours
+		interpreting WCAG guidelines, and have run workshops to help teams incorporate accessibility
+		considerations into their design specs.
 	</p>
 	<p>
 		As for my own designs, I craft every interaction to be considerate of how users of all abilities

@@ -30,4 +30,12 @@
 		--background: var(--gray-1);
 		--shadow: var(--gray-1);
 	}
+
+	img {
+		filter: brightness(0.9);
+
+		&.invert {
+			filter: invert();
+		}
+	}
 }

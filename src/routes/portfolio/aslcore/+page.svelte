@@ -19,11 +19,13 @@
 	<h2 class="visually-hidden">Overview</h2>
 
 	<div class="mediaframe right">
-		<img
-			src="/portfolio/aslcore/aslcore-beforeafter.webp"
-			alt="Two home screens showing the evolution from the old Wordpress blog that used to power the project, to the custom-built website that I designed and programmed."
-			loading="lazy"
-		/>
+		<lightbox-image dialog-id="lightbox">
+			<img
+				src="/portfolio/aslcore/aslcore-beforeafter.webp"
+				alt="Two home screens showing the evolution from the old Wordpress blog that used to power the project, to the custom-built website that I designed and programmed."
+				loading="lazy"
+			/>
+		</lightbox-image>
 	</div>
 
 	<p>
@@ -75,111 +77,3 @@
 		record of my work there, <a href="/rit">View my RIT timeline</a>.
 	</p>
 </section>
-
-<style>
-	table {
-		font-size: var(--step--1);
-
-		thead th {
-			text-align: center;
-		}
-
-		td,
-		th {
-			padding: 0.25rem;
-		}
-
-		td {
-			text-align: center;
-		}
-
-		tbody {
-			td:not(:empty) {
-				background: var(--green-5);
-			}
-		}
-
-		tfoot {
-			td,
-			th {
-				font-weight: bold;
-			}
-		}
-	}
-
-	.mediaframe {
-		margin-top: 1rem;
-		text-align: center;
-		display: flex;
-		flex-wrap: wrap;
-		gap: 1rem;
-
-		img:first-child {
-			flex-basis: 100%;
-		}
-
-		img,
-		iframe {
-			width: 0;
-			flex: 1;
-			border: 1px solid var(--gray-4);
-			border-radius: 0.25rem;
-		}
-
-		.subtle {
-			border: none;
-		}
-	}
-
-	.mediaframe.right {
-		float: right;
-		width: 40%;
-		margin: 2rem;
-		margin-right: 0;
-	}
-
-	.mediaframe.fullsize {
-		flex-direction: column;
-
-		img {
-			flex-basis: unset;
-			width: 100%;
-		}
-	}
-
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		clear: both;
-	}
-
-	blockquote {
-		font-variation-settings: 'ital' 0;
-		font-style: italic;
-		font-size: larger;
-		border-left: 0.25rem solid var(--green-9);
-		padding: 1rem;
-		max-width: 60ch;
-	}
-
-	@media (prefers-color-scheme: dark) {
-		img {
-			filter: brightness(0.9);
-
-			&.invert {
-				filter: invert();
-			}
-		}
-	}
-
-	@media (max-width: 650px) {
-		.mediaframe.right {
-			float: none;
-			width: 100%;
-			margin: 1rem 0 0 0;
-		}
-	}
-</style>

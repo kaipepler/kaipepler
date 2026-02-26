@@ -1,12 +1,3 @@
-<script>
-	import { browser } from '$app/environment';
-	import '$lib/utils/lightbox.css';
-
-	if (browser) {
-		import('$lib/utils/lightbox.js');
-	}
-</script>
-
 <svelte:head>
 	<title>STRATZ - Portfolio - Kai Pepler</title>
 	<meta name="description" content="Examples of art and design work" />
@@ -94,7 +85,7 @@
 	<h3>Competition</h3>
 
 	<div class="mediaframe right">
-		<table>
+		<table class="compact">
 			<caption>Hero Page Functionality</caption>
 			<thead>
 				<tr>
@@ -686,23 +677,10 @@
 	</div>
 </section>
 
-<dialog id="lightbox">
-	<form method="dialog">
-		<button>Close lightbox</button>
-	</form>
-</dialog>
-
 <style>
 	table {
-		font-size: var(--step--1);
-
 		thead th {
 			text-align: center;
-		}
-
-		td,
-		th {
-			padding: 0.25rem;
 		}
 
 		td {
@@ -713,59 +691,6 @@
 			td:not(:empty) {
 				background: var(--green-5);
 			}
-		}
-
-		tfoot {
-			td,
-			th {
-				font-weight: bold;
-			}
-		}
-	}
-
-	.mediaframe {
-		text-align: center;
-		display: flex;
-		flex-wrap: wrap;
-		gap: 1rem;
-
-		.subtle {
-			border: none;
-			box-shadow: none;
-		}
-	}
-
-	.mediaframe.right {
-		float: right;
-		width: 40%;
-		margin: 2rem;
-		margin-right: 0;
-	}
-
-	.mediaframe.fullsize {
-		flex-direction: column;
-
-		img {
-			flex-basis: unset;
-			width: 100%;
-		}
-	}
-
-	@media (prefers-color-scheme: dark) {
-		img {
-			filter: brightness(0.9);
-
-			&.invert {
-				filter: invert();
-			}
-		}
-	}
-
-	@media (max-width: 650px) {
-		.mediaframe.right {
-			float: none;
-			width: 100%;
-			margin: 1rem 0 0 0;
 		}
 	}
 </style>
