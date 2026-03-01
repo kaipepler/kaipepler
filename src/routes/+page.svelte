@@ -23,9 +23,8 @@
 		design strategy.
 	</p>
 	<p>
-		As a UX designer specializing in accessibility, I shape my products at the crossroads of all
-		these fields, taking inspiration from them as I work to make all users’ interactions the best
-		they can be.
+		I specialize in accessible design, shaping products at the crossroads of all these fields, and
+		taking inspiration from them as I work to make all users’ interactions the best they can be.
 	</p>
 	<p><a class="button primary" href="mailto:hello@kaipepler.com">Contact me</a></p>
 	<p>
@@ -71,7 +70,7 @@
 <section>
 	<h2>accessibility.</h2>
 	<p>
-		Accessibility has forever been a core value of my design methodology. I’ve spent countless hours
+		Accessibility has forever been a core part of my designs. I’ve spent countless hours
 		interpreting WCAG guidelines, and have run workshops to help teams incorporate accessibility
 		considerations into their design specs.
 	</p>
@@ -80,10 +79,8 @@
 		can access and enjoy the features I create.
 	</p>
 	<p>
-		I designed and coded this website from scratch to demonstrate my commitment to universal,
-		user-centered design. You can find more information in my site’s <a href="accessibility/"
-			>accessibility statement</a
-		>.
+		I designed and coded this website from scratch to demonstrate my commitment to universal design.
+		You can find more information in my site’s <a href="accessibility/">accessibility statement</a>.
 	</p>
 </section>
 <section class="about">

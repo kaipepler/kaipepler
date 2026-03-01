@@ -59,7 +59,7 @@
 		<div class="tl-date"><h3>2023</h3></div>
 		<div class="tl-desc">
 			<p>
-				I collaborated with our design system team to improve the color scales we use for data
+				I collaborated with our design strategy team to improve the color scales we use for data
 				visualization. The new scales are rooted in color science and are now used across a range of
 				company reports and dashboards.
 			</p>

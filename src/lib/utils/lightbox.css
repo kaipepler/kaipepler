@@ -2,6 +2,10 @@ html:has(dialog[open]) {
 	overflow: hidden;
 }
 
+dialog:not[open] {
+	display: none;
+}
+
 .mediaframe {
 	text-align: center;
 	display: flex;

@@ -10,9 +10,9 @@
 <section>
 	<h1>Writing</h1>
 	<p>
-		Over the years I’ve learned from so many wonderful people who have chosen to share their work
-		with the world. This page is a place where I write articles to reference those works, and put my
-		own learnings back into the community.
+		Over the years I’ve learned from many wonderful people who have chosen to share their work with
+		the world. This is a place where I write articles referencing those works, to put my own
+		learnings back into the community.
 	</p>
 	<p>
 		Topics include color theory, typography, coding, data visualization, accessibility, animation,

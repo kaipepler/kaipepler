@@ -34,7 +34,7 @@
 	<h2>Art & Design</h2>
 	<p>
 		Many of my older pieces are offline as I migrate my portfolio to a new framework. Expect new
-		content and UI changes daily as I tune the new experience.
+		content and UI changes daily as I fine-tune the new experience.
 	</p>
 	<p>
 		Please <a href="mailto:hello@kaipepler.com">contact me</a> if you have any questions or would like
@@ -46,7 +46,7 @@
 	a.project-card {
 		position: relative;
 		border: 2px solid var(--text-primary);
-		border-radius: 8px;
+		border-radius: 0.5rem;
 		padding: 2.5rem 2rem;
 		display: block;
 		color: var(--default);
@@ -120,10 +120,10 @@
 	}
 
 	#stratz::before {
-		background-image: linear-gradient(#123137, #00809c);
+		background-image: linear-gradient(45deg, #00809c, #123137);
 	}
 	#aslcore::before {
-		background-image: linear-gradient(#313131, #0c880c);
+		background-image: linear-gradient(45deg, #0c880c, #313131);
 	}
 	#abstract-no1::before {
 		background-image: linear-gradient(#088800, #00846e);

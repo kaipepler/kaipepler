@@ -21,7 +21,7 @@
 		<p>
 			Nazareth University is my <i lang="la">alma mater</i>. I graduated with honors in 2018,
 			earning a Bachelor of Science in visual communication design. I’ve since gone on to work with
-			their nursing and art departments, recording voiceovers and teaching design labs respectively.
+			their Nursing and Art departments, recording voiceovers and teaching design labs.
 		</p>
 	</div>
 </section>

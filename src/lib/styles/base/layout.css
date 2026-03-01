@@ -43,3 +43,84 @@ aside {
 		border: 1px solid var(--gray-12);
 	}
 }
+
+body {
+	counter-reset: heading;
+}
+
+.hero {
+	background-attachment: fixed;
+	border-radius: 1rem;
+	padding: 4rem 2rem;
+	box-shadow: 0 16px 32px 8px rgba(0, 0, 0, 0.05);
+
+	h1,
+	p {
+		text-transform: unset;
+		width: fit-content;
+		background: var(--background);
+		border-radius: 2px;
+		padding: 0.5rem 1rem;
+		margin: 0;
+	}
+
+	p {
+		margin-top: 0.75rem;
+		color: var(--text-secondary);
+	}
+
+	a.scroll {
+		all: unset;
+		width: 100%;
+		padding-block: 1rem;
+		text-align: center;
+		color: white;
+
+		svg {
+			height: 2.5rem;
+			@media (prefers-reduced-motion: no-preference) {
+				transition: transform 200ms ease;
+			}
+		}
+
+		&:hover svg {
+			transform: translateY(0.5rem);
+		}
+	}
+}
+
+.mediumsblock {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 3rem;
+
+	h3 {
+		margin-top: 0;
+		font-size: var(--step--1);
+	}
+
+	p {
+		margin-block: 0rem;
+	}
+}
+
+.count {
+	section:has(h2) {
+		counter-increment: heading;
+	}
+
+	h2 {
+		counter-reset: subheading;
+		position: relative;
+
+		&:before {
+			content: counter(heading) ' ';
+			color: var(--green-10);
+		}
+	}
+	h3:before {
+		content: counter(heading) '.' counter(subheading) ' ';
+		counter-increment: subheading;
+		color: var(--green-10);
+	}
+}
