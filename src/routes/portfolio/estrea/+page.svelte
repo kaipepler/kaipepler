@@ -303,6 +303,7 @@
 		display: flex;
 		flex-direction: column;
 		margin-top: 2rem;
+		max-width: 85ch;
 
 		div {
 			order: 1;
@@ -317,12 +318,14 @@
 			order: 3;
 			font-size: var(--step--1);
 			margin-inline: -0.5rem;
-			max-width: 95ch;
+			max-width: 100%;
+			position: relative;
 
 			ul {
 				margin-block: 0;
 				padding: 0;
 				display: grid;
+				max-width: 100%;
 				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 				gap: 1rem;
 

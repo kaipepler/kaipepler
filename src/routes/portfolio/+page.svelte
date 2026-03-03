@@ -56,6 +56,7 @@
 		border-radius: 0.5rem;
 		padding: 2.5rem 2rem;
 		display: block;
+		width: 100%;
 		color: var(--default);
 		background-image: linear-gradient(to right, var(--background), var(--background));
 		z-index: 1;
@@ -123,7 +124,6 @@
 		grid-template-columns: repeat(2, 1fr);
 		gap: 2rem;
 		margin-block: 2rem;
-		max-width: unset;
 	}
 
 	div.portfolio-artdesign {
@@ -131,7 +131,6 @@
 		grid-template-columns: repeat(3, 1fr);
 		gap: 2rem;
 		margin-block: 2rem;
-		max-width: unset;
 	}
 
 	#stratz::before {
