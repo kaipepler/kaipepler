@@ -2,13 +2,6 @@
 	view-transition-name: none;
 }
 
-html,
-body {
-	overflow-x: hidden;
-	position: relative;
-	width: 100%;
-}
-
 main {
 	padding-inline: var(--space-m-xl);
 }
