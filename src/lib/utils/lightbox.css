@@ -2,10 +2,6 @@ html:has(dialog[open]) {
 	overflow: hidden;
 }
 
-dialog:not[open] {
-	display: none;
-}
-
 .mediaframe {
 	text-align: center;
 	display: flex;
@@ -64,7 +60,7 @@ lightbox-image {
 
 		&:hover {
 			@media (prefers-reduced-motion: no-preference) {
-				transform: scale(1.05);
+				transform: scale(1.03);
 			}
 			@media (prefers-reduced-motion: reduce) {
 				opacity: 0.8;

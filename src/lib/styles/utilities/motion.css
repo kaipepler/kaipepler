@@ -41,7 +41,7 @@
 
 	/* Details arrow transition */
 	details summary:before {
-		transition: transform 200ms ease-in-out;
+		transition: all 200ms ease-in-out;
 	}
 
 	/* Content reveal animation */

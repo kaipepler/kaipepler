@@ -13,7 +13,7 @@
 	</p>
 </section>
 <section>
-	<h2 class="visually-hidden">Featured</h2>
+	<h2>Featured</h2>
 
 	<div class="portfolio-featured">
 		<a class="project-card" href="/portfolio/stratz/" id="stratz"
@@ -32,6 +32,13 @@
 
 <section>
 	<h2>Art & Design</h2>
+	<div class="portfolio-artdesign">
+		<a class="project-card" href="/portfolio/estrea/" id="estrea"
+			><div class="project-title">Estrea</div>
+			<div class="project-type">Photography</div>
+			<div class="project-date">2014</div></a
+		>
+	</div>
 	<p>
 		Many of my older pieces are offline as I migrate my portfolio to a new framework. Expect new
 		content and UI changes daily as I fine-tune the new experience.
@@ -114,6 +121,14 @@
 	div.portfolio-featured {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+		margin-block: 2rem;
+		max-width: unset;
+	}
+
+	div.portfolio-artdesign {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
 		gap: 2rem;
 		margin-block: 2rem;
 		max-width: unset;

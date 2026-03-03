@@ -1,12 +1,34 @@
 details {
 	border-radius: 5px;
 
-	& > *:not(summary) {
-		margin: 0.5rem 1rem 0.5rem 2.5rem;
+	/* border: 1px solid var(--gray-4); */
+	/* background: var(--gray-2); */
+	padding-block: 0.25rem;
+
+	@media (prefers-reduced-motion: no-preference) {
+		interpolate-size: allow-keywords;
+	}
+
+	&::details-content {
+		padding-left: 2.5rem;
+		opacity: 0;
+		block-size: 0;
+		overflow-y: clip;
+
+		transition:
+			content-visibility 200ms allow-discrete,
+			opacity 200ms,
+			block-size 200ms;
+	}
+
+	&[open]::details-content {
+		opacity: 1;
+		block-size: auto;
+		padding-bottom: 0.5rem;
 	}
 
 	summary {
-		padding: 0.5rem 1rem 0.5rem 2.5rem;
+		padding: 0.5rem 1rem 0.5rem 2.25em;
 		display: inline-block;
 		position: relative;
 		cursor: pointer;
@@ -14,17 +36,28 @@ details {
 		border-radius: 5px;
 		line-height: normal;
 		font-weight: 500;
+		max-width: unset;
+		transition: all 0.2s linear;
+		color: var(--text-secondary);
 
-		&:before {
+		&:hover {
+			color: var(--text-primary);
+
+			&::before {
+				background: var(--text-primary);
+			}
+		}
+
+		&::before {
 			transform: rotate(90deg);
 			transform-origin: 50%;
-			left: 0.8rem;
-			top: calc(50% - 8px);
+			left: 0.8em;
+			top: calc(50% - 0.4rem);
 			content: '';
 			position: absolute;
 
-			--r: 2px; /* border radius */
-			width: 16px;
+			--r: 0.125em; /* border radius */
+			width: 0.8em;
 			aspect-ratio: 1 / cos(30deg);
 			--_g: calc(tan(60deg) * var(--r)) bottom var(--r), #000 98%, #0000 101%;
 			mask:
@@ -34,20 +67,18 @@ details {
 				radial-gradient(var(--r) at left var(--_g)),
 				radial-gradient(var(--r) at right var(--_g));
 			clip-path: polygon(50% 0, 100% 100%, 0 100%);
-			background: var(--green-11);
-		}
-
-		&:hover,
-		&:focus {
-			font-weight: 700;
+			background: var(--text-secondary);
+			/* background: var(--green-11); */
 		}
 	}
 
 	&[open] > summary {
 		font-weight: 700;
+		color: var(--text-primary);
 	}
 
-	&[open] > summary:before {
+	&[open] > summary::before {
 		transform: rotate(180deg);
+		background: var(--text-primary);
 	}
 }
