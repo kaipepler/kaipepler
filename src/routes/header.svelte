@@ -121,16 +121,6 @@
 								font-weight 100ms;
 						}
 
-						&[target='_blank']::after {
-							content: '- opens in a new tab';
-							overflow: hidden;
-							display: inline-block;
-							margin-inline: 0.2em;
-							width: 1px;
-							height: 1px;
-							position: absolute;
-						}
-
 						&:hover {
 							color: var(--green-11);
 							fill: var(--green-11);

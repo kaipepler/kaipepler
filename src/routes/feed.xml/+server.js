@@ -1,10 +1,9 @@
 import * as config from '$lib/config';
-import type { Article } from '$lib/types';
 import { compile } from 'mdsvex';
 
 export async function GET({ fetch }) {
 	const response = await fetch('/writing');
-	const articles: Article[] = await response.json();
+	const articles = await response.json();
 
 	// Fetch and parse content for each article
 	const articlesWithContent = await Promise.all(

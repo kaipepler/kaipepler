@@ -1,11 +1,10 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
-import { type Plugin } from 'vite';
 
-function externalLinksPlugin(): Plugin {
+function externalLinksPlugin() {
 	return {
 		name: 'external-links',
-		transform(code: string, id: string) {
+		transform(code, id) {
 			// Early return if file type doesn't match or no links detected
 			if (!id.match(/\.(svelte|md)$/)) return null;
 			if (!code.includes('<a') && !code.includes('[')) return null;

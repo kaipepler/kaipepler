@@ -1,13 +1,21 @@
-import type { Article } from '$lib/types';
+/**
+ * @typedef {Object} Article
+ * @property {string} title
+ * @property {string} description
+ * @property {string} date
+ * @property {string} update
+ * @property {string[]} categories
+ */
+
 import { json } from '@sveltejs/kit';
 
 /**
  * Retrieves and processes markdown articles from the src/articles directory
- * @returns {Promise<Article[]>} Array of article objects sorted by date
+ * @returns {Promise} Array of article objects sorted by date
  */
 async function getArticles() {
 	// Initialize empty array to store processed articles
-	let articles: Article[] = [];
+	let articles = [];
 
 	// Use Vite's glob import to get all .md files from articles directory
 	// eager: true means files are loaded immediately instead of on-demand
@@ -21,11 +29,13 @@ async function getArticles() {
 
 		// Verify file is valid and contains metadata
 		if (file && typeof file === 'object' && 'metadata' in file && slug) {
-			// Cast metadata to Article type (excluding slug property)
-			const metadata = file.metadata as Omit<Article, 'slug'>;
+			/** @type {Partial<Article>} */
+			const metadata = file.metadata;
+
 			// Create complete article object by combining metadata with slug
-			const article = { ...metadata, slug } satisfies Article;
+			const article = { ...metadata, slug };
 			articles.push(article);
+			console.log(article);
 		}
 	}
 

@@ -272,8 +272,8 @@
 			<ul>
 				<li>
 					Date <strong
-						><time datetime={new Date(photo.dateTime * 1000).toISOString()}
-							>{new Date(photo.dateTime * 1000).toLocaleString('en-US', {
+						><time datetime={new Date(Number(photo.dateTime) * 1000).toISOString()}
+							>{new Date(Number(photo.dateTime) * 1000).toLocaleString('en-US', {
 								year: 'numeric',
 								month: 'short',
 								day: 'numeric',
