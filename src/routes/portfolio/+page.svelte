@@ -33,6 +33,11 @@
 <section>
 	<h2>Art & Design</h2>
 	<div class="portfolio-artdesign">
+		<a class="project-card" href="/portfolio/violin-studies/" id="violin-studies"
+			><div class="project-title">Violin Studies</div>
+			<div class="project-type">Illustration</div>
+			<div class="project-date">2015</div></a
+		>
 		<a class="project-card" href="/portfolio/estrea/" id="estrea"
 			><div class="project-title">Estrea</div>
 			<div class="project-type">Photography</div>
@@ -120,15 +125,13 @@
 	}
 
 	div.portfolio-featured {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		display: flex;
 		gap: 2rem;
 		margin-block: 2rem;
 	}
 
 	div.portfolio-artdesign {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		display: flex;
 		gap: 2rem;
 		margin-block: 2rem;
 	}
@@ -161,9 +164,9 @@
 		background-image: linear-gradient(#108743, #5e8000);
 	}
 	#violin-studies::before {
-		background-image: linear-gradient(#902308, #966f00);
+		background-image: linear-gradient(45deg, #902308, #966f00);
 	}
 	#estrea::before {
-		background-image: linear-gradient(#2c4f7d, #4778af);
+		background-image: linear-gradient(45deg, #2c4f7d, #4778af);
 	}
 </style>
