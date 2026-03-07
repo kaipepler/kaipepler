@@ -48,44 +48,88 @@ body {
 	counter-reset: heading;
 }
 
-.hero {
-	background-attachment: fixed;
-	border-radius: 1rem;
-	padding: 4rem 2rem;
-	box-shadow: 0 16px 32px 8px rgba(0, 0, 0, 0.05);
+.project-card {
+	padding: 8px 8px 2.5em 2.5em;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25em;
+	overflow: hidden;
+	border: 0 solid transparent;
+	box-shadow: inset 0 0 1.5rem rgba(0, 0, 0, 0.15);
+	border-radius: 16px;
 
-	h1,
-	p {
-		text-transform: unset;
+	transition-property: border;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+
+	&::before {
+		position: absolute;
+		content: '';
+		border-radius: 6px;
+		top: -1rem;
+		right: -1rem;
+		bottom: -1rem;
+		left: -1rem;
+		z-index: -1;
+		transition: opacity 0.2s ease-in-out;
+		opacity: 0;
+		background-image: linear-gradient(45deg, var(--c1), var(--c2));
+	}
+	&:hover {
+		border: 0 solid transparent;
+	}
+	&:hover::before {
+		opacity: 1;
+	}
+
+	.title,
+	.date {
 		width: fit-content;
 		background: var(--background);
 		border-radius: 2px;
-		padding: 0.5rem 1rem;
 		margin: 0;
 	}
 
-	p {
-		margin-top: 0.75rem;
-		color: var(--text-secondary);
+	.title {
+		order: 2;
+		font-weight: bold;
+		text-transform: unset;
+
+		padding: 0.4rem 0.75rem;
 	}
 
-	a.scroll {
-		all: unset;
-		width: 100%;
-		padding-block: 1rem;
-		text-align: center;
-		color: white;
+	.date {
+		order: 3;
+		font-size: var(--step--1);
+		font-weight: 400;
+		padding: 0.15rem 0.75rem;
+	}
 
-		svg {
-			height: 2.5rem;
-			@media (prefers-reduced-motion: no-preference) {
-				transition: transform 200ms ease;
-			}
-		}
+	.type {
+		order: 1;
+		font-size: var(--step--2);
+		font-weight: 600;
+		width: fit-content;
+		background: var(--text-primary);
+		color: var(--background);
+		padding: 0 0.75em;
+		border-radius: 8px;
+		align-self: flex-end;
+	}
 
-		&:hover svg {
-			transform: translateY(0.5rem);
-		}
+	.date {
+		color: var(--text-secondary);
+	}
+}
+
+.focus.project-card {
+	border: none;
+	max-width: unset;
+	gap: 0.75em;
+	box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.3);
+	&::before {
+		opacity: 1;
 	}
 }
 

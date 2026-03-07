@@ -1,4 +1,20 @@
 <script>
+	import { page } from '$app/state';
+	let { data } = $props();
+	const current = page.route.id.split('/')[2];
+
+	const currentProject = $derived(data.projects[current]);
+
+	const project = {
+		title: 'Violin Studies',
+		id: 'violin-studies',
+		type: 'Illustration',
+		tags: ['Graphic Design', 'Illustration'],
+		date: '2015',
+		colors: ['#902308', '#966f00'],
+		featured: false
+	};
+
 	const studies = [
 		{
 			title: 'I (Traditional)',
@@ -44,14 +60,21 @@
 	<meta name="description" content="Examples of art and design work" />
 </svelte:head>
 
-<section class="hero">
-	<hgroup>
-		<h1>Violin Studies</h1>
-		<p>A series of studies on the elements that make up a violin</p>
-	</hgroup>
-</section>
-
 <section>
+	<div
+		class="project-card focus"
+		id={currentProject.id}
+		style:--c1={currentProject.colors[0]}
+		style:--c2={currentProject.colors[1]}
+		style:view-transition-name="project-card-{currentProject.id}"
+	>
+		<h1 class="title" style:view-transition-name="project-card-title-{currentProject.id}">
+			{currentProject.title}
+		</h1>
+		<div class="type">{currentProject.type}</div>
+		<div class="date">{currentProject.date}</div>
+	</div>
+
 	<h2 id="overview">Overview</h2>
 	<p>
 		A series of studies on what elements are required to make an illustration read as a violin, and
@@ -97,10 +120,6 @@
 {/each}
 
 <style>
-	.hero {
-		background: linear-gradient(45deg, #902308, #966f00);
-	}
-
 	.gallery-element {
 		display: flex;
 		flex-direction: column;

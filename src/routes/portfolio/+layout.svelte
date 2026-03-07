@@ -1,7 +1,5 @@
 <script lang="ts">
-	import type { LayoutProps } from './$types';
-
-	let { data, children }: LayoutProps = $props();
+	let { children } = $props();
 
 	import { browser } from '$app/environment';
 	import '$lib/utils/lightbox.css';

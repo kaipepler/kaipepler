@@ -1,16 +1,31 @@
+<script>
+	import { page } from '$app/state';
+	let { data } = $props();
+	const current = page.route.id.split('/')[2];
+
+	const currentProject = $derived(data.projects[current]);
+</script>
+
 <svelte:head>
 	<title>STRATZ - Portfolio - Kai Pepler</title>
 	<meta name="description" content="Examples of art and design work" />
 </svelte:head>
 
-<section class="hero">
-	<hgroup>
-		<h1>STRATZ</h1>
-		<p>An advanced esports analytics platform</p>
-	</hgroup>
-</section>
-
 <section>
+	<div
+		class="project-card focus"
+		id={currentProject.id}
+		style:--c1={currentProject.colors[0]}
+		style:--c2={currentProject.colors[1]}
+		style:view-transition-name="project-card-{currentProject.id}"
+	>
+		<h1 class="title" style:view-transition-name="project-card-title-{currentProject.id}">
+			{currentProject.title}
+		</h1>
+		<div class="type">{currentProject.type}</div>
+		<div class="date">{currentProject.date}</div>
+	</div>
+
 	<h2 id="overview">Overview</h2>
 	<p>
 		<a href="https://stratz.com">STRATZ Esports</a> is an advanced analytics platform for the
@@ -687,10 +702,6 @@
 </div>
 
 <style>
-	.hero {
-		background: linear-gradient(45deg, #00809c, #123137);
-	}
-
 	table {
 		thead th {
 			text-align: center;

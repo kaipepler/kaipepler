@@ -1,10 +1,14 @@
+<script>
+	let { data } = $props();
+</script>
+
 <svelte:head>
 	<title>Portfolio - Kai Pepler</title>
 	<meta name="description" content="Examples of art and design work" />
 </svelte:head>
+
 <section>
 	<h1>Portfolio</h1>
-
 	<p>This page highlights a number of my projects and case studies from over the years.</p>
 	<p>
 		My most recent work is under nondisclosure for Xerox. <a href="/xerox"
@@ -12,37 +16,55 @@
 		>.
 	</p>
 </section>
+
 <section>
 	<h2>Featured</h2>
-
-	<div class="portfolio-featured">
-		<a class="project-card" href="/portfolio/stratz/" id="stratz"
-			><div class="project-title">STRATZ</div>
-			<div class="project-type">Case Study</div>
-			<div class="project-date">2019 – 2022</div></a
-		>
-
-		<a class="project-card" href="/portfolio/aslcore/" id="aslcore"
-			><div class="project-title">ASLCORE</div>
-			<div class="project-type">Write-Up</div>
-			<div class="project-date">2016 – 2019</div></a
-		>
+	<div class="featured wrapper">
+		{#each data.projectsArray as project}
+			{#if project.featured}
+				<a href="/portfolio/{project.id}/">
+					<div
+						class="project-card"
+						id={project.id}
+						style:--c1={project.colors[0]}
+						style:--c2={project.colors[1]}
+						style:view-transition-name="project-card-{project.id}"
+					>
+						<div class="title" style:view-transition-name="project-card-title-{project.id}">
+							{project.title}
+						</div>
+						<div class="type">{project.type}</div>
+						<div class="date">{project.date}</div>
+					</div>
+				</a>
+			{/if}
+		{/each}
 	</div>
 </section>
 
 <section>
 	<h2>Art & Design</h2>
-	<div class="portfolio-artdesign">
-		<a class="project-card" href="/portfolio/violin-studies/" id="violin-studies"
-			><div class="project-title">Violin Studies</div>
-			<div class="project-type">Illustration</div>
-			<div class="project-date">2015</div></a
-		>
-		<a class="project-card" href="/portfolio/estrea/" id="estrea"
-			><div class="project-title">Estrea</div>
-			<div class="project-type">Photography</div>
-			<div class="project-date">2014</div></a
-		>
+
+	<div class="wrapper">
+		{#each data.projectsArray as project}
+			{#if !project.featured}
+				<a href="/portfolio/{project.id}/">
+					<div
+						class="project-card"
+						id={project.id}
+						style:--c1={project.colors[0]}
+						style:--c2={project.colors[1]}
+						style:view-transition-name="project-card-{project.id}"
+					>
+						<div class="title" style:view-transition-name="project-card-title-{project.id}">
+							{project.title}
+						</div>
+						<div class="type">{project.type}</div>
+						<div class="date">{project.date}</div>
+					</div>
+				</a>
+			{/if}
+		{/each}
 	</div>
 	<p>
 		Many of my older pieces are offline as I migrate my portfolio to a new framework. Expect new
@@ -55,118 +77,46 @@
 </section>
 
 <style>
-	a.project-card {
-		position: relative;
-		border: 2px solid var(--text-primary);
-		border-radius: 0.5rem;
-		padding: 2.5rem 2rem;
-		display: block;
-		width: 100%;
-		color: var(--default);
-		background-image: linear-gradient(to right, var(--background), var(--background));
-		z-index: 1;
-		text-decoration: none;
-		transition-property: transform, color, box-shadow;
-		transition-duration: 0.2s;
-		transition-timing-function: ease-in-out;
-
-		&::before {
-			position: absolute;
-			content: '';
-			border-radius: 6px;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			z-index: -1;
-			transition: opacity 0.2s ease-in-out;
-			opacity: 0;
-		}
-		&:hover::before {
-			opacity: 1;
-		}
-
-		&:hover {
-			color: white;
-			box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.3);
-			border-width: 2px;
-			transform: scale(1.03);
-		}
-
-		&:active {
-			transform: scale(0.98);
-		}
-
-		div.project-title {
-			font-weight: bold;
-			font-size: var(--step-1);
-			letter-spacing: 0.075rem;
-		}
-
-		div.project-type {
-			position: absolute;
-			top: 0;
-			right: 0;
-			padding: 0.25rem;
-			padding-left: calc(0.35rem + 2px);
-			background: var(--text-primary);
-			border-bottom-left-radius: 8px;
-			border-top-right-radius: 2px;
-			color: var(--background);
-			font-size: var(--step--2);
-			font-weight: bold;
-			letter-spacing: 0.1rem;
-		}
-
-		div.project-date {
-			font-size: var(--step--1);
-			font-weight: 400;
-		}
-	}
-
-	div.portfolio-featured {
-		display: flex;
+	.wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		gap: 2rem;
 		margin-block: 2rem;
+
+		&.featured {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		a {
+			all: unset;
+			cursor: pointer;
+
+			transition-property: transform, box-shadow;
+			transition-duration: 0.2s;
+			transition-timing-function: ease-in-out;
+			border-radius: 16px;
+
+			overflow: hidden;
+
+			&:hover {
+				box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.3);
+				transform: scale(1.03);
+			}
+
+			&:focus-visible {
+				transform: scale(1.03);
+				border-radius: 16px;
+				outline: 3px solid var(--text-primary);
+			}
+
+			&:active {
+				transform: scale(1);
+				box-shadow: none;
+			}
+		}
 	}
 
-	div.portfolio-artdesign {
-		display: flex;
-		gap: 2rem;
-		margin-block: 2rem;
-	}
-
-	#stratz::before {
-		background-image: linear-gradient(45deg, #00809c, #123137);
-	}
-	#aslcore::before {
-		background-image: linear-gradient(45deg, #0c880c, #313131);
-	}
-	#abstract-no1::before {
-		background-image: linear-gradient(#088800, #00846e);
-	}
-	#dota-card-series::before {
-		background-image: linear-gradient(#4022b8, #b01e24);
-	}
-	#randleman-program::before {
-		background-image: linear-gradient(#54200b, #a96521);
-	}
-	#tare::before {
-		background-image: linear-gradient(#9955cc, #4365fe);
-	}
-	#recorder-society::before {
-		background-image: linear-gradient(#002446, #007dab);
-	}
-	#mind-8::before {
-		background-image: linear-gradient(#0075db, #00856b);
-	}
-	#free-leaf-artisan-tea::before {
-		background-image: linear-gradient(#108743, #5e8000);
-	}
-	#violin-studies::before {
-		background-image: linear-gradient(45deg, #902308, #966f00);
-	}
-	#estrea::before {
-		background-image: linear-gradient(45deg, #2c4f7d, #4778af);
+	.title {
+		font-size: larger;
 	}
 </style>

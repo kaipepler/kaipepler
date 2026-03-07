@@ -1,4 +1,10 @@
 <script>
+	import { page } from '$app/state';
+	let { data } = $props();
+	const current = page.route.id.split('/')[2];
+
+	const currentProject = $derived(data.projects[current]);
+
 	const photos = [
 		{
 			title: 'Encircle',
@@ -217,14 +223,21 @@
 	<meta name="description" content="Examples of art and design work" />
 </svelte:head>
 
-<section class="hero">
-	<hgroup>
-		<h1>Estrea</h1>
-		<p>Debut photo album</p>
-	</hgroup>
-</section>
-
 <section>
+	<div
+		class="project-card focus"
+		id={currentProject.id}
+		style:--c1={currentProject.colors[0]}
+		style:--c2={currentProject.colors[1]}
+		style:view-transition-name="project-card-{currentProject.id}"
+	>
+		<h1 class="title" style:view-transition-name="project-card-title-{currentProject.id}">
+			{currentProject.title}
+		</h1>
+		<div class="type">{currentProject.type}</div>
+		<div class="date">{currentProject.date}</div>
+	</div>
+
 	<h2 id="overview">Overview</h2>
 	<p>
 		Estrea is my first full-length photo album. All images were crafted completely in-camera; With
@@ -295,10 +308,6 @@
 {/each}
 
 <style>
-	.hero {
-		background: linear-gradient(45deg, #2c4f7d, #4778af);
-	}
-
 	.gallery-element {
 		display: flex;
 		flex-direction: column;

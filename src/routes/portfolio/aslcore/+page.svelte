@@ -1,16 +1,31 @@
+<script>
+	import { page } from '$app/state';
+	let { data } = $props();
+	const current = page.route.id.split('/')[2];
+
+	const currentProject = $derived(data.projects[current]);
+</script>
+
 <svelte:head>
 	<title>ASLCORE - Portfolio - Kai Pepler</title>
 	<meta name="description" content="Examples of art and design work" />
 </svelte:head>
 
-<section class="hero">
-	<hgroup>
-		<h1>ASLCORE</h1>
-		<p>An ASL lexicon for higher education</p>
-	</hgroup>
-</section>
-
 <section>
+	<div
+		class="project-card focus"
+		id={currentProject.id}
+		style:--c1={currentProject.colors[0]}
+		style:--c2={currentProject.colors[1]}
+		style:view-transition-name="project-card-{currentProject.id}"
+	>
+		<h1 class="title" style:view-transition-name="project-card-title-{currentProject.id}">
+			{currentProject.title}
+		</h1>
+		<div class="type">{currentProject.type}</div>
+		<div class="date">{currentProject.date}</div>
+	</div>
+
 	<h2 id="overview">Overview</h2>
 	<p>
 		<a href="https://aslcore.org">ASLCORE</a> is a project by National Technical Institute for the Deaf
@@ -100,9 +115,3 @@
 		record of my work there, <a href="/rit">View my RIT timeline</a>.
 	</p>
 </section>
-
-<style>
-	.hero {
-		background: linear-gradient(45deg, #0c880c, #313131);
-	}
-</style>

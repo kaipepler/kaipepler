@@ -1,7 +1,7 @@
 @media (prefers-reduced-motion: no-preference) {
 	html {
 		interpolate-size: allow-keywords;
-		scroll-behavior: smooth;
+		/* scroll-behavior: smooth; */
 	}
 
 	/* Button transitions */
@@ -72,6 +72,18 @@
 		animation-iteration-count: 1 !important;
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
+	}
+
+	/* This kills the engine for EVERY transition regardless of inline names */
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none !important;
+	}
+
+	/* Specifically force inline transition names to 'none' */
+	[style*='view-transition-name'] {
+		view-transition-name: none !important;
 	}
 }
 
