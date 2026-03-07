@@ -22,8 +22,12 @@
 		<h1 class="title" style:view-transition-name="project-card-title-{currentProject.id}">
 			{currentProject.title}
 		</h1>
-		<div class="type">{currentProject.type}</div>
-		<div class="date">{currentProject.date}</div>
+		<div class="type" style:view-transition-name="project-card-type-{currentProject.id}">
+			{currentProject.type}
+		</div>
+		<div class="date" style:view-transition-name="project-card-date-{currentProject.id}">
+			{currentProject.date}
+		</div>
 	</div>
 
 	<h2 id="overview">Overview</h2>

@@ -1,4 +1,6 @@
 <script>
+	import { tilt } from './tilt.js';
+
 	let { data } = $props();
 </script>
 
@@ -25,6 +27,7 @@
 				<a href="/portfolio/{project.id}/">
 					<div
 						class="project-card"
+						use:tilt
 						id={project.id}
 						style:--c1={project.colors[0]}
 						style:--c2={project.colors[1]}
@@ -33,8 +36,12 @@
 						<div class="title" style:view-transition-name="project-card-title-{project.id}">
 							{project.title}
 						</div>
-						<div class="type">{project.type}</div>
-						<div class="date">{project.date}</div>
+						<div class="type" style:view-transition-name="project-card-type-{project.id}">
+							{project.type}
+						</div>
+						<div class="date" style:view-transition-name="project-card-date-{project.id}">
+							{project.date}
+						</div>
 					</div>
 				</a>
 			{/if}
@@ -51,6 +58,7 @@
 				<a href="/portfolio/{project.id}/">
 					<div
 						class="project-card"
+						use:tilt
 						id={project.id}
 						style:--c1={project.colors[0]}
 						style:--c2={project.colors[1]}
@@ -59,8 +67,12 @@
 						<div class="title" style:view-transition-name="project-card-title-{project.id}">
 							{project.title}
 						</div>
-						<div class="type">{project.type}</div>
-						<div class="date">{project.date}</div>
+						<div class="type" style:view-transition-name="project-card-type-{project.id}">
+							{project.type}
+						</div>
+						<div class="date" style:view-transition-name="project-card-date-{project.id}">
+							{project.date}
+						</div>
 					</div>
 				</a>
 			{/if}
@@ -87,6 +99,28 @@
 			grid-template-columns: repeat(1, 1fr);
 		}
 
+		.project-card {
+			/* Required for 3D effect */
+			will-change: transform;
+			transform: perspective(1000px) rotateX(var(--rotateX, 0deg)) rotateY(var(--rotateY, 0deg));
+			transition: transform 0.1s ease-out;
+			transform-style: preserve-3d;
+		}
+		.project-card::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			z-index: -1;
+			pointer-events: none; /* Allows clicks to pass through to content */
+			background: radial-gradient(
+				circle at var(--glareX) var(--glareY),
+				var(--c1) 0%,
+				transparent 80%
+			);
+			opacity: var(--glareOpacity, 0);
+			transition: opacity 0.3s ease;
+		}
+
 		a {
 			all: unset;
 			cursor: pointer;
@@ -96,22 +130,30 @@
 			transition-timing-function: ease-in-out;
 			border-radius: 16px;
 
-			overflow: hidden;
-
 			&:hover {
-				box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.3);
 				transform: scale(1.03);
+
+				.project-card {
+					box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.3);
+				}
 			}
 
 			&:focus-visible {
 				transform: scale(1.03);
-				border-radius: 16px;
-				outline: 3px solid var(--text-primary);
+
+				.project-card {
+					border-radius: 16px;
+					outline: 3px solid var(--text-primary);
+				}
 			}
 
 			&:active {
 				transform: scale(1);
 				box-shadow: none;
+
+				.project-card {
+					box-shadow: none;
+				}
 			}
 		}
 	}
