@@ -158,6 +158,12 @@
 		}
 	}
 
+	@media (max-width: 650px) {
+		.wrapper {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
 	.title {
 		font-size: larger;
 	}
