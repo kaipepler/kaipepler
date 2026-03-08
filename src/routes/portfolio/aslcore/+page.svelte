@@ -38,10 +38,6 @@
 	</p>
 	<div class="mediumsblock">
 		<div>
-			<h3>Date</h3>
-			<p>2016 – 2019</p>
-		</div>
-		<div>
 			<h3>Medium</h3>
 			<p>Website, Video</p>
 		</div>

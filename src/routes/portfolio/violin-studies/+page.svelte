@@ -87,10 +87,6 @@
 	<p>Originally drawn in marker and later vectorized.</p>
 	<div class="mediumsblock">
 		<div>
-			<h3>Date</h3>
-			<p>2015</p>
-		</div>
-		<div>
 			<h3>Medium</h3>
 			<p>Vectorized Marker</p>
 		</div>
@@ -102,8 +98,6 @@
 </section>
 
 {#each studies as study}
-	<script>
-	</script>
 	<section class="gallery-element">
 		<h2>
 			{study.title}

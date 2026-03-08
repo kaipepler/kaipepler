@@ -41,10 +41,6 @@
 	</p>
 	<div class="mediumsblock">
 		<div>
-			<h3>Date</h3>
-			<p>2019 – 2022</p>
-		</div>
-		<div>
 			<h3>Medium</h3>
 			<p>Web App</p>
 		</div>

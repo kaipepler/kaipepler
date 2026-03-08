@@ -250,10 +250,6 @@
 	</p>
 	<div class="mediumsblock">
 		<div>
-			<h3>Date</h3>
-			<p>2014</p>
-		</div>
-		<div>
 			<h3>Medium</h3>
 			<p>Digital Photography</p>
 		</div>

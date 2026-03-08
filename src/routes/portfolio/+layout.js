@@ -95,7 +95,7 @@ export function load() {
 			id: 'estrea',
 			type: 'Photography',
 			tags: ['Photography'],
-			date: '2015',
+			date: '2014',
 			colors: ['#2c4f7d', '#4778af'],
 			featured: false
 		}
