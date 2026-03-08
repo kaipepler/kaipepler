@@ -1,19 +1,8 @@
 <script>
-	import { page } from '$app/state';
 	let { data } = $props();
+	import { page } from '$app/state';
 	const current = page.route.id.split('/')[2];
-
 	const currentProject = $derived(data.projects[current]);
-
-	const project = {
-		title: 'Violin Studies',
-		id: 'violin-studies',
-		type: 'Illustration',
-		tags: ['Graphic Design', 'Illustration'],
-		date: '2015',
-		colors: ['#902308', '#966f00'],
-		featured: false
-	};
 
 	const studies = [
 		{
@@ -79,7 +68,7 @@
 		</div>
 	</div>
 
-	<h2 id="overview">Overview</h2>
+	<h2 id="overview" class="visually-hidden">Overview</h2>
 	<p>
 		A series of studies on what elements are required to make an illustration read as a violin, and
 		how the stylization adds additional characteristics to its interpretation.
@@ -122,6 +111,7 @@
 		display: flex;
 		flex-direction: column;
 		margin-top: 2rem;
+		width: fit-content;
 		max-width: 85ch;
 
 		div {

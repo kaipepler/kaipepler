@@ -242,7 +242,7 @@
 		</div>
 	</div>
 
-	<h2 id="overview">Overview</h2>
+	<h2 id="overview" class="visually-hidden">Overview</h2>
 	<p>
 		Estrea is my first full-length photo album. All images were crafted completely in-camera; With
 		the exception of minor color correction and sensor dust cleaning, no post-processing or
@@ -312,6 +312,7 @@
 		display: flex;
 		flex-direction: column;
 		margin-top: 2rem;
+		width: fit-content;
 		max-width: 85ch;
 
 		div {
@@ -327,7 +328,8 @@
 			order: 3;
 			font-size: var(--step--1);
 			margin-inline: -0.5rem;
-			max-width: 100%;
+			max-width: unset;
+			width: 100%;
 			position: relative;
 
 			ul {

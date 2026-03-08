@@ -30,7 +30,7 @@
 		</div>
 	</div>
 
-	<h2 id="overview">Overview</h2>
+	<h2 id="overview" class="visually-hidden">Overview</h2>
 	<p>
 		<a href="https://aslcore.org">ASLCORE</a> is a project by National Technical Institute for the Deaf
 		(NTID) at the Rochester Institute of Technology (RIT) to support ASL vocabulary in higher education
@@ -38,13 +38,13 @@
 	</p>
 	<div class="mediumsblock">
 		<div>
-			<h3>Medium</h3>
-			<p>Website, Video</p>
+			<h3>Deliverables</h3>
+			<p>Website, Videos, Brand Assets, Presentations</p>
 		</div>
 	</div>
 	<blockquote>
-		I shot and maintained a library of over 2,000 videos, showcasing them on a custom-designed
-		website for the project.
+		I shot and maintained a library of over 2,000 videos, as well as designed and coded a website
+		from scratch to showcase the project.
 	</blockquote>
 </section>
 
@@ -103,15 +103,16 @@
 			resources across the globe, and I’m honored to have been a part of bringing these resources
 			into the world.
 		</p>
-		<p><a class="button primary" href="https://aslcore.org">Visit ASLCORE</a></p>
+		<p><a class="button primary" href="https://aslcore.org">ASLCORE Website</a></p>
 	</section>
 </div>
 
+<hr />
+
 <section>
-	<hr />
-	<h2 class="visually-hiddeen">My Work with RIT</h2>
+	<h2>My Work with RIT</h2>
 	<p>
 		ASLCORE was one of a number of projects I supported while working with RIT. For a complete
-		record of my work there, <a href="/rit">View my RIT timeline</a>.
+		record of my work there, <a href="/rit">view my RIT timeline</a>.
 	</p>
 </section>

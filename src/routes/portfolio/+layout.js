@@ -27,15 +27,15 @@ export function load() {
 			colors: ['#00809c', '#123137'],
 			featured: true
 		},
-		// {
-		// 	title: 'Randleman Program',
-		// 	id: 'randleman-program',
-		// 	type: 'Branding',
-		// 	tags: ['Branding', 'Logo Design', 'UI'],
-		// 	date: '2019',
-		// 	colors: ['#54200b', '#a96521'],
-		// 	featured: false
-		// },
+		{
+			title: 'Randleman Program',
+			id: 'randleman-program',
+			type: 'Branding',
+			tags: ['Branding', 'Logo Design', 'UI'],
+			date: '2019',
+			colors: ['#54200b', '#a96521'],
+			featured: true
+		},
 		// {
 		// 	title: 'Târé',
 		// 	id: 'tare',
@@ -54,15 +54,15 @@ export function load() {
 			colors: ['#0c880c', '#313131'],
 			featured: true
 		},
-		// {
-		// 	title: 'Recorder Society',
-		// 	id: 'recorder-society',
-		// 	type: 'Branding',
-		// 	tags: ['Graphic Design', 'Logo Design', 'Branding'],
-		// 	date: '2019',
-		// 	colors: ['#002446', '#007dab'],
-		// 	featured: false
-		// },
+		{
+			title: 'Recorder Society',
+			id: 'recorder-society',
+			type: 'Logo',
+			tags: ['Graphic Design', 'Logo Design', 'Branding'],
+			date: '2019',
+			colors: ['#002446', '#007dab'],
+			featured: false
+		},
 		// {
 		// 	title: 'MIND 8',
 		// 	id: 'mind-8',

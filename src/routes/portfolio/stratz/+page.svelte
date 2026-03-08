@@ -30,7 +30,7 @@
 		</div>
 	</div>
 
-	<h2 id="overview">Overview</h2>
+	<h2 id="overview" class="visually-hidden">Overview</h2>
 	<p>
 		<a href="https://stratz.com">STRATZ Esports</a> is an advanced analytics platform for the
 		popular <a href="https://www.dota2.com/home">Dota 2</a>, by Valve Software.
@@ -41,8 +41,8 @@
 	</p>
 	<div class="mediumsblock">
 		<div>
-			<h3>Medium</h3>
-			<p>Web App</p>
+			<h3>Deliverables</h3>
+			<p>UI, UX, Videos, Brand Assets, Presentations</p>
 		</div>
 	</div>
 	<blockquote>
@@ -606,7 +606,7 @@
 			lifelong pursuit, and I will take these lessons with me into all future projects I undertake.
 		</p>
 
-		<p><a class="button primary" href="https://stratz.com">Visit STRATZ</a></p>
+		<p><a class="button primary" href="https://stratz.com">STRATZ Website</a></p>
 
 		<aside aria-labelledby="external">
 			<strong aria-hidden="true"><span id="external">Note</span>:</strong> Since my departure, STRATZ

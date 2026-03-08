@@ -21,6 +21,14 @@ html:has(dialog[open]) {
 	margin-right: 0;
 }
 
+.mediaframe.medium {
+	width: 30%;
+}
+
+.mediaframe.small {
+	width: 20%;
+}
+
 .mediaframe.fullsize {
 	flex-direction: column;
 
@@ -35,6 +43,14 @@ html:has(dialog[open]) {
 		float: none;
 		width: 100%;
 		margin: 1rem 0 0 0;
+	}
+	.mediaframe.medium {
+		width: 60%;
+		margin: auto;
+	}
+	.mediaframe.small {
+		width: 60%;
+		margin: auto;
 	}
 }
 
@@ -72,7 +88,7 @@ lightbox-image {
 
 dialog {
 	--_gutter: 2rem;
-	padding: 1rem;
+	padding: 0;
 	outline: unset;
 	border: none;
 	background: unset;
