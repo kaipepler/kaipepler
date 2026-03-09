@@ -63,15 +63,15 @@ export function load() {
 			colors: ['#002446', '#007dab'],
 			featured: false
 		},
-		// {
-		// 	title: 'MIND 8',
-		// 	id: 'mind-8',
-		// 	type: 'Animation',
-		// 	tags: ['Graphic Design', 'Illustration', 'Logo Design', 'Branding'],
-		// 	date: '2018',
-		// 	colors: ['#0075db', '#00856b'],
-		// 	featured: false
-		// },
+		{
+			title: 'MIND 8',
+			id: 'mind-8',
+			type: 'Animation',
+			tags: ['Graphic Design', 'Illustration', 'Logo Design', 'Branding'],
+			date: '2018',
+			colors: ['#0075db', '#00856b'],
+			featured: false
+		},
 		// {
 		// 	title: 'Free Leaf Artisan Tea',
 		// 	id: 'free-leaf-artisan-tea',
