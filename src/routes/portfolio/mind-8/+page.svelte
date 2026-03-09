@@ -32,17 +32,13 @@
 
 	<h2 id="overview">Overview</h2>
 	<p>
-		MIND 8 is a conceptual short animation. All content (concept, art, animation, and sound effects)
-		were created by me.
+		MIND 8 is a conceptual short animation. I created the concept, art, animation, and sound
+		effects.
 	</p>
-	<aside aria-labelledby="external">
-		<strong aria-hidden="true"><span id="external">Note</span>:</strong>
-		<div>
-			In the original version, I included a dream-like background track. The music was covered under
-			Creative Commons when released, but since 2015 the artist has removed their work from free
-			licencing. Out of respect I have cut the backing track from the animation.
-		</div>
-	</aside>
+	<p>
+		The background music is <em>Better Way</em> by
+		<a href="https://www.kai-engel.com">Kai Engel</a>. Used with permission.
+	</p>
 	<div class="mediumsblock">
 		<div>
 			<h3>Medium</h3>
@@ -66,8 +62,8 @@
 	<details>
 		<summary>Text Description</summary>
 		<p>
-			Across an infinite white space, black lines start to come together, forming the basic
-			primitives of a human form.
+			Dream-like music starts to play. Across an infinite white space, black lines start to come
+			together, forming the basic primitives of a human form.
 		</p>
 		<p>
 			The black outlines fade as shades of blue fill each shape of the human’s figure. At the same
