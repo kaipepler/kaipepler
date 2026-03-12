@@ -20,13 +20,13 @@
 		style:view-transition-name="project-card-{currentProject.id}"
 	>
 		<h1 class="title" style:view-transition-name="project-card-title-{currentProject.id}">
-			{currentProject.title}
+			<span>{currentProject.title}</span>
 		</h1>
 		<div class="type" style:view-transition-name="project-card-type-{currentProject.id}">
 			{currentProject.type}
 		</div>
 		<div class="date" style:view-transition-name="project-card-date-{currentProject.id}">
-			{currentProject.date}
+			<span>{currentProject.date}</span>
 		</div>
 	</div>
 

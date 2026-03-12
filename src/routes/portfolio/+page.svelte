@@ -34,13 +34,13 @@
 						style:view-transition-name="project-card-{project.id}"
 					>
 						<div class="title" style:view-transition-name="project-card-title-{project.id}">
-							{project.title}
+							<span>{project.title}</span>
 						</div>
 						<div class="type" style:view-transition-name="project-card-type-{project.id}">
 							{project.type}
 						</div>
 						<div class="date" style:view-transition-name="project-card-date-{project.id}">
-							{project.date}
+							<span>{project.date}</span>
 						</div>
 					</div>
 				</a>
@@ -65,27 +65,19 @@
 						style:view-transition-name="project-card-{project.id}"
 					>
 						<div class="title" style:view-transition-name="project-card-title-{project.id}">
-							{project.title}
+							<span>{project.title}</span>
 						</div>
 						<div class="type" style:view-transition-name="project-card-type-{project.id}">
 							{project.type}
 						</div>
 						<div class="date" style:view-transition-name="project-card-date-{project.id}">
-							{project.date}
+							<span>{project.date}</span>
 						</div>
 					</div>
 				</a>
 			{/if}
 		{/each}
 	</div>
-	<p>
-		Many of my older pieces are offline as I migrate my portfolio to a new framework. Expect new
-		content and UI changes daily as I fine-tune the new experience.
-	</p>
-	<p>
-		Please <a href="mailto:hello@kaipepler.com">contact me</a> if you have any questions or would like
-		to see further samples of my work.
-	</p>
 </section>
 
 <style>
@@ -114,7 +106,7 @@
 			pointer-events: none; /* Allows clicks to pass through to content */
 			background: radial-gradient(
 				circle at var(--glareX) var(--glareY),
-				var(--c1) 0%,
+				var(--c2) 0%,
 				transparent 80%
 			);
 			opacity: var(--glareOpacity, 0);

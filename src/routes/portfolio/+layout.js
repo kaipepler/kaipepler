@@ -6,7 +6,7 @@ export function load() {
 		// 	type: 'Illustration',
 		// 	tags: ['Illustration'],
 		// 	date: '2023',
-		// 	colors: ['#4022b8', '#b01e24'],
+		// 	colors: ['#0E7409', '#046E5B'],
 		// 	featured: false
 		// },
 		// {
@@ -33,18 +33,18 @@ export function load() {
 			type: 'Branding',
 			tags: ['Branding', 'Logo Design', 'UI'],
 			date: '2019',
-			colors: ['#54200b', '#a96521'],
+			colors: ['#a96521', '#54200b'],
 			featured: true
 		},
-		// {
-		// 	title: 'Târé',
-		// 	id: 'tare',
-		// 	type: 'Illustration',
-		// 	tags: ['Illustration'],
-		// 	date: '2019',
-		// 	colors: ['#9955cc', '#4365fe'],
-		// 	featured: false
-		// },
+		{
+			title: 'Târé',
+			id: 'tare',
+			type: 'Illustration',
+			tags: ['Illustration'],
+			date: '2019',
+			colors: ['#7139D3', '#D33E3A'],
+			featured: false
+		},
 		{
 			title: 'ASLCORE',
 			id: 'aslcore',

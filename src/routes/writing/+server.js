@@ -35,7 +35,6 @@ async function getArticles() {
 			// Create complete article object by combining metadata with slug
 			const article = { ...metadata, slug };
 			articles.push(article);
-			console.log(article);
 		}
 	}
 
