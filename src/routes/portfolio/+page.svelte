@@ -21,6 +21,9 @@
 
 <section>
 	<h2>Featured</h2>
+
+	<small>Some of my more in-depth UX and design projects.</small>
+
 	<div class="featured wrapper">
 		{#each data.projectsArray as project}
 			{#if project.featured}
@@ -51,6 +54,7 @@
 
 <section>
 	<h2>Art & Design</h2>
+	<small>From freelance projects to designs I’ve done just for fun.</small>
 
 	<div class="wrapper">
 		{#each data.projectsArray as project}

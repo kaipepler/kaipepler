@@ -1,23 +1,23 @@
 export function load() {
 	const projectsArray = [
-		// {
-		// 	title: 'Abstract №1',
-		// 	id: 'abstract-no1',
-		// 	type: 'Illustration',
-		// 	tags: ['Illustration'],
-		// 	date: '2023',
-		// 	colors: ['#0E7409', '#046E5B'],
-		// 	featured: false
-		// },
-		// {
-		// 	title: 'Dota 2 Card Series',
-		// 	id: 'dota-2-card-series',
-		// 	type: 'Illustration',
-		// 	tags: ['Illustration'],
-		// 	date: '2022 (rev. 2024)',
-		// 	colors: ['#4022b8', '#b01e24'],
-		// 	featured: false
-		// },
+		{
+			title: 'Abstract №1',
+			id: 'abstract-no1',
+			type: 'Illustration',
+			tags: ['Illustration'],
+			date: '2023',
+			colors: ['#0E7409', '#046E5B'],
+			featured: false
+		},
+		{
+			title: 'Dota 2 Card Series',
+			id: 'dota-2-card-series',
+			type: 'Illustration',
+			tags: ['Illustration'],
+			date: '2022 (rev. 2024)',
+			colors: ['#4022b8', '#b01e24'],
+			featured: false
+		},
 		{
 			title: 'STRATZ',
 			id: 'stratz',
