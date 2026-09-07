@@ -4,9 +4,46 @@
 	import RIT from '$lib/assets/rit.svelte';
 	import Map from '$lib/assets/map.svelte';
 
-	const adjs = ['sunny', 'cloudy', 'rainy', 'stormy', 'windy', 'snowy', 'icy'];
-	const randomIndex = Math.floor(Math.random() * adjs.length);
-	let adj = adjs[randomIndex];
+	let { data } = $props();
+
+	const adj = new globalThis.Map([
+		[0, 'sunny'],
+		[1, 'sunny'],
+		[2, 'cloudy'],
+		[3, 'cloudy'],
+		[45, 'foggy'],
+		[48, 'foggy'],
+		[51, 'rainy'],
+		[53, 'rainy'],
+		[55, 'rainy'],
+		[61, 'rainy'],
+		[63, 'rainy'],
+		[65, 'rainy'],
+		[66, 'icy'],
+		[67, 'icy'],
+		[71, 'snowy'],
+		[73, 'snowy'],
+		[75, 'snowy'],
+		[77, 'snowy'],
+		[80, 'rainy'],
+		[81, 'rainy'],
+		[82, 'rainy'],
+		[95, 'stormy'],
+		[96, 'stormy'],
+		[99, 'stormy']
+	]);
+
+	const current = $derived(data.weather.current);
+
+	let description = $derived.by(() => {
+		const weatherCode = Number(current.weather_code);
+
+		if (Number(current.wind_speed_10m) >= 10) {
+			return 'windy';
+		}
+
+		return adj.get(weatherCode) ?? 'unknown';
+	});
 </script>
 
 <svelte:head>
@@ -87,8 +124,8 @@
 	<div class="content">
 		<h2 class="visually-hidden">About Me</h2>
 		<p>
-			Based in {adj} Rochester New York on the edge of beautiful Lake Ontario, I’ve worked with top companies
-			and universities in the area:
+			I’m based in {description} Rochester New York on the edge of gorgeous Lake Ontario. I love the Great
+			Lakes region and am proud to have worked with top companies and universities in the area:
 		</p>
 		<div class="logos">
 			<small>Select a logo to learn more about my work with these organizations.</small>
@@ -129,7 +166,7 @@
 				gap: 1lh;
 
 				small {
-					color: var(--text-primary);
+					color: var(--text-secondary);
 				}
 
 				div {
