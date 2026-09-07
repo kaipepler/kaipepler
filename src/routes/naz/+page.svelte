@@ -39,8 +39,8 @@
 		<div class="tl-date"><h3>2017</h3></div>
 		<div class="tl-desc">
 			<p>
-				For the past {`${new Date().getFullYear() - 2017}`} years I have recorded the voiceovers for the
-				Nazareth nursing department’s biannual pinning ceremonies.
+				From 2017–2025 I’ve recorded the voiceovers for the Nazareth nursing department’s biannual
+				pinning ceremonies.
 			</p>
 		</div>
 	</div>

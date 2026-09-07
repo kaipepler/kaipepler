@@ -1,12 +1,11 @@
 <script>
 	let { children } = $props();
 
+	import * as config from '$lib/config';
 	import Header from './header.svelte';
-	import Footer from './footer.svelte';
 
 	// First, load our theme variables
 	import '$lib/styles/themes/colors.css';
-	import '$lib/styles/themes/dark-mode.css';
 	import '$lib/styles/themes/high-contrast.css';
 
 	// Then load utilities that other styles might depend on
@@ -50,7 +49,15 @@
 		{@render children()}
 	</main>
 
-	<Footer />
+	<footer>
+		<div>
+			&copy {`${new Date().getFullYear()} ${config.title}`}
+			<ul>
+				<li><a href="/accessibility"><span>Accessibility</span></a></li>
+				<li><a href="/privacy"><span>Privacy</span></a></li>
+			</ul>
+		</div>
+	</footer>
 </div>
 
 <style>
@@ -58,9 +65,59 @@
 		height: 100%;
 		display: grid;
 		grid-template-rows: auto 1fr auto;
-	}
 
-	main {
-		z-index: 1;
+		footer {
+			padding: 1.5rem var(--space-m-xl);
+
+			div {
+				margin-inline: auto;
+				max-width: 1200px;
+				display: flex;
+				justify-content: space-between;
+				font-size: var(--step--1);
+				font-weight: 400;
+				color: var(--text-secondary);
+
+				@media (prefers-contrast: more) {
+					color: var(--text-primary);
+				}
+
+				ul {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					list-style-type: none;
+					padding: 0;
+					margin: 0;
+
+					li {
+						text-align: center;
+						a {
+							position: relative;
+							padding: 0.5rem;
+							border-radius: 6px;
+
+							@media (prefers-contrast: more) {
+								border: 1px solid var(--gray-12);
+							}
+
+							span {
+								border-bottom: 0.08rem solid transparent;
+								padding-block: 0.2rem;
+								transition:
+									color 0.2s linear,
+									border 0.2s linear;
+							}
+
+							&:hover {
+								span {
+									color: var(--text-primary);
+									border-bottom: 0.08rem solid var(--text-primary);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 </style>

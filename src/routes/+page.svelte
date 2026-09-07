@@ -87,7 +87,8 @@
 	<div class="content">
 		<h2 class="visually-hidden">About Me</h2>
 		<p>
-			Based in {adj} Rochester New York, I’ve worked with top companies and universities in the area:
+			Based in {adj} Rochester New York on the edge of beautiful Lake Ontario, I’ve worked with top companies
+			and universities in the area:
 		</p>
 		<div class="logos">
 			<small>Select a logo to learn more about my work with these organizations.</small>

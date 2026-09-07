@@ -3,21 +3,10 @@
 	import Logo from '$lib/assets/logo.svelte';
 	import Bluesky from '$lib/assets/bluesky.svelte';
 	import { page } from '$app/state';
-
-	/**
-	 * @param {{ preventDefault: () => void; }} e
-	 */
-	function handleSkipLink(e) {
-		e.preventDefault();
-		// Update URL without triggering history navigation
-		location.replace('#main');
-		// Focus main directly
-		document.getElementById('main')?.focus();
-	}
 </script>
 
 <header>
-	<a class="button skip-link" href="#main" onclick={handleSkipLink}>Skip to Main Content</a>
+	<a class="button skip-link" href="#main">Skip to Main Content</a>
 	<nav>
 		<div class="logo-wrapper">
 			<a href="/" aria-labelledby="title">
